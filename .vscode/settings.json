@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "sl_system_process_action.h": "c",
+        "sl_fem_util.h": "c"
+    }
+}
