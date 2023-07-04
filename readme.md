@@ -38,6 +38,25 @@ Import the GATT configuration:
 
 ## Responding to Bluetooth Events
 
+Open the app.c file and add following:
+
+```
+/*******************************************************************************
+ * @brief  Application Init.
+ * @retval None
+ * 
+ * @note    Additional application init code. 
+ *          This is called once during start-up.
+*******************************************************************************/
+void app_init(void)
+{
+  // turn on LED at the startup
+  sl_led_turn_on(&sl_led_led0);
+}
+```
+
+and
+
 ```
 /*************************************************************************** 
  * @brief   Bluetooth stack event handler.
@@ -189,4 +208,3 @@ Additional application logic has to be implemented in the `app_init()` and `app_
 [AN1260: Integrating v3.x Silicon Labs Bluetooth Applications with Real-Time Operating Systems](https://www.silabs.com/documents/public/application-notes/an1260-integrating-v3x-bluetooth-applications-with-rtos.pdf)
 [UG103.6: Bootloader Fundamentals](https://www.silabs.com/documents/public/user-guides/ug103-06-fundamentals-bootloading.pdf)
 [UG489: Silicon Labs Gecko Bootloader User's Guide for GSDK 4.0 and Higher](https://cn.silabs.com/documents/public/user-guides/ug489-gecko-bootloader-user-guide-gsdk-4.pdf)
-
