@@ -23,6 +23,7 @@ vscode-build/obj/app.o: app.c \
  gecko_sdk_4.3.0/platform/Device/SiliconLabs/BGM22/Include/bgm22_fsrco.h \
  gecko_sdk_4.3.0/platform/Device/SiliconLabs/BGM22/Include/bgm22_dpll.h \
  gecko_sdk_4.3.0/platform/Device/SiliconLabs/BGM22/Include/bgm22_lfxo.h \
+ 
  gecko_sdk_4.3.0/platform/Device/SiliconLabs/BGM22/Include/bgm22_lfrco.h \
  gecko_sdk_4.3.0/platform/Device/SiliconLabs/BGM22/Include/bgm22_ulfrco.h \
  gecko_sdk_4.3.0/platform/Device/SiliconLabs/BGM22/Include/bgm22_msc.h \
