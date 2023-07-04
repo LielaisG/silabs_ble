@@ -23,4 +23,5 @@ extern const sli_bt_gattdb_t gattdb;
 #define gattdb_automation_io_0                25
 #define gattdb_led_control                    27
 
+
 #endif // __GATT_DB_H
