@@ -1,114 +1,195 @@
-# SoC - Empty
+# BLE_LED_ctrl
 
-The Bluetooth SoC-Empty example is a project that you can use as a template for any standalone Bluetooth application.
-
-> Note: this example expects a specific Gecko Bootloader to be present on your device. For details see the Troubleshooting section.
+> Note: this example expects a specific Gecko Bootloader to be present on your device. The Bluetooth SoC-Empty example is a project that serves as a template for this standalone Bluetooth application.
 
 ## Getting Started
 
-To learn the Bluetooth technology basics, see [UG103.14: Bluetooth LE Fundamentals](https://www.silabs.com/documents/public/user-guides/ug103-14-fundamentals-ble.pdf).
-
-To get started with Silicon Labs Bluetooth and Simplicity Studio, see [QSG169: Bluetooth SDK v3.x Quick Start Guide](https://www.silabs.com/documents/public/quick-start-guides/qsg169-bluetooth-sdk-v3x-quick-start-guide.pdf).
-
-The term SoC stands for "System on Chip", meaning that this is a standalone application that runs on the EFR32/BGM and does not require any external MCU or other active components to operate.
-
-As the name implies, the example is an (almost) empty template that has only the bare minimum to make a working Bluetooth application. This skeleton can be extended with the application logic.
+-[UG103.14: Bluetooth LE Fundamentals](https://www.silabs.com/documents/public/user-guides/ug103-14-fundamentals-ble.pdf).
+-[QSG169: Bluetooth SDK v3.x Quick Start Guide](https://www.silabs.com/documents/public/quick-start-guides/qsg169-bluetooth-sdk-v3x-quick-start-guide.pdf).
+-[UG434: SiliconLabs Bluetooth ® C Application Developer's Guide for SDK v3.x](https://www.silabs.com/documents/public/user-guides/ug434-bluetooth-c-soc-dev-guide-sdk-v3x.pdf).
+-[UG438: GATT Configurator User’s Guide for Bluetooth SDK v3.x](https://www.silabs.com/documents/public/user-guides/ug438-gatt-configurator-users-guide-sdk-v3x.pdf)
+-[Bluetooth API Reference](https://docs.silabs.com/bluetooth/latest/)
+-[AN1260: Integrating v3.x Silicon Labs Bluetooth Applications with Real-Time Operating Systems](https://www.silabs.com/documents/public/application-notes/an1260-integrating-v3x-bluetooth-applications-with-rtos.pdf)
+-[UG103.6: Bootloader Fundamentals](https://www.silabs.com/documents/public/user-guides/ug103-06-fundamentals-bootloading.pdf)
+-[UG489: Silicon Labs Gecko Bootloader User's Guide for GSDK 4.0 and Higher](https://cn.silabs.com/documents/public/user-guides/ug489-gecko-bootloader-user-guide-gsdk-4.pdf)
 
 The development of a Bluetooth applications consist of three main steps:
-
 * Designing the GATT database
 * Responding to the events raised by the Bluetooth stack
 * Implementing additional application logic
-
-These steps are covered in the following sections. To learn more about programming an SoC application, see [UG434: Silicon Labs Bluetooth ® C Application Developer's Guide for SDK v3.x](https://www.silabs.com/documents/public/user-guides/ug434-bluetooth-c-soc-dev-guide-sdk-v3x.pdf).
-
-## Designing the GATT Database
-
-The SOC-empty example implements a basic GATT database. GATT definitions (services/characteristics) can be extended using the GATT Configurator, which can be found under Advanced Configurators in the Software Components tab of the Project Configurator. To open the Project Configurator, open the .slcp file of the project.
-
-![Opening GATT Configurator](image/readme_img1.png)
-
-To learn how to use the GATT Configurator, see [UG438: GATT Configurator User’s Guide for Bluetooth SDK v3.x](https://www.silabs.com/documents/public/user-guides/ug438-gatt-configurator-users-guide-sdk-v3x.pdf).
-
-## Responding to Bluetooth Events
-
-A Bluetooth application is event driven. The Bluetooth stack generates events e.g., when a remote device connects or disconnects or when it writes a characteristic in the local GATT database. The application has to handle these events in the `sl_bt_on_event()` function. The prototype of this function is implemented in *app.c*. To handle more events, the switch-case statement of this function is to be extended. For the list of Bluetooth events, see the online [Bluetooth API Reference](https://docs.silabs.com/bluetooth/latest/).
-
-## Implementing Application Logic
-
-Additional application logic has to be implemented in the `app_init()` and `app_process_action()` functions. Find the definitions of these functions in *app.c*. The `app_init()` function is called once when the device is booted, and `app_process_action()` is called repeatedly in a while(1) loop. For example, you can poll peripherals in this function. To save energy and to have this function called at specific intervals only, for example once every second, use the services of the [Sleeptimer](https://docs.silabs.com/gecko-platform/latest/service/api/group-sleeptimer). If you need a more sophisticated application, consider using RTOS (see [AN1260: Integrating v3.x Silicon Labs Bluetooth Applications with Real-Time Operating Systems](https://www.silabs.com/documents/public/application-notes/an1260-integrating-v3x-bluetooth-applications-with-rtos.pdf)).
-
-## Features Already Added to the SOC-Empty Application
-
-The SOC-Empty application is ***almost*** empty. It implements a basic application to demonstrate how to handle events, how to use the GATT database, and how to add software components.
-
-* A simple application is implemented in the event handler function that starts advertising on boot (and on connection_closed event). This makes it possible for remote devices to find the device and connect to it.
-* A simple GATT database is defined by adding Generic Access and Device Information services. This makes it possible for remote devices to read out some basic information such as the device name.
-* The OTA DFU software component is added, which extends both the event handlers (see *sl_ota_dfu.c*) and the GATT database (see *ota_dfu.xml*). This makes it possible to make Over-The-Air Device-Firmware-Upgrade without any additional application code.
 
 ## Testing the SOC-Empty Application
 
 As described above, an empty example does nothing except advertising and letting other devices connect and read its basic GATT database. To test this feature, do the following:
 
 1. Build and flash the SoC-Empty example to your device.
-2. Make sure a bootloader is installed. See the Troubleshooting section.
-3. Download the **EFR Connect** smartphone app, available on [iOS](https://apps.apple.com/us/app/efr-connect/id1030932759) and [Android](https://play.google.com/store/apps/details?id=com.siliconlabs.bledemo).
-4. Open the app and choose the Bluetooth Browser.
+2. Download the **EFR Connect** smartphone app, available on [iOS](https://apps.apple.com/us/app/efr-connect/id1030932759) and [Android](https://play.google.com/store/apps/details?id=com.siliconlabs.bledemo).
+3. Open the app and choose the Bluetooth Browser.
    ![EFR Connect start screen](image/readme_img2.png)
-5. Now you should find your device advertising as "Empty Example". Tap **Connect**.
+4. Now you should find your device advertising as "Empty Example". Tap **Connect**.
    ![Bluetooth Browser](image/readme_img3.png)
-6. The connection is opened, and the GATT database is automatically discovered. Find the device name characteristic under Generic Access service and try to read out the device name.
+5. The connection is opened, and the GATT database is automatically discovered. Find the device name characteristic under Generic Access service and try to read out the device name.
    ![GATT database of the device](image/readme_img4.png)
 
-## Troubleshooting
+## Prepare Project environment
 
-### Bootloader Issues
+Open the .slcp file. Select the SOFTWARE COMPONENTS tab and install the software components:
+1. [Services] → [IO Stream] → [IO Stream: USART] → default instance name: vcom
+2. [Application] → [Utility] → [Log]
+3. [Platform] → [Driver] → [LED] → [Simple LED] → default instance name: led0
+4. [Bluetooth] → [Application] → Remove OTA DFU
 
-Note that Example Projects do not include a bootloader. However, Bluetooth-based Example Projects expect a bootloader to be present on the device in order to support device firmware upgrade (DFU). To get your application to work, you should either 
-- flash the proper bootloader or
-- remove the DFU functionality from the project.
+## Designing the GATT Database
 
-**If you do not wish to add a bootloader**, then remove the DFU functionality by uninstalling the *Bootloader Application Interface* software component -- and all of its dependants. This will automatically put your application code to the start address of the flash, which means that a bootloader is no longer needed, but also that you will not be able to upgrade your firmware.
+The SOC-empty example implements a basic GATT database. 
+Import the GATT configuration:
+1. Open the .slcp file in the project.
+2. Select the CONFIGURATION TOOLS tab and open the Bluetooth GATT Configurator.
+3. Find the Import button and import the attached config/btconf/gatt_configuration.btconf file.
+4. Save the GATT configuration (ctrl-s).
 
-**If you want to add a bootloader**, then either 
-- Create a bootloader project, build it and flash it to your device. Note that different projects expect different bootloaders:
-  - for NCP and RCP projects create a *BGAPI UART DFU* type bootloader
-  - for SoC projects on Series 1 devices create a *Bluetooth in-place OTA DFU* type bootloader or any *Internal Storage* type bootloader
-  - for SoC projects on Series 2 devices create a *Bluetooth Apploader OTA DFU* type bootloader
+## Responding to Bluetooth Events
 
-- or run a precompiled Demo on your device from the Launcher view before flashing your application. Precompiled demos flash both bootloader and application images to the device. Flashing your own application image after the demo will overwrite the demo application but leave the bootloader in place. 
-  - For NCP and RCP projects, flash the *Bluetooth - NCP* demo.
-  - For SoC projects, flash the *Bluetooth - SoC Thermometer* demo.
+```
+/*************************************************************************** 
+ * @brief   Bluetooth stack event handler.
+ *          This overrides the dummy weak implementation.
+ * 
+ * @param[in] evt Event coming from the Bluetooth stack.
+****************************************************************************/
+void sl_bt_on_event(sl_bt_msg_t *evt)
+{
+    sl_status_t sc;
+    uint16_t sent_len;
+    sl_led_state_t led_status;
 
-**Important Notes:** 
-- when you flash your application image to the device, use the *.hex* or *.s37* output file. Flashing *.bin* files may overwrite (erase) the bootloader.
+    switch (SL_BT_MSG_ID(evt->header))
+    {
+        /**
+         * @brief   This event indicates the device has started and the radio is ready.
+         *          Do not call any stack command before receiving this boot event!
+        */
+        case sl_bt_evt_system_boot_id:
+            // Create an advertising set.
+            sc = sl_bt_advertiser_create_set(&advertising_set_handle);
+            app_assert_status(sc);
+            
+            // Generate data for advertising
+            sc = sl_bt_legacy_advertiser_generate_data(advertising_set_handle,
+                                                    sl_bt_advertiser_general_discoverable);
+            app_assert_status(sc);
 
-- On Series 1 devices (EFR32xG1x), both first stage and second stage bootloaders have to be flashed. This can be done at once by flashing the *-combined.s37* file found in the bootloader project after building the project.
+            // Set advertising interval to 100ms.
+            sc = sl_bt_advertiser_set_timing(
+                advertising_set_handle,
+                160, // min. adv. interval (milliseconds * 1.6)
+                160, // max. adv. interval (milliseconds * 1.6)
+                0,   // adv. duration
+                0);  // max. num. adv. events
+            app_assert_status(sc);
+            
+            // Start advertising and enable connections.
+            sc = sl_bt_legacy_advertiser_start(advertising_set_handle,
+                                            sl_bt_advertiser_connectable_scannable);
+            app_assert_status(sc);
 
-- On Series 2 devices SoC example projects require a *Bluetooth Apploader OTA DFU* type bootloader by default. This bootloader needs a lot of flash space and does not fit into the regular bootloader area, hence the application start address must be shifted. This shift is automatically done by the *Apploader Support for Applications* software component, which is installed by default. If you want to use any other bootloader type, you should remove this software component in order to shift the application start address back to the end of the regular bootloader area. Note, that in this case you cannot do OTA DFU with Apploader, but you can still implement application-level OTA DFU by installing the *Application OTA DFU* software component instead of *In-place OTA DFU*.
+            // print log
+            app_log("Stack version: %u.%u.%u\r\n", evt->data.evt_system_boot.major,
+                evt->data.evt_system_boot.minor, evt->data.evt_system_boot.patch);
+            break;
 
-For more information on bootloaders, see [UG103.6: Bootloader Fundamentals](https://www.silabs.com/documents/public/user-guides/ug103-06-fundamentals-bootloading.pdf) and [UG489: Silicon Labs Gecko Bootloader User's Guide for GSDK 4.0 and Higher](https://cn.silabs.com/documents/public/user-guides/ug489-gecko-bootloader-user-guide-gsdk-4.pdf).
+        /**
+         * @brief   This event indicates that a new connection was opened.
+        */
+        case sl_bt_evt_connection_opened_id:
+            app_log("Connection opened.\n");
+            break;
+
+        /**
+         * @brief   This event indicates that a connection was closed.
+        */
+        case sl_bt_evt_connection_closed_id:
+            app_log("Connection closed.\n");
+
+            // Generate data for advertising
+            sc = sl_bt_legacy_advertiser_generate_data(advertising_set_handle,
+                                                    sl_bt_advertiser_general_discoverable);
+            app_assert_status(sc);
+
+            // Restart advertising after client has disconnected.
+            sc = sl_bt_legacy_advertiser_start(advertising_set_handle,
+                                            sl_bt_advertiser_connectable_scannable);
+            app_assert_status(sc);
+            break;
+
+        /**
+         * @brief   Write request
+        */
+        case sl_bt_evt_gatt_server_user_write_request_id:
+            // Automation IO digital control
+            if (evt->data.evt_gatt_server_user_write_request.characteristic == gattdb_led_control)
+            {
+                // Write user supplied value to LEDs.
+                // Both HEX and ASCII formats are supported to control the LED.
+                if ((evt->data.evt_gatt_server_attribute_value.value.data[0] == 1) || (evt->data.evt_gatt_server_attribute_value.value.data[0] == 0x31))
+                {
+                    app_log("Turn on led\n");
+                    sl_led_turn_on(&sl_led_led0);
+                }
+                else if ((evt->data.evt_gatt_server_attribute_value.value.data[0] == 0) || (evt->data.evt_gatt_server_attribute_value.value.data[0] == 0x30))
+                {
+                    app_log("Turn off led\n");
+                    sl_led_turn_off(&sl_led_led0);
+                }
+                else
+                {
+                    app_log("Invalid attribute value\n");
+                }
+                sc = sl_bt_gatt_server_send_user_write_response(
+                    evt->data.evt_gatt_server_user_write_request.connection,
+                    gattdb_led_control,
+                    SL_STATUS_OK);
+                app_assert_status(sc);
+            }
+            break;
+
+        /**
+         * @brief   Read request
+        */
+        case sl_bt_evt_gatt_server_user_read_request_id:
+            // Automation IO digital control
+            if (evt->data.evt_gatt_server_user_read_request.characteristic == gattdb_led_control)
+            {
+                app_log("Read led\n");
+                led_status = sl_led_get_state(&sl_led_led0);
+                sc = sl_bt_gatt_server_send_user_read_response(
+                    evt->data.evt_gatt_server_user_read_request.connection,
+                    gattdb_led_control,
+                    SL_STATUS_OK,
+                    1,
+                    &led_status,
+                    &sent_len);
+                app_assert_status(sc);
+            }
+            break;
+
+        /**
+         * @brief   Add additional event handlers here as your application requires!
+        */
+
+        /**
+         * @brief   Default event handler.
+        */
+        default:
+            break;
+    }
+}
+```
+
+## Implementing Application Logic
+
+Additional application logic has to be implemented in the `app_init()` and `app_process_action()` functions. Find the definitions of these functions in *app.c*. The `app_init()` function is called once when the device is booted, and `app_process_action()` is called repeatedly in a while(1) loop. For example, you can poll peripherals in this function. To save energy and to have this function called at specific intervals only, for example once every second, use the services of the [Sleeptimer](https://docs.silabs.com/gecko-platform/latest/service/api/group-sleeptimer). If you need a more sophisticated application, consider using RTOS (see ).
 
 
-### Programming the Radio Board
-
-Before programming the radio board mounted on the mainboard, make sure the power supply switch is in the AEM position (right side) as shown below.
-
-![Radio board power supply switch](image/readme_img0.png)
 
 
-## Resources
-
-[Bluetooth Documentation](https://docs.silabs.com/bluetooth/latest/)
-
-[UG103.14: Bluetooth LE Fundamentals](https://www.silabs.com/documents/public/user-guides/ug103-14-fundamentals-ble.pdf)
-
-[QSG169: Bluetooth SDK v3.x Quick Start Guide](https://www.silabs.com/documents/public/quick-start-guides/qsg169-bluetooth-sdk-v3x-quick-start-guide.pdf)
-
-[UG434: Silicon Labs Bluetooth ® C Application Developer's Guide for SDK v3.x](https://www.silabs.com/documents/public/user-guides/ug434-bluetooth-c-soc-dev-guide-sdk-v3x.pdf)
-
-[Bluetooth Training](https://www.silabs.com/support/training/bluetooth)
-
-## Report Bugs & Get Support
-
-You are always encouraged and welcome to report any issues you found to us via [Silicon Labs Community](https://www.silabs.com/community).
