@@ -2,3 +2,6 @@
 .projectlinkstore
 bt_soc_empty.pintool
 vscode-build/**
+.pdm/**
+.settings/**
+.uceditor/**
