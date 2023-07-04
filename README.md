@@ -1,16 +1,8 @@
-# Mesh BLE application
-
-## Inital sources
-
-**Source code of formely accepted release**.
-
-- Panel: 
-- Thermo head: 
-
+# BLE applications on EFR32 MCUs
 
 ## New releases
-
 The sources **with latest changes**:
 
-- Panel: 
-- Thermo head: 
+Projects based on SoC Empty:
+- LED Control through smartphone
+- 
