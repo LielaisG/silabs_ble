@@ -1,8 +1,6 @@
-# BLE applications on EFR32 MCUs
+# BLE applications on EFR32 mcu
 
 ## New releases
 The sources **with latest changes**:
 
-Projects based on SoC Empty:
 - LED Control through smartphone
-- 
