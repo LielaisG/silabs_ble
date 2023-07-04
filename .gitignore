@@ -1,7 +1,7 @@
 .cproject
 .projectlinkstore
 bt_soc_empty.pintool
-/vscode-build/
-/.pdm/
-/.settings/
-/.uceditor/
+vscode-build/
+.pdm/
+.settings/
+.uceditor/
