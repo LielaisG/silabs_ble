@@ -21,7 +21,17 @@ The development of a Bluetooth applications consist of three main steps:
 
 ## Prepare Project environment
 
+Open the .slcp file. Select the SOFTWARE COMPONENTS tab and install the software components:
+- [Services] → [IO Stream] → [IO Stream: USART] → default instance name: **vcom**
+- [Application] → [Utility] → [Log]
+- [Application] → [Utility] → [Assert]
+- [Bluetooth] → [BLE Controller (Link Layer)] → [Features with Commands and Events] → [Scanner for legacy advertisements] → Uninstall
+- [Bluetooth] → [BLE Controller (Link Layer)] → [Features with Commands and Events] → [Scanner Base Feature]
+- Open Properties of the project.
+    - Select C/C++ Build → Settings → Tool Settings → GNU ARM C Linker → General. Check Printf float.
 
+-------------------- remove this
+- [Platform] → [Board] → [Board Control] → enable *Virtual COM UART*
 
 ## Designing the GATT Database
 
