@@ -5,3 +5,13 @@ vscode-build/
 .pdm/
 .settings/
 .uceditor/
+image/
+vscode-build/bt_soc_empty.bin
+vscode-build/bt_soc_empty.hex
+vscode-build/bt_soc_empty.map
+vscode-build/bt_soc_empty.out
+vscode-build/bt_soc_empty.s37
+vscode-build/obj/app.d
+vscode-build/obj/app.o
+vscode-build/obj/sl_gatt_service_device_information.o
+vscode-build/obj/autogen/gatt_db.o

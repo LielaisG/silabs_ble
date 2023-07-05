@@ -14197,7 +14197,7 @@ END GROUP
 LOAD c:/work/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/crtend.o
 LOAD c:/work/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/crtn.o
 
-.text           0x00000000    0x2f6f4
+.text           0x00000000    0x2f6d4
                 0x00000000                linker_vectors_begin = .
  *(.vectors)
  .vectors       0x00000000      0x140 vscode-build/obj/gecko_sdk_4.3.0/platform/Device/SiliconLabs/BGM22/Source/startup_bgm22.o
@@ -20380,557 +20380,552 @@ LOAD c:/work/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/10.3_2
  .rodata.gattdb_attribute_field_0
                 0x0002a678        0x4 vscode-build/obj/autogen/gatt_db.o
                 0x0002a678                gattdb_attribute_field_0
- .rodata.gattdb_attribute_field_11
-                0x0002a67c        0xd vscode-build/obj/autogen/gatt_db.o
-                0x0002a67c                gattdb_attribute_field_11
- *fill*         0x0002a689        0x1 
+ .rodata.gattdb_attribute_field_12
+                0x0002a67c        0x4 vscode-build/obj/autogen/gatt_db.o
+                0x0002a67c                gattdb_attribute_field_12
  .rodata.gattdb_attribute_field_13
-                0x0002a68a        0x4 vscode-build/obj/autogen/gatt_db.o
-                0x0002a68a                gattdb_attribute_field_13
- .rodata.gattdb_attribute_field_14
-                0x0002a68e        0x4 vscode-build/obj/autogen/gatt_db.o
-                0x0002a68e                gattdb_attribute_field_14
- .rodata.gattdb_attribute_field_16
-                0x0002a692        0xe vscode-build/obj/autogen/gatt_db.o
-                0x0002a692                gattdb_attribute_field_16
- .rodata.gattdb_attribute_field_25
-                0x0002a6a0        0x4 vscode-build/obj/autogen/gatt_db.o
-                0x0002a6a0                gattdb_attribute_field_25
- .rodata.gattdb_attribute_field_28
-                0x0002a6a4        0xd vscode-build/obj/autogen/gatt_db.o
-                0x0002a6a4                gattdb_attribute_field_28
- *fill*         0x0002a6b1        0x1 
+                0x0002a680        0x4 vscode-build/obj/autogen/gatt_db.o
+                0x0002a680                gattdb_attribute_field_13
+ .rodata.gattdb_attribute_field_15
+                0x0002a684        0xe vscode-build/obj/autogen/gatt_db.o
+                0x0002a684                gattdb_attribute_field_15
+ .rodata.gattdb_attribute_field_24
+                0x0002a692        0x4 vscode-build/obj/autogen/gatt_db.o
+                0x0002a692                gattdb_attribute_field_24
+ .rodata.gattdb_attribute_field_27
+                0x0002a696        0xd vscode-build/obj/autogen/gatt_db.o
+                0x0002a696                gattdb_attribute_field_27
+ *fill*         0x0002a6a3        0x1 
  .rodata.gattdb_attribute_field_8
-                0x0002a6b2        0x4 vscode-build/obj/autogen/gatt_db.o
-                0x0002a6b2                gattdb_attribute_field_8
- *fill*         0x0002a6b6        0x2 
+                0x0002a6a4        0x4 vscode-build/obj/autogen/gatt_db.o
+                0x0002a6a4                gattdb_attribute_field_8
  .rodata.gattdb_attributes_map
-                0x0002a6b8      0x1d0 vscode-build/obj/autogen/gatt_db.o
-                0x0002a6b8                gattdb_attributes_map
+                0x0002a6a8      0x1c0 vscode-build/obj/autogen/gatt_db.o
+                0x0002a6a8                gattdb_attributes_map
  .rodata.gattdb_uuidtable_128_map
-                0x0002a888        0x1 vscode-build/obj/autogen/gatt_db.o
-                0x0002a888                gattdb_uuidtable_128_map
- *fill*         0x0002a889        0x1 
+                0x0002a868        0x1 vscode-build/obj/autogen/gatt_db.o
+                0x0002a868                gattdb_uuidtable_128_map
+ *fill*         0x0002a869        0x1 
  .rodata.gattdb_uuidtable_16_map
-                0x0002a88a       0x20 vscode-build/obj/autogen/gatt_db.o
-                0x0002a88a                gattdb_uuidtable_16_map
- *fill*         0x0002a8aa        0x2 
- .rodata        0x0002a8ac       0x1c vscode-build/obj/autogen/sl_iostream_init_usart_instances.o
+                0x0002a86a       0x20 vscode-build/obj/autogen/gatt_db.o
+                0x0002a86a                gattdb_uuidtable_16_map
+ *fill*         0x0002a88a        0x2 
+ .rodata        0x0002a88c       0x1c vscode-build/obj/autogen/sl_iostream_init_usart_instances.o
  .rodata.sl_led_led0
-                0x0002a8c8       0x18 vscode-build/obj/autogen/sl_simple_led_instances.o
-                0x0002a8c8                sl_led_led0
+                0x0002a8a8       0x18 vscode-build/obj/autogen/sl_simple_led_instances.o
+                0x0002a8a8                sl_led_led0
  .rodata.sl_status_print.str1.1
-                0x0002a8e0        0x2 vscode-build/obj/gecko_sdk_4.3.0/app/common/util/app_log/app_log.o
+                0x0002a8c0        0x2 vscode-build/obj/gecko_sdk_4.3.0/app/common/util/app_log/app_log.o
  .rodata._app_log_status_string.str1.1
-                0x0002a8e2        0x5 vscode-build/obj/gecko_sdk_4.3.0/app/common/util/app_log/app_log.o
- .rodata        0x0002a8e7        0x4 vscode-build/obj/gecko_sdk_4.3.0/platform/emdrv/dmadrv/src/dmadrv.o
- *fill*         0x0002a8eb        0x1 
+                0x0002a8c2        0x5 vscode-build/obj/gecko_sdk_4.3.0/app/common/util/app_log/app_log.o
+ .rodata        0x0002a8c7        0x4 vscode-build/obj/gecko_sdk_4.3.0/platform/emdrv/dmadrv/src/dmadrv.o
+ *fill*         0x0002a8cb        0x1 
  .rodata.nvm3_halFlashHandle
-                0x0002a8ec       0x1c vscode-build/obj/gecko_sdk_4.3.0/platform/emdrv/nvm3/src/nvm3_hal_flash.o
-                0x0002a8ec                nvm3_halFlashHandle
+                0x0002a8cc       0x1c vscode-build/obj/gecko_sdk_4.3.0/platform/emdrv/nvm3/src/nvm3_hal_flash.o
+                0x0002a8cc                nvm3_halFlashHandle
  .rodata.nvm3_maxFragmentCount
-                0x0002a908        0x1 vscode-build/obj/gecko_sdk_4.3.0/platform/emdrv/nvm3/src/nvm3_lock.o
-                0x0002a908                nvm3_maxFragmentCount
- *fill*         0x0002a909        0x3 
+                0x0002a8e8        0x1 vscode-build/obj/gecko_sdk_4.3.0/platform/emdrv/nvm3/src/nvm3_lock.o
+                0x0002a8e8                nvm3_maxFragmentCount
+ *fill*         0x0002a8e9        0x3 
  .rodata.nvm3_objHandleSize
-                0x0002a90c        0x4 vscode-build/obj/gecko_sdk_4.3.0/platform/emdrv/nvm3/src/nvm3_lock.o
-                0x0002a90c                nvm3_objHandleSize
+                0x0002a8ec        0x4 vscode-build/obj/gecko_sdk_4.3.0/platform/emdrv/nvm3/src/nvm3_lock.o
+                0x0002a8ec                nvm3_objHandleSize
  .rodata.NULL_blk
-                0x0002a910        0xc vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/cryptolib_types.o
-                0x0002a910                NULL_blk
+                0x0002a8f0        0xc vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/cryptolib_types.o
+                0x0002a8f0                NULL_blk
  .rodata.operation_select
-                0x0002a91c        0x8 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_blk_cipher.o
-                0x0002a91c                operation_select
+                0x0002a8fc        0x8 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_blk_cipher.o
+                0x0002a8fc                operation_select
  .rodata.ecc_p256_params
-                0x0002a924       0xc0 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_ecc_curves.o
+                0x0002a904       0xc0 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_ecc_curves.o
  .rodata.sx_ecc_curve_p256
-                0x0002a9e4       0x14 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_ecc_curves.o
-                0x0002a9e4                sx_ecc_curve_p256
- .rodata        0x0002a9f8       0x60 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_trng.o
+                0x0002a9c4       0x14 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_ecc_curves.o
+                0x0002a9c4                sx_ecc_curve_p256
+ .rodata        0x0002a9d8       0x60 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_trng.o
  .rodata.random_blk
-                0x0002aa58        0xc vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_trng.o
+                0x0002aa38        0xc vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_trng.o
  .rodata.CSWTCH.1
-                0x0002aa64        0x6 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_mbedtls_support/src/sli_psa_crypto.o
+                0x0002aa44        0x6 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_mbedtls_support/src/sli_psa_crypto.o
  .rodata.aes_ccm_radio.str1.1
-                0x0002aa6a       0x11 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_protocol_crypto/src/sli_protocol_crypto_radioaes.o
- *fill*         0x0002aa7b        0x1 
+                0x0002aa4a       0x11 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_protocol_crypto/src/sli_protocol_crypto_radioaes.o
+ *fill*         0x0002aa5b        0x1 
  .rodata.aes_ccm_config_decrypt
-                0x0002aa7c        0x4 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_protocol_crypto/src/sli_protocol_crypto_radioaes.o
+                0x0002aa5c        0x4 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_protocol_crypto/src/sli_protocol_crypto_radioaes.o
  .rodata.aes_ccm_config_encrypt
-                0x0002aa80        0x4 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_protocol_crypto/src/sli_protocol_crypto_radioaes.o
+                0x0002aa60        0x4 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_protocol_crypto/src/sli_protocol_crypto_radioaes.o
  .rodata.zero.1
-                0x0002aa84        0x4 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_protocol_crypto/src/sli_protocol_crypto_radioaes.o
- .rodata        0x0002aa88        0x8 vscode-build/obj/gecko_sdk_4.3.0/platform/service/device_init/src/sl_device_init_dcdc_s2.o
- .rodata        0x0002aa90       0x28 vscode-build/obj/gecko_sdk_4.3.0/platform/service/device_init/src/sl_device_init_hfxo_s2.o
- .rodata        0x0002aab8       0x14 vscode-build/obj/gecko_sdk_4.3.0/platform/service/device_init/src/sl_device_init_lfxo_s2.o
+                0x0002aa64        0x4 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_protocol_crypto/src/sli_protocol_crypto_radioaes.o
+ .rodata        0x0002aa68        0x8 vscode-build/obj/gecko_sdk_4.3.0/platform/service/device_init/src/sl_device_init_dcdc_s2.o
+ .rodata        0x0002aa70       0x28 vscode-build/obj/gecko_sdk_4.3.0/platform/service/device_init/src/sl_device_init_hfxo_s2.o
+ .rodata        0x0002aa98       0x14 vscode-build/obj/gecko_sdk_4.3.0/platform/service/device_init/src/sl_device_init_lfxo_s2.o
  .rodata.CSWTCH.68
-                0x0002aacc        0x4 vscode-build/obj/gecko_sdk_4.3.0/platform/service/power_manager/src/sl_power_manager.o
- .rodata        0x0002aad0        0xb vscode-build/obj/gecko_sdk_4.3.0/platform/service/sleeptimer/src/sl_sleeptimer_hal_rtcc.o
- *fill*         0x0002aadb        0x1 
+                0x0002aaac        0x4 vscode-build/obj/gecko_sdk_4.3.0/platform/service/power_manager/src/sl_power_manager.o
+ .rodata        0x0002aab0        0xb vscode-build/obj/gecko_sdk_4.3.0/platform/service/sleeptimer/src/sl_sleeptimer_hal_rtcc.o
+ *fill*         0x0002aabb        0x1 
  .rodata.bt_bgapi_classes
-                0x0002aadc       0x24 vscode-build/obj/gecko_sdk_4.3.0/protocol/bluetooth/src/sl_bt_stack_init.o
+                0x0002aabc       0x24 vscode-build/obj/gecko_sdk_4.3.0/protocol/bluetooth/src/sl_bt_stack_init.o
  .rodata.bt_config
-                0x0002ab00       0x28 vscode-build/obj/gecko_sdk_4.3.0/protocol/bluetooth/src/sl_bt_stack_init.o
+                0x0002aae0       0x28 vscode-build/obj/gecko_sdk_4.3.0/protocol/bluetooth/src/sl_bt_stack_init.o
  .rodata.bt_used_features
-                0x0002ab28       0x48 vscode-build/obj/gecko_sdk_4.3.0/protocol/bluetooth/src/sl_bt_stack_init.o
+                0x0002ab08       0x48 vscode-build/obj/gecko_sdk_4.3.0/protocol/bluetooth/src/sl_bt_stack_init.o
  .rodata.sli_feature_bt_advertiser_config
-                0x0002ab70        0x1 vscode-build/obj/gecko_sdk_4.3.0/protocol/bluetooth/src/sli_bt_advertiser_config.o
-                0x0002ab70                sli_feature_bt_advertiser_config
- *fill*         0x0002ab71        0x1 
+                0x0002ab50        0x1 vscode-build/obj/gecko_sdk_4.3.0/protocol/bluetooth/src/sli_bt_advertiser_config.o
+                0x0002ab50                sli_feature_bt_advertiser_config
+ *fill*         0x0002ab51        0x1 
  .rodata.sli_feature_bt_connection_config
-                0x0002ab72        0x4 vscode-build/obj/gecko_sdk_4.3.0/protocol/bluetooth/src/sli_bt_connection_config.o
-                0x0002ab72                sli_feature_bt_connection_config
- .rodata        0x0002ab76        0x8 vscode-build/obj/gecko_sdk_4.3.0/util/third_party/mbedtls/library/psa_crypto_storage.o
+                0x0002ab52        0x4 vscode-build/obj/gecko_sdk_4.3.0/protocol/bluetooth/src/sli_bt_connection_config.o
+                0x0002ab52                sli_feature_bt_connection_config
+ .rodata        0x0002ab56        0x8 vscode-build/obj/gecko_sdk_4.3.0/util/third_party/mbedtls/library/psa_crypto_storage.o
  .rodata.sl_gatt_service_device_information_on_event.str1.1
-                0x0002ab7e       0x38 vscode-build/obj/sl_gatt_service_device_information.o
+                0x0002ab5e       0x38 vscode-build/obj/sl_gatt_service_device_information.o
                                  0x74 (size before relaxing)
  .rodata.__func__.0
-                0x0002abb6       0x2c vscode-build/obj/sl_gatt_service_device_information.o
- *fill*         0x0002abe2        0x2 
+                0x0002ab96       0x2c vscode-build/obj/sl_gatt_service_device_information.o
+ *fill*         0x0002abc2        0x2 
  .rodata._global_impure_ptr
-                0x0002abe4        0x4 c:/work/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libc_nano.a(lib_a-impure.o)
-                0x0002abe4                _global_impure_ptr
+                0x0002abc4        0x4 c:/work/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libc_nano.a(lib_a-impure.o)
+                0x0002abc4                _global_impure_ptr
  .rodata.__sf_fake_stderr
-                0x0002abe8       0x20 c:/work/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libc_nano.a(lib_a-findfp.o)
-                0x0002abe8                __sf_fake_stderr
+                0x0002abc8       0x20 c:/work/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libc_nano.a(lib_a-findfp.o)
+                0x0002abc8                __sf_fake_stderr
  .rodata.__sf_fake_stdin
-                0x0002ac08       0x20 c:/work/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libc_nano.a(lib_a-findfp.o)
-                0x0002ac08                __sf_fake_stdin
+                0x0002abe8       0x20 c:/work/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libc_nano.a(lib_a-findfp.o)
+                0x0002abe8                __sf_fake_stdin
  .rodata.__sf_fake_stdout
-                0x0002ac28       0x20 c:/work/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libc_nano.a(lib_a-findfp.o)
-                0x0002ac28                __sf_fake_stdout
+                0x0002ac08       0x20 c:/work/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libc_nano.a(lib_a-findfp.o)
+                0x0002ac08                __sf_fake_stdout
  .rodata._vfprintf_r.str1.1
-                0x0002ac48       0x11 c:/work/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x0002ac28       0x11 c:/work/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libc_nano.a(lib_a-nano-vfprintf.o)
  .rodata._printf_i.str1.1
-                0x0002ac59       0x22 c:/work/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libc_nano.a(lib_a-nano-vfprintf_i.o)
- .rodata        0x0002ac7b        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(ll_adv.c.obj)
+                0x0002ac39       0x22 c:/work/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .rodata        0x0002ac5b        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(ll_adv.c.obj)
  .rodata.CSWTCH.6
-                0x0002ac83        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(ll_hci_phy.c.obj)
+                0x0002ac63        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(ll_hci_phy.c.obj)
  .rodata.LLCP_PDU_LENGTHS
-                0x0002ac87       0x2b gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(ll_llcp.c.obj)
+                0x0002ac67       0x2b gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(ll_llcp.c.obj)
  .rodata.CSWTCH.15
-                0x0002acb2        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(ll_radio_utils.c.obj)
+                0x0002ac92        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(ll_radio_utils.c.obj)
  .rodata.ll_scanTxnReportLegacyPacket.str1.1
-                0x0002acb6        0xa gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(ll_scan.c.obj)
+                0x0002ac96        0xa gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(ll_scan.c.obj)
  .rodata.ll_scanPacketTypes
-                0x0002acc0        0x9 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(ll_scan.c.obj)
-                0x0002acc0                ll_scanPacketTypes
- *fill*         0x0002acc9        0x1 
+                0x0002aca0        0x9 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(ll_scan.c.obj)
+                0x0002aca0                ll_scanPacketTypes
+ *fill*         0x0002aca9        0x1 
  .rodata.ll_timing
-                0x0002acca       0x18 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(ll_timing.c.obj)
- .rodata        0x0002ace2        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(ll_radio.c.obj)
- *fill*         0x0002ace6        0x2 
+                0x0002acaa       0x18 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(ll_timing.c.obj)
+ .rodata        0x0002acc2        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(ll_radio.c.obj)
+ *fill*         0x0002acc6        0x2 
  .rodata.ll_radioScaToPpm
-                0x0002ace8       0x24 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(ll_radio.c.obj)
-                0x0002ace8                ll_radioScaToPpm
+                0x0002acc8       0x24 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(ll_radio.c.obj)
+                0x0002acc8                ll_radioScaToPpm
  .rodata.bg_message_init.str1.1
-                0x0002ad0c       0x15 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bg_message.c.obj)
+                0x0002acec       0x15 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bg_message.c.obj)
  .rodata.str1.1
-                0x0002ad21       0xe8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bg_pool.c.obj)
- *fill*         0x0002ae09        0x3 
+                0x0002ad01       0xe8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bg_pool.c.obj)
+ *fill*         0x0002ade9        0x3 
  .rodata.bg_pool_description
-                0x0002ae0c       0x44 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bg_pool.c.obj)
+                0x0002adec       0x44 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bg_pool.c.obj)
  .rodata.bgbuf_init.str1.1
-                0x0002ae50       0x20 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgbuf.c.obj)
+                0x0002ae30       0x20 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgbuf.c.obj)
  .rodata.bg_malloc_init.str1.1
-                0x0002ae70        0xa gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bg_malloc_sl.c.obj)
- *fill*         0x0002ae7a        0x2 
+                0x0002ae50        0xa gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bg_malloc_sl.c.obj)
+ *fill*         0x0002ae5a        0x2 
  .rodata.sli_feature_bt_builtin_bonding_database_init_always
-                0x0002ae7c        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bondingdb.c.obj)
-                0x0002ae7c                sli_feature_bt_builtin_bonding_database_init_always
+                0x0002ae5c        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bondingdb.c.obj)
+                0x0002ae5c                sli_feature_bt_builtin_bonding_database_init_always
  .rodata.gap_address_type_to_bgapi_gap_address_type
-                0x0002ae84        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(sli_bt_gap_addr.c.obj)
+                0x0002ae64        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(sli_bt_gap_addr.c.obj)
  .rodata.gap_address_type_to_equivalence_class
-                0x0002ae8c        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(sli_bt_gap_addr.c.obj)
+                0x0002ae6c        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(sli_bt_gap_addr.c.obj)
  .rodata.hci_to_gap_address_type
-                0x0002ae94        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(sli_bt_gap_addr.c.obj)
+                0x0002ae74        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(sli_bt_gap_addr.c.obj)
  .rodata.random_address_type_to_gap_address_type
-                0x0002ae98        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(sli_bt_gap_addr.c.obj)
+                0x0002ae78        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(sli_bt_gap_addr.c.obj)
  .rodata.hci_handlers
-                0x0002ae9c       0x30 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(hci.c.obj)
+                0x0002ae7c       0x30 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(hci.c.obj)
  .rodata.state_listeners
-                0x0002aecc        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(hci.c.obj)
+                0x0002aeac        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(hci.c.obj)
  .rodata.CSWTCH.17
-                0x0002aed4        0xb gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(ubt.c.obj)
- *fill*         0x0002aedf        0x1 
+                0x0002aeb4        0xb gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(ubt.c.obj)
+ *fill*         0x0002aebf        0x1 
  .rodata.sli_bgapi_class_bt_advertiser_optimized
-                0x0002aee0       0x10 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_advertiser.c.obj)
-                0x0002aee0                sli_bgapi_class_bt_advertiser_optimized
+                0x0002aec0       0x10 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_advertiser.c.obj)
+                0x0002aec0                sli_bgapi_class_bt_advertiser_optimized
  .rodata.sli_feature_bt_advertiser_init_always
-                0x0002aef0        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_advertiser.c.obj)
-                0x0002aef0                sli_feature_bt_advertiser_init_always
+                0x0002aed0        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_advertiser.c.obj)
+                0x0002aed0                sli_feature_bt_advertiser_init_always
  .rodata.sli_bgapi_class_bt_legacy_advertiser_optimized
-                0x0002aef8       0x10 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_legacy_advertiser.c.obj)
-                0x0002aef8                sli_bgapi_class_bt_legacy_advertiser_optimized
+                0x0002aed8       0x10 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_legacy_advertiser.c.obj)
+                0x0002aed8                sli_bgapi_class_bt_legacy_advertiser_optimized
  .rodata.sli_bgapi_class_bt_scanner_optimized
-                0x0002af08       0x10 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_scanner.c.obj)
-                0x0002af08                sli_bgapi_class_bt_scanner_optimized
+                0x0002aee8       0x10 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_scanner.c.obj)
+                0x0002aee8                sli_bgapi_class_bt_scanner_optimized
  .rodata.sli_feature_bt_scanner_init_always
-                0x0002af18        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_scanner.c.obj)
-                0x0002af18                sli_feature_bt_scanner_init_always
+                0x0002aef8        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_scanner.c.obj)
+                0x0002aef8                sli_feature_bt_scanner_init_always
  .rodata.bgapi_event_decl_bt_scanner_legacy_advertisement_report
-                0x0002af20        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_scanner_base.c.obj)
+                0x0002af00        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_scanner_base.c.obj)
  .rodata.sli_feature_bt_scanner_base_init_always
-                0x0002af24        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_scanner_base.c.obj)
-                0x0002af24                sli_feature_bt_scanner_base_init_always
+                0x0002af04        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_scanner_base.c.obj)
+                0x0002af04                sli_feature_bt_scanner_base_init_always
  .rodata.sli_bgapi_class_bt_gatt_server_optimized
-                0x0002af2c       0x10 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_gatt_server.c.obj)
-                0x0002af2c                sli_bgapi_class_bt_gatt_server_optimized
+                0x0002af0c       0x10 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_gatt_server.c.obj)
+                0x0002af0c                sli_bgapi_class_bt_gatt_server_optimized
  .rodata.sli_bgapi_class_bt_gatt_optimized
-                0x0002af3c       0x10 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_gatt_client.c.obj)
-                0x0002af3c                sli_bgapi_class_bt_gatt_optimized
+                0x0002af1c       0x10 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_gatt_client.c.obj)
+                0x0002af1c                sli_bgapi_class_bt_gatt_optimized
  .rodata.sli_feature_bt_gatt_init_always
-                0x0002af4c        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_gatt_client.c.obj)
-                0x0002af4c                sli_feature_bt_gatt_init_always
+                0x0002af2c        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_gatt_client.c.obj)
+                0x0002af2c                sli_feature_bt_gatt_init_always
  .rodata.sli_bgapi_class_bt_sm_optimized
-                0x0002af54       0x10 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_sm.c.obj)
-                0x0002af54                sli_bgapi_class_bt_sm_optimized
+                0x0002af34       0x10 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_sm.c.obj)
+                0x0002af34                sli_bgapi_class_bt_sm_optimized
  .rodata.sli_feature_bt_sm_init_always
-                0x0002af64        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_sm.c.obj)
-                0x0002af64                sli_feature_bt_sm_init_always
+                0x0002af44        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_sm.c.obj)
+                0x0002af44                sli_feature_bt_sm_init_always
  .rodata.bgapi_event_decl_bt_system_awake
-                0x0002af6c        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_system.c.obj)
+                0x0002af4c        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_system.c.obj)
  .rodata.bgapi_event_decl_bt_system_soft_timer
-                0x0002af70        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_system.c.obj)
+                0x0002af50        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_system.c.obj)
  .rodata.null_address
-                0x0002af74        0x7 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_system.c.obj)
- *fill*         0x0002af7b        0x1 
+                0x0002af54        0x7 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_system.c.obj)
+ *fill*         0x0002af5b        0x1 
  .rodata.sli_bgapi_class_bt_system_optimized
-                0x0002af7c       0x10 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_system.c.obj)
-                0x0002af7c                sli_bgapi_class_bt_system_optimized
+                0x0002af5c       0x10 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_system.c.obj)
+                0x0002af5c                sli_bgapi_class_bt_system_optimized
  .rodata.sli_feature_bt_system_init_always
-                0x0002af8c        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_system.c.obj)
-                0x0002af8c                sli_feature_bt_system_init_always
+                0x0002af6c        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_system.c.obj)
+                0x0002af6c                sli_feature_bt_system_init_always
  .rodata.CSWTCH.49
-                0x0002af94        0x3 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_connection.c.obj)
- *fill*         0x0002af97        0x1 
+                0x0002af74        0x3 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_connection.c.obj)
+ *fill*         0x0002af77        0x1 
  .rodata.bgapi_event_decl_bt_connection_data_length
-                0x0002af98        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_connection.c.obj)
+                0x0002af78        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_connection.c.obj)
  .rodata.bgapi_event_decl_bt_connection_get_remote_tx_power_completed
-                0x0002af9c        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_connection.c.obj)
+                0x0002af7c        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_connection.c.obj)
  .rodata.bgapi_event_decl_bt_connection_opened
-                0x0002afa0        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_connection.c.obj)
+                0x0002af80        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_connection.c.obj)
  .rodata.bgapi_event_decl_bt_connection_parameters
-                0x0002afa4        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_connection.c.obj)
+                0x0002af84        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_connection.c.obj)
  .rodata.bgapi_event_decl_bt_connection_phy_status
-                0x0002afa8        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_connection.c.obj)
+                0x0002af88        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_connection.c.obj)
  .rodata.bgapi_event_decl_bt_connection_remote_tx_power
-                0x0002afac        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_connection.c.obj)
+                0x0002af8c        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_connection.c.obj)
  .rodata.bgapi_event_decl_bt_connection_remote_used_features
-                0x0002afb0        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_connection.c.obj)
+                0x0002af90        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_connection.c.obj)
  .rodata.bgapi_event_decl_bt_connection_tx_power
-                0x0002afb4        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_connection.c.obj)
+                0x0002af94        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_connection.c.obj)
  .rodata.sli_bgapi_class_bt_connection_optimized
-                0x0002afb8       0x10 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_connection.c.obj)
-                0x0002afb8                sli_bgapi_class_bt_connection_optimized
+                0x0002af98       0x10 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_connection.c.obj)
+                0x0002af98                sli_bgapi_class_bt_connection_optimized
  .rodata.sli_feature_bt_connection_init_always
-                0x0002afc8        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_connection.c.obj)
-                0x0002afc8                sli_feature_bt_connection_init_always
+                0x0002afa8        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_connection.c.obj)
+                0x0002afa8                sli_feature_bt_connection_init_always
  .rodata.CSWTCH.19
-                0x0002afd0        0xe gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_efr32_hal.c.obj)
- *fill*         0x0002afde        0x2 
+                0x0002afb0        0xe gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_efr32_hal.c.obj)
+ *fill*         0x0002afbe        0x2 
  .rodata.bgapi_event_decl_bt_advertiser_timeout
-                0x0002afe0        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_efr32_hal.c.obj)
+                0x0002afc0        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_efr32_hal.c.obj)
  .rodata.bgapi_event_decl_bt_external_bondingdb_data
-                0x0002afe4        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_efr32_hal.c.obj)
+                0x0002afc4        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_efr32_hal.c.obj)
  .rodata.bgapi_event_decl_bt_external_bondingdb_data_ready
-                0x0002afe8        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_efr32_hal.c.obj)
+                0x0002afc8        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_efr32_hal.c.obj)
  .rodata.bgapi_event_decl_bt_external_bondingdb_data_request
-                0x0002afec        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_efr32_hal.c.obj)
+                0x0002afcc        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_efr32_hal.c.obj)
  .rodata.bgapi_event_decl_bt_sm_bonded
-                0x0002aff0        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_efr32_hal.c.obj)
+                0x0002afd0        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_efr32_hal.c.obj)
  .rodata.bgapi_event_decl_bt_sm_bonding_failed
-                0x0002aff4        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_efr32_hal.c.obj)
+                0x0002afd4        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_efr32_hal.c.obj)
  .rodata.bgapi_event_decl_bt_sm_confirm_bonding
-                0x0002aff8        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_efr32_hal.c.obj)
+                0x0002afd8        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_efr32_hal.c.obj)
  .rodata.bgapi_event_decl_bt_sm_confirm_passkey
-                0x0002affc        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_efr32_hal.c.obj)
+                0x0002afdc        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_efr32_hal.c.obj)
  .rodata.bgapi_event_decl_bt_sm_passkey_display
-                0x0002b000        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_efr32_hal.c.obj)
+                0x0002afe0        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_efr32_hal.c.obj)
  .rodata.bgapi_event_decl_bt_sm_passkey_request
-                0x0002b004        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_efr32_hal.c.obj)
+                0x0002afe4        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_efr32_hal.c.obj)
  .rodata.bgapi_event_decl_bt_system_boot
-                0x0002b008        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_efr32_hal.c.obj)
+                0x0002afe8        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_efr32_hal.c.obj)
  .rodata.bgapi_event_decl_bt_system_error
-                0x0002b00c        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_efr32_hal.c.obj)
+                0x0002afec        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_efr32_hal.c.obj)
  .rodata.bgapi_event_decl_bt_system_hardware_error
-                0x0002b010        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_efr32_hal.c.obj)
+                0x0002aff0        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_efr32_hal.c.obj)
  .rodata.hci_phy_to_gap_phy
-                0x0002b014        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_hci_phy_to_gap_phy.c.obj)
+                0x0002aff4        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_hci_phy_to_gap_phy.c.obj)
  .rodata.soc_cmd_decl_bt_advertiser_create_set
-                0x0002b018        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(sl_bt_class_advertiser.c.obj)
+                0x0002aff8        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(sl_bt_class_advertiser.c.obj)
  .rodata.soc_cmd_decl_bt_advertiser_set_timing
-                0x0002b020        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(sl_bt_class_advertiser.c.obj)
+                0x0002b000        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(sl_bt_class_advertiser.c.obj)
  .rodata.soc_cmd_decl_bt_legacy_advertiser_generate_data
-                0x0002b028        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(sl_bt_class_legacy_advertiser.c.obj)
+                0x0002b008        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(sl_bt_class_legacy_advertiser.c.obj)
  .rodata.soc_cmd_decl_bt_legacy_advertiser_start
-                0x0002b030        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(sl_bt_class_legacy_advertiser.c.obj)
+                0x0002b010        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(sl_bt_class_legacy_advertiser.c.obj)
  .rodata.soc_cmd_decl_bt_gatt_server_send_user_read_response
-                0x0002b038        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(sl_bt_class_gatt_server.c.obj)
+                0x0002b018        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(sl_bt_class_gatt_server.c.obj)
  .rodata.soc_cmd_decl_bt_gatt_server_send_user_write_response
-                0x0002b040        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(sl_bt_class_gatt_server.c.obj)
+                0x0002b020        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(sl_bt_class_gatt_server.c.obj)
  .rodata.soc_cmd_decl_bt_gatt_server_write_attribute_value
-                0x0002b048        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(sl_bt_class_gatt_server.c.obj)
+                0x0002b028        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(sl_bt_class_gatt_server.c.obj)
  .rodata.soc_cmd_decl_bt_system_get_identity_address
-                0x0002b050        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(sl_bt_class_system.c.obj)
+                0x0002b030        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(sl_bt_class_system.c.obj)
  .rodata.bgapi_buffer_init.str1.1
-                0x0002b058        0xe gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi.c.obj)
+                0x0002b038        0xe gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi.c.obj)
  .rodata.ll_advExtHeaderCalcLength.str1.1
-                0x0002b066        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(ll_adv_header.c.obj)
- .rodata        0x0002b06e        0x5 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(ll_adv_header.c.obj)
+                0x0002b046        0x8 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(ll_adv_header.c.obj)
+ .rodata        0x0002b04e        0x5 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(ll_adv_header.c.obj)
  .rodata.CSWTCH.22
-                0x0002b073        0xb gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(acl.c.obj)
- .rodata        0x0002b07e        0xc gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(gap_adv.c.obj)
+                0x0002b053        0xb gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(acl.c.obj)
+ .rodata        0x0002b05e        0xc gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(gap_adv.c.obj)
  .rodata.gatt_init.str1.1
-                0x0002b08a       0x10 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(gatt.c.obj)
- .rodata        0x0002b09a        0x3 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(gatt_db_minimal.c.obj)
+                0x0002b06a       0x10 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(gatt.c.obj)
+ .rodata        0x0002b07a        0x3 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(gatt_db_minimal.c.obj)
  .rodata.base_uuid
-                0x0002b09d       0x10 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(gatt_db_dynamic.c.obj)
- *fill*         0x0002b0ad        0x3 
+                0x0002b07d       0x10 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(gatt_db_dynamic.c.obj)
+ *fill*         0x0002b08d        0x3 
  .rodata.l2cap_data_fragment_validators
-                0x0002b0b0       0x10 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(l2cap.c.obj)
+                0x0002b090       0x10 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(l2cap.c.obj)
  .rodata.smp_generate_ecc_keypair.str1.1
-                0x0002b0c0       0x42 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(smp.c.obj)
+                0x0002b0a0       0x42 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(smp.c.obj)
  .rodata.smp_f5.str1.1
-                0x0002b102       0x11 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(smp.c.obj)
+                0x0002b0e2       0x11 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(smp.c.obj)
  .rodata.blocked_sample_ltk
-                0x0002b113       0x10 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(smp.c.obj)
+                0x0002b0f3       0x10 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(smp.c.obj)
  .rodata.sc_ltk_generation_select
-                0x0002b123       0x19 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(smp.c.obj)
+                0x0002b103       0x19 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(smp.c.obj)
  .rodata.sm_debug_private
-                0x0002b13c       0x20 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(smp.c.obj)
+                0x0002b11c       0x20 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(smp.c.obj)
  .rodata.sm_debug_public_x
-                0x0002b15c       0x20 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(smp.c.obj)
+                0x0002b13c       0x20 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(smp.c.obj)
  .rodata.sm_debug_public_y
-                0x0002b17c       0x20 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(smp.c.obj)
+                0x0002b15c       0x20 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(smp.c.obj)
  .rodata.stk_generation_select
-                0x0002b19c       0x19 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(smp.c.obj)
- *fill*         0x0002b1b5        0x3 
+                0x0002b17c       0x19 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(smp.c.obj)
+ *fill*         0x0002b195        0x3 
  .rodata.bgapi_event_decl_bt_gatt_characteristic
-                0x0002b1b8        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_gatt_listener.c.obj)
+                0x0002b198        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_gatt_listener.c.obj)
  .rodata.bgapi_event_decl_bt_gatt_characteristic_value
-                0x0002b1bc        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_gatt_listener.c.obj)
+                0x0002b19c        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_gatt_listener.c.obj)
  .rodata.bgapi_event_decl_bt_gatt_descriptor
-                0x0002b1c0        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_gatt_listener.c.obj)
+                0x0002b1a0        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_gatt_listener.c.obj)
  .rodata.bgapi_event_decl_bt_gatt_descriptor_value
-                0x0002b1c4        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_gatt_listener.c.obj)
+                0x0002b1a4        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_gatt_listener.c.obj)
  .rodata.bgapi_event_decl_bt_gatt_mtu_exchanged
-                0x0002b1c8        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_gatt_listener.c.obj)
+                0x0002b1a8        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_gatt_listener.c.obj)
  .rodata.bgapi_event_decl_bt_gatt_procedure_completed
-                0x0002b1cc        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_gatt_listener.c.obj)
+                0x0002b1ac        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_gatt_listener.c.obj)
  .rodata.bgapi_event_decl_bt_gatt_server_attribute_value
-                0x0002b1d0        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_gatt_listener.c.obj)
+                0x0002b1b0        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_gatt_listener.c.obj)
  .rodata.bgapi_event_decl_bt_gatt_server_characteristic_status
-                0x0002b1d4        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_gatt_listener.c.obj)
+                0x0002b1b4        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_gatt_listener.c.obj)
  .rodata.bgapi_event_decl_bt_gatt_server_execute_write_completed
-                0x0002b1d8        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_gatt_listener.c.obj)
+                0x0002b1b8        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_gatt_listener.c.obj)
  .rodata.bgapi_event_decl_bt_gatt_server_indication_timeout
-                0x0002b1dc        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_gatt_listener.c.obj)
+                0x0002b1bc        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_gatt_listener.c.obj)
  .rodata.bgapi_event_decl_bt_gatt_server_user_read_request
-                0x0002b1e0        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_gatt_listener.c.obj)
+                0x0002b1c0        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_gatt_listener.c.obj)
  .rodata.bgapi_event_decl_bt_gatt_server_user_write_request
-                0x0002b1e4        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_gatt_listener.c.obj)
+                0x0002b1c4        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_gatt_listener.c.obj)
  .rodata.bgapi_event_decl_bt_gatt_service
-                0x0002b1e8        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_gatt_listener.c.obj)
+                0x0002b1c8        0x4 gecko_sdk_4.3.0/protocol/bluetooth/lib/EFR32XG22/GCC/libbluetooth.a(bgapi_gatt_listener.c.obj)
  .rodata.CSWTCH.30
-                0x0002b1ec        0x7 gecko_sdk_4.3.0/platform/emdrv/nvm3/lib/libnvm3_CM33_gcc.a(nvm3_object.o)
- *fill*         0x0002b1f3        0x1 
+                0x0002b1cc        0x7 gecko_sdk_4.3.0/platform/emdrv/nvm3/lib/libnvm3_CM33_gcc.a(nvm3_object.o)
+ *fill*         0x0002b1d3        0x1 
  .rodata.RAIL_Mapping1
-                0x0002b1f4       0x20 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_pa_curves.o)
+                0x0002b1d4       0x20 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_pa_curves.o)
  .rodata.RAIL_PiecewiseData0Dcdc
-                0x0002b214       0x4c gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_pa_curves.o)
+                0x0002b1f4       0x4c gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_pa_curves.o)
  .rodata.RAIL_TxPowerCurvesDcdc
-                0x0002b260       0x18 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_pa_curves.o)
-                0x0002b260                RAIL_TxPowerCurvesDcdc
+                0x0002b240       0x18 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_pa_curves.o)
+                0x0002b240                RAIL_TxPowerCurvesDcdc
  .rodata.RAILINT_72b737fcc29d3783ca18acdd920e3520
-                0x0002b278       0x28 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rail_singleprotocol.o)
+                0x0002b258       0x28 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rail_singleprotocol.o)
  .rodata.RAILINT_3fa0072bb3cc43c5cd58a2d50bf4761c
-                0x0002b2a0       0x28 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rail_singleprotocol.o)
+                0x0002b280       0x28 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rail_singleprotocol.o)
  .rodata.RAILINT_e05b4c901d5e9d3437581e70ea80c86e
-                0x0002b2c8        0xc gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rail_rf.o)
+                0x0002b2a8        0xc gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rail_rf.o)
  .rodata.RAILINT_801ba83a0f58278dc54ca2d1d914c2a0
-                0x0002b2d4        0x4 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(tmrdrv_config.o)
+                0x0002b2b4        0x4 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(tmrdrv_config.o)
  .rodata.RAIL_PaAutoModeConfigDefault
-                0x0002b2d8       0x12 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(pa_auto_mode.o)
+                0x0002b2b8       0x12 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(pa_auto_mode.o)
  .rodata.configureEm1Requirement.str1.1
-                0x0002b2ea        0x5 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rail_power_manager.o)
- *fill*         0x0002b2ef        0x1 
+                0x0002b2ca        0x5 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rail_power_manager.o)
+ *fill*         0x0002b2cf        0x1 
  .rodata.RAILINT_6647bd1de91ef88792af4853416c3185
-                0x0002b2f0        0x8 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rail_power_manager.o)
+                0x0002b2d0        0x8 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rail_power_manager.o)
  .rodata.RAILINT_5b3921bc1e51b114035eddb5334f1b7b
-                0x0002b2f8        0x8 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rail_power_manager.o)
+                0x0002b2d8        0x8 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rail_power_manager.o)
  .rodata.RAILINT_1c22f22c283ae3a723c29804badc7404
-                0x0002b300        0x4 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rail_rf_hal.o)
+                0x0002b2e0        0x4 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rail_rf_hal.o)
  .rodata.RAILINT_553e309e68767141442835b7e12819b1
-                0x0002b304        0x4 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rail_rf_hal.o)
+                0x0002b2e4        0x4 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rail_rf_hal.o)
  .rodata.RAILINT_eb0c1f2ed345f95fec54bcc639058785
-                0x0002b308        0x4 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rail_rf_hal.o)
+                0x0002b2e8        0x4 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rail_rf_hal.o)
  .rodata.RAILINT_1442ecf6669c00916ad8e9d684cee985
-                0x0002b30c        0xc gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rail_rf_hal.o)
+                0x0002b2ec        0xc gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rail_rf_hal.o)
  .rodata.RAILINT_8bbcf4b8d937a321d9096d3770232e66
-                0x0002b318        0xc gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rail_rf_hal.o)
+                0x0002b2f8        0xc gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rail_rf_hal.o)
  .rodata.RAILINT_58a7eb109dd3c71655f93e313f54ed2e
-                0x0002b324        0x8 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rail_rf_hal.o)
+                0x0002b304        0x8 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rail_rf_hal.o)
  .rodata.RAILINT_4e35523f221d208bf5d8aa23dfe31d4e
-                0x0002b32c        0x8 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rail_ble_rf_hal.o)
+                0x0002b30c        0x8 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rail_ble_rf_hal.o)
  .rodata.RAILINT_79b965a7a51d63aa1d1aa6a3f1f6c3eb
-                0x0002b334        0x8 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rail_ble_rf_hal.o)
+                0x0002b314        0x8 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rail_ble_rf_hal.o)
  .rodata.RAILINT_d3dd13574495c9b1fcdaf482701deee1
-                0x0002b33c        0x8 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rfhal_radio.o)
+                0x0002b31c        0x8 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rfhal_radio.o)
  .rodata.RAILINT_26c232db0d85f28633cb79f52da4153a
-                0x0002b344        0x8 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rfhal_radio.o)
+                0x0002b324        0x8 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rfhal_radio.o)
  .rodata.RAIL_BLE_Phy125kbps
-                0x0002b34c        0x4 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rfhal_standard_phys.o)
-                0x0002b34c                RAIL_BLE_Phy125kbps
+                0x0002b32c        0x4 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rfhal_standard_phys.o)
+                0x0002b32c                RAIL_BLE_Phy125kbps
  .rodata.RAIL_BLE_Phy1MbpsViterbi
-                0x0002b350        0x4 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rfhal_standard_phys.o)
-                0x0002b350                RAIL_BLE_Phy1MbpsViterbi
+                0x0002b330        0x4 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rfhal_standard_phys.o)
+                0x0002b330                RAIL_BLE_Phy1MbpsViterbi
  .rodata.RAIL_BLE_Phy2MbpsViterbi
-                0x0002b354        0x4 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rfhal_standard_phys.o)
-                0x0002b354                RAIL_BLE_Phy2MbpsViterbi
+                0x0002b334        0x4 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rfhal_standard_phys.o)
+                0x0002b334                RAIL_BLE_Phy2MbpsViterbi
  .rodata.RAIL_BLE_Phy500kbps
-                0x0002b358        0x4 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rfhal_standard_phys.o)
-                0x0002b358                RAIL_BLE_Phy500kbps
+                0x0002b338        0x4 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rfhal_standard_phys.o)
+                0x0002b338                RAIL_BLE_Phy500kbps
  .rodata.RAIL_BLE_PhySimulscan
-                0x0002b35c        0x4 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rfhal_standard_phys.o)
-                0x0002b35c                RAIL_BLE_PhySimulscan
+                0x0002b33c        0x4 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rfhal_standard_phys.o)
+                0x0002b33c                RAIL_BLE_PhySimulscan
  .rodata.RAILINT_fc4f997ed88f479adfdd3de1f377abc0
-                0x0002b360        0x6 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rfhal_synth.o)
- *fill*         0x0002b366        0x2 
+                0x0002b340        0x6 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rfhal_synth.o)
+ *fill*         0x0002b346        0x2 
  .rodata.RAILINT_12bc68fe404c9669cca1a5e2181bab07
-                0x0002b368        0xc gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rfhal_timings.o)
+                0x0002b348        0xc gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rfhal_timings.o)
  .rodata.RAILINT_6c7715fcf8a536bb641f7a33742a842f
-                0x0002b374     0x36e4 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(generic_efr32xg22_release_seq.o)
-                0x0002b374                RAILINT_6c7715fcf8a536bb641f7a33742a842f
+                0x0002b354     0x36e4 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(generic_efr32xg22_release_seq.o)
+                0x0002b354                RAILINT_6c7715fcf8a536bb641f7a33742a842f
  .rodata.RAILINT_9d07dc039c08503d9a4b04a0473a0ca1
-                0x0002ea58        0x4 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(generic_efr32xg22_release_seq.o)
-                0x0002ea58                RAILINT_9d07dc039c08503d9a4b04a0473a0ca1
+                0x0002ea38        0x4 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(generic_efr32xg22_release_seq.o)
+                0x0002ea38                RAILINT_9d07dc039c08503d9a4b04a0473a0ca1
  .rodata.RAILINT_0eb5025e0992745cd906fad9b3db783b
-                0x0002ea5c       0x2c gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(generic_efr32xg22_release_seq.o)
-                0x0002ea5c                RAILINT_0eb5025e0992745cd906fad9b3db783b
+                0x0002ea3c       0x2c gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(generic_efr32xg22_release_seq.o)
+                0x0002ea3c                RAILINT_0eb5025e0992745cd906fad9b3db783b
  .rodata.RAILINT_a4dab10770f6efc8b4fe056e3e47b6c7
-                0x0002ea88        0x4 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(generic_efr32xg22_release_seq.o)
-                0x0002ea88                RAILINT_a4dab10770f6efc8b4fe056e3e47b6c7
+                0x0002ea68        0x4 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(generic_efr32xg22_release_seq.o)
+                0x0002ea68                RAILINT_a4dab10770f6efc8b4fe056e3e47b6c7
  .rodata.ble_LR_DSA_125kb_0_modemConfig
-                0x0002ea8c      0x160 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
-                0x0002ea8c                ble_LR_DSA_125kb_0_modemConfig
+                0x0002ea6c      0x160 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
+                0x0002ea6c                ble_LR_DSA_125kb_0_modemConfig
  .rodata.ble_LR_DSA_125kb_channelConfig
-                0x0002ebec       0x18 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
-                0x0002ebec                ble_LR_DSA_125kb_channelConfig
+                0x0002ebcc       0x18 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
+                0x0002ebcc                ble_LR_DSA_125kb_channelConfig
  .rodata.ble_LR_DSA_125kb_channels
-                0x0002ec04       0x24 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
-                0x0002ec04                ble_LR_DSA_125kb_channels
+                0x0002ebe4       0x24 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
+                0x0002ebe4                ble_LR_DSA_125kb_channels
  .rodata.ble_LR_DSA_1Mb_0_modemConfig
-                0x0002ec28      0x160 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
-                0x0002ec28                ble_LR_DSA_1Mb_0_modemConfig
+                0x0002ec08      0x160 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
+                0x0002ec08                ble_LR_DSA_1Mb_0_modemConfig
  .rodata.ble_LR_DSA_1Mb_channelConfig
-                0x0002ed88       0x18 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
-                0x0002ed88                ble_LR_DSA_1Mb_channelConfig
+                0x0002ed68       0x18 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
+                0x0002ed68                ble_LR_DSA_1Mb_channelConfig
  .rodata.ble_LR_DSA_1Mb_channels
-                0x0002eda0       0x24 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
-                0x0002eda0                ble_LR_DSA_1Mb_channels
+                0x0002ed80       0x24 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
+                0x0002ed80                ble_LR_DSA_1Mb_channels
  .rodata.ble_LR_DSA_500kb_0_modemConfig
-                0x0002edc4      0x160 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
-                0x0002edc4                ble_LR_DSA_500kb_0_modemConfig
+                0x0002eda4      0x160 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
+                0x0002eda4                ble_LR_DSA_500kb_0_modemConfig
  .rodata.ble_LR_DSA_500kb_channelConfig
-                0x0002ef24       0x18 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
-                0x0002ef24                ble_LR_DSA_500kb_channelConfig
+                0x0002ef04       0x18 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
+                0x0002ef04                ble_LR_DSA_500kb_channelConfig
  .rodata.ble_LR_DSA_500kb_channels
-                0x0002ef3c       0x24 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
-                0x0002ef3c                ble_LR_DSA_500kb_channels
+                0x0002ef1c       0x24 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
+                0x0002ef1c                ble_LR_DSA_500kb_channels
  .rodata.ble_viterbi1M_0_modemConfig
-                0x0002ef60      0x160 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
-                0x0002ef60                ble_viterbi1M_0_modemConfig
+                0x0002ef40      0x160 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
+                0x0002ef40                ble_viterbi1M_0_modemConfig
  .rodata.ble_viterbi1M_channelConfig
-                0x0002f0c0       0x18 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
-                0x0002f0c0                ble_viterbi1M_channelConfig
+                0x0002f0a0       0x18 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
+                0x0002f0a0                ble_viterbi1M_channelConfig
  .rodata.ble_viterbi1M_channels
-                0x0002f0d8       0x24 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
-                0x0002f0d8                ble_viterbi1M_channels
+                0x0002f0b8       0x24 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
+                0x0002f0b8                ble_viterbi1M_channels
  .rodata.ble_viterbi1M_modemConfigBase
-                0x0002f0fc      0x21c gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
-                0x0002f0fc                ble_viterbi1M_modemConfigBase
+                0x0002f0dc      0x21c gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
+                0x0002f0dc                ble_viterbi1M_modemConfigBase
  .rodata.ble_viterbi2M_0_modemConfig
-                0x0002f318      0x160 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
-                0x0002f318                ble_viterbi2M_0_modemConfig
+                0x0002f2f8      0x160 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
+                0x0002f2f8                ble_viterbi2M_0_modemConfig
  .rodata.ble_viterbi2M_channelConfig
-                0x0002f478       0x18 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
-                0x0002f478                ble_viterbi2M_channelConfig
+                0x0002f458       0x18 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
+                0x0002f458                ble_viterbi2M_channelConfig
  .rodata.ble_viterbi2M_channels
-                0x0002f490       0x24 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
-                0x0002f490                ble_viterbi2M_channels
+                0x0002f470       0x24 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
+                0x0002f470                ble_viterbi2M_channels
  .rodata.hfxoRetimingConfigEntries
-                0x0002f4b4       0x56 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
- *fill*         0x0002f50a        0x2 
+                0x0002f494       0x56 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
+ *fill*         0x0002f4ea        0x2 
  .rodata.irCalConfig
-                0x0002f50c       0x1a gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
- *fill*         0x0002f526        0x2 
+                0x0002f4ec       0x1a gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
+ *fill*         0x0002f506        0x2 
  .rodata.phyInfo_0
-                0x0002f528       0x50 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
+                0x0002f508       0x50 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
  .rodata.phyInfo_1
-                0x0002f578       0x50 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
+                0x0002f558       0x50 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
  .rodata.phyInfo_2
-                0x0002f5c8       0x50 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
+                0x0002f5a8       0x50 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
  .rodata.phyInfo_3
-                0x0002f618       0x50 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
+                0x0002f5f8       0x50 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
  .rodata.phyInfo_4
-                0x0002f668       0x50 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
+                0x0002f648       0x50 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
  .rodata.timingConfig_0
-                0x0002f6b8        0xc gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
+                0x0002f698        0xc gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
  .rodata.timingConfig_1
-                0x0002f6c4        0xc gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
+                0x0002f6a4        0xc gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
  .rodata.timingConfig_2
-                0x0002f6d0        0xc gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
+                0x0002f6b0        0xc gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
  .rodata.timingConfig_3
-                0x0002f6dc        0xc gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
+                0x0002f6bc        0xc gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
  .rodata.timingConfig_4
-                0x0002f6e8        0xc gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
+                0x0002f6c8        0xc gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
  *(.eh_frame*)
- .eh_frame      0x0002f6f4        0x0 c:/work/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/crtbegin.o
+ .eh_frame      0x0002f6d4        0x0 c:/work/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/crtbegin.o
 
-.glue_7         0x0002f6f4        0x0
- .glue_7        0x0002f6f4        0x0 linker stubs
+.glue_7         0x0002f6d4        0x0
+ .glue_7        0x0002f6d4        0x0 linker stubs
 
-.glue_7t        0x0002f6f4        0x0
- .glue_7t       0x0002f6f4        0x0 linker stubs
+.glue_7t        0x0002f6d4        0x0
+ .glue_7t       0x0002f6d4        0x0 linker stubs
 
-.vfp11_veneer   0x0002f6f4        0x0
- .vfp11_veneer  0x0002f6f4        0x0 linker stubs
+.vfp11_veneer   0x0002f6d4        0x0
+ .vfp11_veneer  0x0002f6d4        0x0 linker stubs
 
-.v4_bx          0x0002f6f4        0x0
- .v4_bx         0x0002f6f4        0x0 linker stubs
+.v4_bx          0x0002f6d4        0x0
+ .v4_bx         0x0002f6d4        0x0 linker stubs
 
-.iplt           0x0002f6f4        0x0
- .iplt          0x0002f6f4        0x0 c:/work/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/crtbegin.o
+.iplt           0x0002f6d4        0x0
+ .iplt          0x0002f6d4        0x0 c:/work/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0002f6f4                __exidx_start = .
+                0x0002f6d4                __exidx_start = .
 
-.ARM.exidx      0x0002f6f4        0x8
+.ARM.exidx      0x0002f6d4        0x8
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
- .ARM.exidx     0x0002f6f4        0x8 c:/work/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard/crt0.o
+ .ARM.exidx     0x0002f6d4        0x8 c:/work/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard/crt0.o
                                  0x10 (size before relaxing)
- .ARM.exidx     0x0002f6fc        0x0 c:/work/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard\libgcc.a(_udivmoddi4.o)
+ .ARM.exidx     0x0002f6dc        0x0 c:/work/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard\libgcc.a(_udivmoddi4.o)
                                   0x8 (size before relaxing)
-                0x0002f6fc                __exidx_end = .
+                0x0002f6dc                __exidx_end = .
 
-.rel.dyn        0x0002f6fc        0x0
- .rel.iplt      0x0002f6fc        0x0 c:/work/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/crtbegin.o
+.rel.dyn        0x0002f6dc        0x0
+ .rel.iplt      0x0002f6dc        0x0 c:/work/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/crtbegin.o
 
-.copy.table     0x0002f6fc        0xc
-                0x0002f6fc                . = ALIGN (0x4)
-                0x0002f6fc                __copy_table_start__ = .
-                0x0002f6fc        0x4 LONG 0x2f708 __etext
-                0x0002f700        0x4 LONG 0x20000ac0 __data_start__
-                0x0002f704        0x4 LONG 0x103 ((__data_end__ - __data_start__) / 0x4)
-                0x0002f708                __copy_table_end__ = .
+.copy.table     0x0002f6dc        0xc
+                0x0002f6dc                . = ALIGN (0x4)
+                0x0002f6dc                __copy_table_start__ = .
+                0x0002f6dc        0x4 LONG 0x2f6e8 __etext
+                0x0002f6e0        0x4 LONG 0x20000ac0 __data_start__
+                0x0002f6e4        0x4 LONG 0x103 ((__data_end__ - __data_start__) / 0x4)
+                0x0002f6e8                __copy_table_end__ = .
 
-.zero.table     0x0002f708        0x0
-                0x0002f708                . = ALIGN (0x4)
-                0x0002f708                __zero_table_start__ = .
-                0x0002f708                __zero_table_end__ = .
-                0x0002f708                __etext = .
+.zero.table     0x0002f6e8        0x0
+                0x0002f6e8                . = ALIGN (0x4)
+                0x0002f6e8                __zero_table_start__ = .
+                0x0002f6e8                __zero_table_end__ = .
+                0x0002f6e8                __etext = .
                 0x20000000                . = ORIGIN (RAM)
 
 .stack          0x20000000      0xac0
@@ -20944,7 +20939,7 @@ LOAD c:/work/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/10.3_2
 .noinit
  *(.noinit*)
 
-.data           0x20000ac0      0x40c load address 0x0002f708
+.data           0x20000ac0      0x40c load address 0x0002f6e8
                 0x20000ac0                . = ALIGN (0x4)
                 0x20000ac0                __data_start__ = .
  *(vtable)
@@ -21044,23 +21039,23 @@ LOAD c:/work/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/10.3_2
  .data.gattdb_attribute_field_10
                 0x20000c4c       0x10 vscode-build/obj/autogen/gatt_db.o
                 0x20000c4c                gattdb_attribute_field_10
- .data.gattdb_attribute_field_18
+ .data.gattdb_attribute_field_17
                 0x20000c5c        0xe vscode-build/obj/autogen/gatt_db.o
-                0x20000c5c                gattdb_attribute_field_18
+                0x20000c5c                gattdb_attribute_field_17
+ .data.gattdb_attribute_field_19
+                0x20000c6a        0x9 vscode-build/obj/autogen/gatt_db.o
+                0x20000c6a                gattdb_attribute_field_19
+ *fill*         0x20000c73        0x1 
  .data.gattdb_attribute_field_2
-                0x20000c6a        0xa vscode-build/obj/autogen/gatt_db.o
-                0x20000c6a                gattdb_attribute_field_2
- .data.gattdb_attribute_field_20
-                0x20000c74        0x9 vscode-build/obj/autogen/gatt_db.o
-                0x20000c74                gattdb_attribute_field_20
- *fill*         0x20000c7d        0x1 
- .data.gattdb_attribute_field_22
+                0x20000c74        0xa vscode-build/obj/autogen/gatt_db.o
+                0x20000c74                gattdb_attribute_field_2
+ .data.gattdb_attribute_field_21
                 0x20000c7e        0xb vscode-build/obj/autogen/gatt_db.o
-                0x20000c7e                gattdb_attribute_field_22
+                0x20000c7e                gattdb_attribute_field_21
  *fill*         0x20000c89        0x1 
- .data.gattdb_attribute_field_24
+ .data.gattdb_attribute_field_23
                 0x20000c8a        0xe vscode-build/obj/autogen/gatt_db.o
-                0x20000c8a                gattdb_attribute_field_24
+                0x20000c8a                gattdb_attribute_field_23
  .data.gattdb_attribute_field_5
                 0x20000c98       0x16 vscode-build/obj/autogen/gatt_db.o
                 0x20000c98                gattdb_attribute_field_5
@@ -21147,10 +21142,10 @@ LOAD c:/work/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/10.3_2
                 0x20000ecc                . = ALIGN (0x4)
                 0x20000ecc                __data_end__ = .
 
-.igot.plt       0x20000ecc        0x0 load address 0x0002fb14
+.igot.plt       0x20000ecc        0x0 load address 0x0002faf4
  .igot.plt      0x20000ecc        0x0 c:/work/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/10.3_2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v8-m.main+fp/hard/crtbegin.o
 
-.bss            0x20000ecc     0x19dc load address 0x0002fb14
+.bss            0x20000ecc     0x19dc load address 0x0002faf4
                 0x20000ecc                . = ALIGN (0x4)
                 0x20000ecc                __bss_start__ = .
  *(SORT_BY_ALIGNMENT(.bss*))
@@ -21761,13 +21756,13 @@ LOAD c:/work/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/10.3_2
                 0x0007e000                __main_flash_end__ = 0x7e000
 
 .internal_storage
-                0x0002f708        0x0
+                0x0002f6e8        0x0
  *(.internal_storage*)
 
-.nvm            0x0002f708     0xa000
+.nvm            0x0002f6e8     0xa000
  *(.simee*)
- .simee         0x0002f708     0xa000 vscode-build/obj/gecko_sdk_4.3.0/platform/emdrv/nvm3/src/nvm3_default_common_linker.o
-                0x0002f708                nvm3_default_storage
+ .simee         0x0002f6e8     0xa000 vscode-build/obj/gecko_sdk_4.3.0/platform/emdrv/nvm3/src/nvm3_default_common_linker.o
+                0x0002f6e8                nvm3_default_storage
                 0x0007e000                linker_nvm_end = __main_flash_end__
                 0x00074000                linker_nvm_begin = (linker_nvm_end - SIZEOF (.nvm))
                 0x0000a000                linker_nvm_size = SIZEOF (.nvm)
@@ -22665,104 +22660,104 @@ LOAD linker stubs
  .comment       0x00000049       0x4a gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_module_efr32xg22_gcc_release.a(rail_mfm_rf_hal.o)
  .comment       0x00000049       0x4a gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
 
-.debug_info     0x00000000    0x62fb4
+.debug_info     0x00000000    0x62fa2
  .debug_info    0x00000000     0x2eae vscode-build/obj/app.o
- .debug_info    0x00002eae      0x511 vscode-build/obj/autogen/gatt_db.o
- .debug_info    0x000033bf     0x28aa vscode-build/obj/autogen/sl_bluetooth.o
- .debug_info    0x00005c69       0x7e vscode-build/obj/autogen/sl_board_default_init.o
- .debug_info    0x00005ce7      0xfdc vscode-build/obj/autogen/sl_device_init_clocks.o
- .debug_info    0x00006cc3      0xef5 vscode-build/obj/autogen/sl_event_handler.o
- .debug_info    0x00007bb8     0x294f vscode-build/obj/autogen/sl_iostream_init_usart_instances.o
- .debug_info    0x0000a507      0x1de vscode-build/obj/autogen/sl_power_manager_handler.o
- .debug_info    0x0000a6e5      0x25f vscode-build/obj/autogen/sl_simple_led_instances.o
- .debug_info    0x0000a944      0x57b vscode-build/obj/gecko_sdk_4.3.0/app/common/util/app_log/app_log.o
- .debug_info    0x0000aebf      0x2a3 vscode-build/obj/gecko_sdk_4.3.0/hardware/board/src/sl_board_control_gpio.o
- .debug_info    0x0000b162      0x271 vscode-build/obj/gecko_sdk_4.3.0/hardware/board/src/sl_board_init.o
- .debug_info    0x0000b3d3      0x518 vscode-build/obj/gecko_sdk_4.3.0/hardware/driver/configuration_over_swo/src/sl_cos.o
- .debug_info    0x0000b8eb      0x2f4 vscode-build/obj/gecko_sdk_4.3.0/platform/Device/SiliconLabs/BGM22/Source/startup_bgm22.o
- .debug_info    0x0000bbdf     0x1c7f vscode-build/obj/gecko_sdk_4.3.0/platform/Device/SiliconLabs/BGM22/Source/system_bgm22.o
- .debug_info    0x0000d85e      0x2ee vscode-build/obj/gecko_sdk_4.3.0/platform/common/src/sl_slist.o
- .debug_info    0x0000db4c      0x1ed vscode-build/obj/gecko_sdk_4.3.0/platform/common/toolchain/src/sl_memory.o
- .debug_info    0x0000dd39     0x1d94 vscode-build/obj/gecko_sdk_4.3.0/platform/driver/debug/src/sl_debug_swo.o
- .debug_info    0x0000facd      0x23c vscode-build/obj/gecko_sdk_4.3.0/platform/driver/leddrv/src/sl_led.o
- .debug_info    0x0000fd09     0x15d3 vscode-build/obj/gecko_sdk_4.3.0/platform/driver/leddrv/src/sl_simple_led.o
- .debug_info    0x000112dc     0x1c71 vscode-build/obj/gecko_sdk_4.3.0/platform/emdrv/dmadrv/src/dmadrv.o
- .debug_info    0x00012f4d      0x5d0 vscode-build/obj/gecko_sdk_4.3.0/platform/emdrv/nvm3/src/nvm3_default_common_linker.o
- .debug_info    0x0001351d      0x8c7 vscode-build/obj/gecko_sdk_4.3.0/platform/emdrv/nvm3/src/nvm3_hal_flash.o
- .debug_info    0x00013de4      0x3b0 vscode-build/obj/gecko_sdk_4.3.0/platform/emdrv/nvm3/src/nvm3_lock.o
- .debug_info    0x00014194     0x65f0 vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_cmu.o
- .debug_info    0x0001a784     0x1143 vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_core.o
- .debug_info    0x0001b8c7     0x3531 vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_emu.o
- .debug_info    0x0001edf8     0x1df0 vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_gpio.o
- .debug_info    0x00020be8     0x1b04 vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_ldma.o
- .debug_info    0x000226ec     0x26a9 vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_msc.o
- .debug_info    0x00024d95     0x1b81 vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_rtcc.o
- .debug_info    0x00026916     0x1878 vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_system.o
- .debug_info    0x0002818e     0x3820 vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_usart.o
- .debug_info    0x0002b9ae       0xdb vscode-build/obj/gecko_sdk_4.3.0/platform/radio/rail_lib/plugin/fem_util/sl_fem_util.o
- .debug_info    0x0002ba89      0xcba vscode-build/obj/gecko_sdk_4.3.0/platform/radio/rail_lib/plugin/pa-conversions/pa_conversions_efr32.o
- .debug_info    0x0002c743       0x8c vscode-build/obj/gecko_sdk_4.3.0/platform/radio/rail_lib/plugin/rail_util_power_manager_init/sl_rail_util_power_manager_init.o
- .debug_info    0x0002c7cf      0x21c vscode-build/obj/gecko_sdk_4.3.0/platform/radio/rail_lib/plugin/rail_util_pti/sl_rail_util_pti.o
- .debug_info    0x0002c9eb      0x48e vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/se_manager/src/sl_se_manager.o
- .debug_info    0x0002ce79      0xe7d vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/ba414ep_config.o
- .debug_info    0x0002dcf6      0x70f vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/ba431_config.o
- .debug_info    0x0002e405      0x76a vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/cryptodma_internal.o
- .debug_info    0x0002eb6f      0x101 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/cryptolib_types.o
- .debug_info    0x0002ec70     0x37b3 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_aes.o
- .debug_info    0x00032423     0x385c vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_blk_cipher.o
- .debug_info    0x00035c7f      0x3d7 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_dh_alg.o
- .debug_info    0x00036056      0x855 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_ecc_curves.o
- .debug_info    0x000368ab      0x6a6 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_ecc_keygen_alg.o
- .debug_info    0x00036f51      0x4d7 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_math.o
- .debug_info    0x00037428      0x52f vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_memcpy.o
- .debug_info    0x00037957     0x185b vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_primitives.o
- .debug_info    0x000391b2      0x325 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_rng.o
- .debug_info    0x000394d7      0xda4 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_trng.o
- .debug_info    0x0003a27b       0xd7 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_mbedtls_support/src/sl_mbedtls.o
- .debug_info    0x0003a352       0xe9 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_mbedtls_support/src/sli_psa_crypto.o
- .debug_info    0x0003a43b     0x113f vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_protocol_crypto/src/sli_protocol_crypto_radioaes.o
- .debug_info    0x0003b57a     0x118c vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_protocol_crypto/src/sli_radioaes_management.o
- .debug_info    0x0003c706      0xd7f vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/cryptoacc_management.o
- .debug_info    0x0003d485     0x15a4 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/sl_psa_its_nvm3.o
- .debug_info    0x0003ea29      0xf8b vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/sli_cryptoacc_transparent_driver_cipher.o
- .debug_info    0x0003f9b4      0x74c vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/sli_cryptoacc_transparent_driver_key_derivation.o
- .debug_info    0x00040100      0xb35 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/sli_cryptoacc_transparent_driver_key_management.o
- .debug_info    0x00040c35      0xf5e vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/sli_cryptoacc_transparent_driver_mac.o
- .debug_info    0x00041b93       0xbf vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/sli_psa_driver_init.o
- .debug_info    0x00041c52      0x387 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/sli_psa_trng.o
- .debug_info    0x00041fd9      0x29a vscode-build/obj/gecko_sdk_4.3.0/platform/service/device_init/src/sl_device_init_dcdc_s2.o
- .debug_info    0x00042273      0x899 vscode-build/obj/gecko_sdk_4.3.0/platform/service/device_init/src/sl_device_init_emu_s2.o
- .debug_info    0x00042b0c      0x7cb vscode-build/obj/gecko_sdk_4.3.0/platform/service/device_init/src/sl_device_init_hfxo_s2.o
- .debug_info    0x000432d7       0xef vscode-build/obj/gecko_sdk_4.3.0/platform/service/device_init/src/sl_device_init_lfrco.o
- .debug_info    0x000433c6      0x24e vscode-build/obj/gecko_sdk_4.3.0/platform/service/device_init/src/sl_device_init_lfxo_s2.o
- .debug_info    0x00043614      0x782 vscode-build/obj/gecko_sdk_4.3.0/platform/service/device_init/src/sl_device_init_nvic.o
- .debug_info    0x00043d96      0x5ba vscode-build/obj/gecko_sdk_4.3.0/platform/service/iostream/src/sl_iostream.o
- .debug_info    0x00044350      0x536 vscode-build/obj/gecko_sdk_4.3.0/platform/service/iostream/src/sl_iostream_retarget_stdio.o
- .debug_info    0x00044886      0x7d2 vscode-build/obj/gecko_sdk_4.3.0/platform/service/iostream/src/sl_iostream_stdlib_config.o
- .debug_info    0x00045058     0x1f67 vscode-build/obj/gecko_sdk_4.3.0/platform/service/iostream/src/sl_iostream_uart.o
- .debug_info    0x00046fbf     0x2f62 vscode-build/obj/gecko_sdk_4.3.0/platform/service/iostream/src/sl_iostream_usart.o
- .debug_info    0x00049f21      0xc14 vscode-build/obj/gecko_sdk_4.3.0/platform/service/mpu/src/sl_mpu.o
- .debug_info    0x0004ab35     0x1369 vscode-build/obj/gecko_sdk_4.3.0/platform/service/power_manager/src/sl_power_manager.o
- .debug_info    0x0004be9e       0xfe vscode-build/obj/gecko_sdk_4.3.0/platform/service/power_manager/src/sl_power_manager_debug.o
- .debug_info    0x0004bf9c     0x1c0e vscode-build/obj/gecko_sdk_4.3.0/platform/service/power_manager/src/sl_power_manager_hal_s2.o
- .debug_info    0x0004dbaa     0x18cc vscode-build/obj/gecko_sdk_4.3.0/platform/service/sleeptimer/src/sl_sleeptimer.o
- .debug_info    0x0004f476     0x1fcf vscode-build/obj/gecko_sdk_4.3.0/platform/service/sleeptimer/src/sl_sleeptimer_hal_rtcc.o
- .debug_info    0x00051445       0xa6 vscode-build/obj/gecko_sdk_4.3.0/platform/service/system/src/sl_system_init.o
- .debug_info    0x000514eb       0x91 vscode-build/obj/gecko_sdk_4.3.0/platform/service/system/src/sl_system_process_action.o
- .debug_info    0x0005157c      0x872 vscode-build/obj/gecko_sdk_4.3.0/protocol/bluetooth/src/sl_bt_stack_init.o
- .debug_info    0x00051dee       0xbd vscode-build/obj/gecko_sdk_4.3.0/protocol/bluetooth/src/sli_bt_advertiser_config.o
- .debug_info    0x00051eab       0xe2 vscode-build/obj/gecko_sdk_4.3.0/protocol/bluetooth/src/sli_bt_connection_config.o
- .debug_info    0x00051f8d      0x312 vscode-build/obj/gecko_sdk_4.3.0/util/silicon_labs/silabs_core/memory_manager/sl_malloc.o
- .debug_info    0x0005229f      0x110 vscode-build/obj/gecko_sdk_4.3.0/util/third_party/mbedtls/library/platform_util.o
- .debug_info    0x000523af     0x7c59 vscode-build/obj/gecko_sdk_4.3.0/util/third_party/mbedtls/library/psa_crypto.o
- .debug_info    0x0005a008      0x432 vscode-build/obj/gecko_sdk_4.3.0/util/third_party/mbedtls/library/psa_crypto_client.o
- .debug_info    0x0005a43a     0x390a vscode-build/obj/gecko_sdk_4.3.0/util/third_party/mbedtls/library/psa_crypto_driver_wrappers.o
- .debug_info    0x0005dd44      0xf40 vscode-build/obj/gecko_sdk_4.3.0/util/third_party/mbedtls/library/psa_crypto_slot_management.o
- .debug_info    0x0005ec84      0xd7d vscode-build/obj/gecko_sdk_4.3.0/util/third_party/mbedtls/library/psa_crypto_storage.o
- .debug_info    0x0005fa01       0xf8 vscode-build/obj/main.o
- .debug_info    0x0005faf9     0x2968 vscode-build/obj/sl_gatt_service_device_information.o
- .debug_info    0x00062461      0x309 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_pa_curves.o)
- .debug_info    0x0006276a      0x84a gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
+ .debug_info    0x00002eae      0x4ff vscode-build/obj/autogen/gatt_db.o
+ .debug_info    0x000033ad     0x28aa vscode-build/obj/autogen/sl_bluetooth.o
+ .debug_info    0x00005c57       0x7e vscode-build/obj/autogen/sl_board_default_init.o
+ .debug_info    0x00005cd5      0xfdc vscode-build/obj/autogen/sl_device_init_clocks.o
+ .debug_info    0x00006cb1      0xef5 vscode-build/obj/autogen/sl_event_handler.o
+ .debug_info    0x00007ba6     0x294f vscode-build/obj/autogen/sl_iostream_init_usart_instances.o
+ .debug_info    0x0000a4f5      0x1de vscode-build/obj/autogen/sl_power_manager_handler.o
+ .debug_info    0x0000a6d3      0x25f vscode-build/obj/autogen/sl_simple_led_instances.o
+ .debug_info    0x0000a932      0x57b vscode-build/obj/gecko_sdk_4.3.0/app/common/util/app_log/app_log.o
+ .debug_info    0x0000aead      0x2a3 vscode-build/obj/gecko_sdk_4.3.0/hardware/board/src/sl_board_control_gpio.o
+ .debug_info    0x0000b150      0x271 vscode-build/obj/gecko_sdk_4.3.0/hardware/board/src/sl_board_init.o
+ .debug_info    0x0000b3c1      0x518 vscode-build/obj/gecko_sdk_4.3.0/hardware/driver/configuration_over_swo/src/sl_cos.o
+ .debug_info    0x0000b8d9      0x2f4 vscode-build/obj/gecko_sdk_4.3.0/platform/Device/SiliconLabs/BGM22/Source/startup_bgm22.o
+ .debug_info    0x0000bbcd     0x1c7f vscode-build/obj/gecko_sdk_4.3.0/platform/Device/SiliconLabs/BGM22/Source/system_bgm22.o
+ .debug_info    0x0000d84c      0x2ee vscode-build/obj/gecko_sdk_4.3.0/platform/common/src/sl_slist.o
+ .debug_info    0x0000db3a      0x1ed vscode-build/obj/gecko_sdk_4.3.0/platform/common/toolchain/src/sl_memory.o
+ .debug_info    0x0000dd27     0x1d94 vscode-build/obj/gecko_sdk_4.3.0/platform/driver/debug/src/sl_debug_swo.o
+ .debug_info    0x0000fabb      0x23c vscode-build/obj/gecko_sdk_4.3.0/platform/driver/leddrv/src/sl_led.o
+ .debug_info    0x0000fcf7     0x15d3 vscode-build/obj/gecko_sdk_4.3.0/platform/driver/leddrv/src/sl_simple_led.o
+ .debug_info    0x000112ca     0x1c71 vscode-build/obj/gecko_sdk_4.3.0/platform/emdrv/dmadrv/src/dmadrv.o
+ .debug_info    0x00012f3b      0x5d0 vscode-build/obj/gecko_sdk_4.3.0/platform/emdrv/nvm3/src/nvm3_default_common_linker.o
+ .debug_info    0x0001350b      0x8c7 vscode-build/obj/gecko_sdk_4.3.0/platform/emdrv/nvm3/src/nvm3_hal_flash.o
+ .debug_info    0x00013dd2      0x3b0 vscode-build/obj/gecko_sdk_4.3.0/platform/emdrv/nvm3/src/nvm3_lock.o
+ .debug_info    0x00014182     0x65f0 vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_cmu.o
+ .debug_info    0x0001a772     0x1143 vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_core.o
+ .debug_info    0x0001b8b5     0x3531 vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_emu.o
+ .debug_info    0x0001ede6     0x1df0 vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_gpio.o
+ .debug_info    0x00020bd6     0x1b04 vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_ldma.o
+ .debug_info    0x000226da     0x26a9 vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_msc.o
+ .debug_info    0x00024d83     0x1b81 vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_rtcc.o
+ .debug_info    0x00026904     0x1878 vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_system.o
+ .debug_info    0x0002817c     0x3820 vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_usart.o
+ .debug_info    0x0002b99c       0xdb vscode-build/obj/gecko_sdk_4.3.0/platform/radio/rail_lib/plugin/fem_util/sl_fem_util.o
+ .debug_info    0x0002ba77      0xcba vscode-build/obj/gecko_sdk_4.3.0/platform/radio/rail_lib/plugin/pa-conversions/pa_conversions_efr32.o
+ .debug_info    0x0002c731       0x8c vscode-build/obj/gecko_sdk_4.3.0/platform/radio/rail_lib/plugin/rail_util_power_manager_init/sl_rail_util_power_manager_init.o
+ .debug_info    0x0002c7bd      0x21c vscode-build/obj/gecko_sdk_4.3.0/platform/radio/rail_lib/plugin/rail_util_pti/sl_rail_util_pti.o
+ .debug_info    0x0002c9d9      0x48e vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/se_manager/src/sl_se_manager.o
+ .debug_info    0x0002ce67      0xe7d vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/ba414ep_config.o
+ .debug_info    0x0002dce4      0x70f vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/ba431_config.o
+ .debug_info    0x0002e3f3      0x76a vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/cryptodma_internal.o
+ .debug_info    0x0002eb5d      0x101 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/cryptolib_types.o
+ .debug_info    0x0002ec5e     0x37b3 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_aes.o
+ .debug_info    0x00032411     0x385c vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_blk_cipher.o
+ .debug_info    0x00035c6d      0x3d7 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_dh_alg.o
+ .debug_info    0x00036044      0x855 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_ecc_curves.o
+ .debug_info    0x00036899      0x6a6 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_ecc_keygen_alg.o
+ .debug_info    0x00036f3f      0x4d7 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_math.o
+ .debug_info    0x00037416      0x52f vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_memcpy.o
+ .debug_info    0x00037945     0x185b vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_primitives.o
+ .debug_info    0x000391a0      0x325 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_rng.o
+ .debug_info    0x000394c5      0xda4 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_trng.o
+ .debug_info    0x0003a269       0xd7 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_mbedtls_support/src/sl_mbedtls.o
+ .debug_info    0x0003a340       0xe9 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_mbedtls_support/src/sli_psa_crypto.o
+ .debug_info    0x0003a429     0x113f vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_protocol_crypto/src/sli_protocol_crypto_radioaes.o
+ .debug_info    0x0003b568     0x118c vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_protocol_crypto/src/sli_radioaes_management.o
+ .debug_info    0x0003c6f4      0xd7f vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/cryptoacc_management.o
+ .debug_info    0x0003d473     0x15a4 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/sl_psa_its_nvm3.o
+ .debug_info    0x0003ea17      0xf8b vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/sli_cryptoacc_transparent_driver_cipher.o
+ .debug_info    0x0003f9a2      0x74c vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/sli_cryptoacc_transparent_driver_key_derivation.o
+ .debug_info    0x000400ee      0xb35 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/sli_cryptoacc_transparent_driver_key_management.o
+ .debug_info    0x00040c23      0xf5e vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/sli_cryptoacc_transparent_driver_mac.o
+ .debug_info    0x00041b81       0xbf vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/sli_psa_driver_init.o
+ .debug_info    0x00041c40      0x387 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/sli_psa_trng.o
+ .debug_info    0x00041fc7      0x29a vscode-build/obj/gecko_sdk_4.3.0/platform/service/device_init/src/sl_device_init_dcdc_s2.o
+ .debug_info    0x00042261      0x899 vscode-build/obj/gecko_sdk_4.3.0/platform/service/device_init/src/sl_device_init_emu_s2.o
+ .debug_info    0x00042afa      0x7cb vscode-build/obj/gecko_sdk_4.3.0/platform/service/device_init/src/sl_device_init_hfxo_s2.o
+ .debug_info    0x000432c5       0xef vscode-build/obj/gecko_sdk_4.3.0/platform/service/device_init/src/sl_device_init_lfrco.o
+ .debug_info    0x000433b4      0x24e vscode-build/obj/gecko_sdk_4.3.0/platform/service/device_init/src/sl_device_init_lfxo_s2.o
+ .debug_info    0x00043602      0x782 vscode-build/obj/gecko_sdk_4.3.0/platform/service/device_init/src/sl_device_init_nvic.o
+ .debug_info    0x00043d84      0x5ba vscode-build/obj/gecko_sdk_4.3.0/platform/service/iostream/src/sl_iostream.o
+ .debug_info    0x0004433e      0x536 vscode-build/obj/gecko_sdk_4.3.0/platform/service/iostream/src/sl_iostream_retarget_stdio.o
+ .debug_info    0x00044874      0x7d2 vscode-build/obj/gecko_sdk_4.3.0/platform/service/iostream/src/sl_iostream_stdlib_config.o
+ .debug_info    0x00045046     0x1f67 vscode-build/obj/gecko_sdk_4.3.0/platform/service/iostream/src/sl_iostream_uart.o
+ .debug_info    0x00046fad     0x2f62 vscode-build/obj/gecko_sdk_4.3.0/platform/service/iostream/src/sl_iostream_usart.o
+ .debug_info    0x00049f0f      0xc14 vscode-build/obj/gecko_sdk_4.3.0/platform/service/mpu/src/sl_mpu.o
+ .debug_info    0x0004ab23     0x1369 vscode-build/obj/gecko_sdk_4.3.0/platform/service/power_manager/src/sl_power_manager.o
+ .debug_info    0x0004be8c       0xfe vscode-build/obj/gecko_sdk_4.3.0/platform/service/power_manager/src/sl_power_manager_debug.o
+ .debug_info    0x0004bf8a     0x1c0e vscode-build/obj/gecko_sdk_4.3.0/platform/service/power_manager/src/sl_power_manager_hal_s2.o
+ .debug_info    0x0004db98     0x18cc vscode-build/obj/gecko_sdk_4.3.0/platform/service/sleeptimer/src/sl_sleeptimer.o
+ .debug_info    0x0004f464     0x1fcf vscode-build/obj/gecko_sdk_4.3.0/platform/service/sleeptimer/src/sl_sleeptimer_hal_rtcc.o
+ .debug_info    0x00051433       0xa6 vscode-build/obj/gecko_sdk_4.3.0/platform/service/system/src/sl_system_init.o
+ .debug_info    0x000514d9       0x91 vscode-build/obj/gecko_sdk_4.3.0/platform/service/system/src/sl_system_process_action.o
+ .debug_info    0x0005156a      0x872 vscode-build/obj/gecko_sdk_4.3.0/protocol/bluetooth/src/sl_bt_stack_init.o
+ .debug_info    0x00051ddc       0xbd vscode-build/obj/gecko_sdk_4.3.0/protocol/bluetooth/src/sli_bt_advertiser_config.o
+ .debug_info    0x00051e99       0xe2 vscode-build/obj/gecko_sdk_4.3.0/protocol/bluetooth/src/sli_bt_connection_config.o
+ .debug_info    0x00051f7b      0x312 vscode-build/obj/gecko_sdk_4.3.0/util/silicon_labs/silabs_core/memory_manager/sl_malloc.o
+ .debug_info    0x0005228d      0x110 vscode-build/obj/gecko_sdk_4.3.0/util/third_party/mbedtls/library/platform_util.o
+ .debug_info    0x0005239d     0x7c59 vscode-build/obj/gecko_sdk_4.3.0/util/third_party/mbedtls/library/psa_crypto.o
+ .debug_info    0x00059ff6      0x432 vscode-build/obj/gecko_sdk_4.3.0/util/third_party/mbedtls/library/psa_crypto_client.o
+ .debug_info    0x0005a428     0x390a vscode-build/obj/gecko_sdk_4.3.0/util/third_party/mbedtls/library/psa_crypto_driver_wrappers.o
+ .debug_info    0x0005dd32      0xf40 vscode-build/obj/gecko_sdk_4.3.0/util/third_party/mbedtls/library/psa_crypto_slot_management.o
+ .debug_info    0x0005ec72      0xd7d vscode-build/obj/gecko_sdk_4.3.0/util/third_party/mbedtls/library/psa_crypto_storage.o
+ .debug_info    0x0005f9ef       0xf8 vscode-build/obj/main.o
+ .debug_info    0x0005fae7     0x2968 vscode-build/obj/sl_gatt_service_device_information.o
+ .debug_info    0x0006244f      0x309 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_pa_curves.o)
+ .debug_info    0x00062758      0x84a gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
 
 .debug_abbrev   0x00000000     0xd161
  .debug_abbrev  0x00000000      0x26d vscode-build/obj/app.o
@@ -23324,200 +23319,200 @@ LOAD linker stubs
  .debug_line    0x00025c67      0x186 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_pa_curves.o)
  .debug_line    0x00025ded      0x161 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
 
-.debug_str      0x00000000    0x18f30
+.debug_str      0x00000000    0x18f16
  .debug_str     0x00000000     0x282b vscode-build/obj/app.o
                                0x2a0d (size before relaxing)
- .debug_str     0x0000282b      0x3e2 vscode-build/obj/autogen/gatt_db.o
-                                0x5e8 (size before relaxing)
- .debug_str     0x00002c0d      0x534 vscode-build/obj/autogen/sl_bluetooth.o
+ .debug_str     0x0000282b      0x3c8 vscode-build/obj/autogen/gatt_db.o
+                                0x5ce (size before relaxing)
+ .debug_str     0x00002bf3      0x534 vscode-build/obj/autogen/sl_bluetooth.o
                                0x2bd6 (size before relaxing)
- .debug_str     0x00003141       0x36 vscode-build/obj/autogen/sl_board_default_init.o
+ .debug_str     0x00003127       0x36 vscode-build/obj/autogen/sl_board_default_init.o
                                 0x1c2 (size before relaxing)
- .debug_str     0x00003177      0x961 vscode-build/obj/autogen/sl_device_init_clocks.o
+ .debug_str     0x0000315d      0x961 vscode-build/obj/autogen/sl_device_init_clocks.o
                                 0xc14 (size before relaxing)
- .debug_str     0x00003ad8      0x34b vscode-build/obj/autogen/sl_event_handler.o
+ .debug_str     0x00003abe      0x34b vscode-build/obj/autogen/sl_event_handler.o
                                 0xe2e (size before relaxing)
- .debug_str     0x00003e23     0x2145 vscode-build/obj/autogen/sl_iostream_init_usart_instances.o
+ .debug_str     0x00003e09     0x2145 vscode-build/obj/autogen/sl_iostream_init_usart_instances.o
                                0x2afa (size before relaxing)
- .debug_str     0x00005f68      0x161 vscode-build/obj/autogen/sl_power_manager_handler.o
+ .debug_str     0x00005f4e      0x161 vscode-build/obj/autogen/sl_power_manager_handler.o
                                 0x36b (size before relaxing)
- .debug_str     0x000060c9       0x89 vscode-build/obj/autogen/sl_simple_led_instances.o
+ .debug_str     0x000060af       0x89 vscode-build/obj/autogen/sl_simple_led_instances.o
                                 0x30d (size before relaxing)
- .debug_str     0x00006152      0x1ea vscode-build/obj/gecko_sdk_4.3.0/app/common/util/app_log/app_log.o
+ .debug_str     0x00006138      0x1ea vscode-build/obj/gecko_sdk_4.3.0/app/common/util/app_log/app_log.o
                                 0x4e4 (size before relaxing)
- .debug_str     0x0000633c      0x28f vscode-build/obj/gecko_sdk_4.3.0/hardware/board/src/sl_board_control_gpio.o
+ .debug_str     0x00006322      0x28f vscode-build/obj/gecko_sdk_4.3.0/hardware/board/src/sl_board_control_gpio.o
                                 0x473 (size before relaxing)
- .debug_str     0x000065cb       0x43 vscode-build/obj/gecko_sdk_4.3.0/hardware/board/src/sl_board_init.o
+ .debug_str     0x000065b1       0x43 vscode-build/obj/gecko_sdk_4.3.0/hardware/board/src/sl_board_init.o
                                 0x5cb (size before relaxing)
- .debug_str     0x0000660e      0x337 vscode-build/obj/gecko_sdk_4.3.0/hardware/driver/configuration_over_swo/src/sl_cos.o
+ .debug_str     0x000065f4      0x337 vscode-build/obj/gecko_sdk_4.3.0/hardware/driver/configuration_over_swo/src/sl_cos.o
                                 0x573 (size before relaxing)
- .debug_str     0x00006945      0x13e vscode-build/obj/gecko_sdk_4.3.0/platform/Device/SiliconLabs/BGM22/Source/startup_bgm22.o
+ .debug_str     0x0000692b      0x13e vscode-build/obj/gecko_sdk_4.3.0/platform/Device/SiliconLabs/BGM22/Source/startup_bgm22.o
                                 0x2e5 (size before relaxing)
- .debug_str     0x00006a83      0x5d5 vscode-build/obj/gecko_sdk_4.3.0/platform/Device/SiliconLabs/BGM22/Source/system_bgm22.o
+ .debug_str     0x00006a69      0x5d5 vscode-build/obj/gecko_sdk_4.3.0/platform/Device/SiliconLabs/BGM22/Source/system_bgm22.o
                                0x14ed (size before relaxing)
- .debug_str     0x00007058       0xd9 vscode-build/obj/gecko_sdk_4.3.0/platform/common/src/sl_slist.o
+ .debug_str     0x0000703e       0xd9 vscode-build/obj/gecko_sdk_4.3.0/platform/common/src/sl_slist.o
                                 0x298 (size before relaxing)
- .debug_str     0x00007131       0xca vscode-build/obj/gecko_sdk_4.3.0/platform/common/toolchain/src/sl_memory.o
+ .debug_str     0x00007117       0xca vscode-build/obj/gecko_sdk_4.3.0/platform/common/toolchain/src/sl_memory.o
                                 0x28b (size before relaxing)
- .debug_str     0x000071fb      0x318 vscode-build/obj/gecko_sdk_4.3.0/platform/driver/debug/src/sl_debug_swo.o
+ .debug_str     0x000071e1      0x318 vscode-build/obj/gecko_sdk_4.3.0/platform/driver/debug/src/sl_debug_swo.o
                                0x15d6 (size before relaxing)
- .debug_str     0x00007513       0x4d vscode-build/obj/gecko_sdk_4.3.0/platform/driver/leddrv/src/sl_led.o
+ .debug_str     0x000074f9       0x4d vscode-build/obj/gecko_sdk_4.3.0/platform/driver/leddrv/src/sl_led.o
                                 0x28e (size before relaxing)
- .debug_str     0x00007560       0xda vscode-build/obj/gecko_sdk_4.3.0/platform/driver/leddrv/src/sl_simple_led.o
+ .debug_str     0x00007546       0xda vscode-build/obj/gecko_sdk_4.3.0/platform/driver/leddrv/src/sl_simple_led.o
                                0x136a (size before relaxing)
- .debug_str     0x0000763a      0xcb2 vscode-build/obj/gecko_sdk_4.3.0/platform/emdrv/dmadrv/src/dmadrv.o
+ .debug_str     0x00007620      0xcb2 vscode-build/obj/gecko_sdk_4.3.0/platform/emdrv/dmadrv/src/dmadrv.o
                                0x104c (size before relaxing)
- .debug_str     0x000082ec      0x39b vscode-build/obj/gecko_sdk_4.3.0/platform/emdrv/nvm3/src/nvm3_default_common_linker.o
+ .debug_str     0x000082d2      0x39b vscode-build/obj/gecko_sdk_4.3.0/platform/emdrv/nvm3/src/nvm3_default_common_linker.o
                                 0x5a6 (size before relaxing)
- .debug_str     0x00008687      0x228 vscode-build/obj/gecko_sdk_4.3.0/platform/emdrv/nvm3/src/nvm3_hal_flash.o
+ .debug_str     0x0000866d      0x228 vscode-build/obj/gecko_sdk_4.3.0/platform/emdrv/nvm3/src/nvm3_hal_flash.o
                                 0x5b2 (size before relaxing)
- .debug_str     0x000088af      0x208 vscode-build/obj/gecko_sdk_4.3.0/platform/emdrv/nvm3/src/nvm3_lock.o
+ .debug_str     0x00008895      0x208 vscode-build/obj/gecko_sdk_4.3.0/platform/emdrv/nvm3/src/nvm3_lock.o
                                 0x417 (size before relaxing)
- .debug_str     0x00008ab7     0x1888 vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_cmu.o
+ .debug_str     0x00008a9d     0x1888 vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_cmu.o
                                0x3541 (size before relaxing)
- .debug_str     0x0000a33f      0x2f2 vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_core.o
+ .debug_str     0x0000a325      0x2f2 vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_core.o
                                 0xa40 (size before relaxing)
- .debug_str     0x0000a631      0xa22 vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_emu.o
+ .debug_str     0x0000a617      0xa22 vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_emu.o
                                0x23d3 (size before relaxing)
- .debug_str     0x0000b053       0xf5 vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_gpio.o
+ .debug_str     0x0000b039       0xf5 vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_gpio.o
                                0x1315 (size before relaxing)
- .debug_str     0x0000b148       0xba vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_ldma.o
+ .debug_str     0x0000b12e       0xba vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_ldma.o
                                0x1380 (size before relaxing)
- .debug_str     0x0000b202      0x1ea vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_msc.o
+ .debug_str     0x0000b1e8      0x1ea vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_msc.o
                                0x1665 (size before relaxing)
- .debug_str     0x0000b3ec     0x2017 vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_rtcc.o
+ .debug_str     0x0000b3d2     0x2017 vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_rtcc.o
                                0x2475 (size before relaxing)
- .debug_str     0x0000d403      0x2b4 vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_system.o
+ .debug_str     0x0000d3e9      0x2b4 vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_system.o
                                0x1363 (size before relaxing)
- .debug_str     0x0000d6b7      0x473 vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_usart.o
+ .debug_str     0x0000d69d      0x473 vscode-build/obj/gecko_sdk_4.3.0/platform/emlib/src/em_usart.o
                                0x383a (size before relaxing)
- .debug_str     0x0000db2a       0xa0 vscode-build/obj/gecko_sdk_4.3.0/platform/radio/rail_lib/plugin/fem_util/sl_fem_util.o
+ .debug_str     0x0000db10       0xa0 vscode-build/obj/gecko_sdk_4.3.0/platform/radio/rail_lib/plugin/fem_util/sl_fem_util.o
                                 0x24a (size before relaxing)
- .debug_str     0x0000dbca      0x989 vscode-build/obj/gecko_sdk_4.3.0/platform/radio/rail_lib/plugin/pa-conversions/pa_conversions_efr32.o
+ .debug_str     0x0000dbb0      0x989 vscode-build/obj/gecko_sdk_4.3.0/platform/radio/rail_lib/plugin/pa-conversions/pa_conversions_efr32.o
                                 0xbe3 (size before relaxing)
- .debug_str     0x0000e553       0x6e vscode-build/obj/gecko_sdk_4.3.0/platform/radio/rail_lib/plugin/rail_util_power_manager_init/sl_rail_util_power_manager_init.o
+ .debug_str     0x0000e539       0x6e vscode-build/obj/gecko_sdk_4.3.0/platform/radio/rail_lib/plugin/rail_util_power_manager_init/sl_rail_util_power_manager_init.o
                                 0x225 (size before relaxing)
- .debug_str     0x0000e5c1       0xe3 vscode-build/obj/gecko_sdk_4.3.0/platform/radio/rail_lib/plugin/rail_util_pti/sl_rail_util_pti.o
+ .debug_str     0x0000e5a7       0xe3 vscode-build/obj/gecko_sdk_4.3.0/platform/radio/rail_lib/plugin/rail_util_pti/sl_rail_util_pti.o
                                 0x382 (size before relaxing)
- .debug_str     0x0000e6a4      0x1d4 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/se_manager/src/sl_se_manager.o
+ .debug_str     0x0000e68a      0x1d4 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/se_manager/src/sl_se_manager.o
                                 0x3ec (size before relaxing)
- .debug_str     0x0000e878      0x3e9 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/ba414ep_config.o
+ .debug_str     0x0000e85e      0x3e9 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/ba414ep_config.o
                                 0x5fc (size before relaxing)
- .debug_str     0x0000ec61      0x531 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/ba431_config.o
+ .debug_str     0x0000ec47      0x531 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/ba431_config.o
                                 0x726 (size before relaxing)
- .debug_str     0x0000f192      0x1e6 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/cryptodma_internal.o
+ .debug_str     0x0000f178      0x1e6 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/cryptodma_internal.o
                                 0x538 (size before relaxing)
- .debug_str     0x0000f378       0x63 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/cryptolib_types.o
+ .debug_str     0x0000f35e       0x63 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/cryptolib_types.o
                                 0x235 (size before relaxing)
- .debug_str     0x0000f3db      0xc78 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_aes.o
+ .debug_str     0x0000f3c1      0xc78 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_aes.o
                                 0xfdc (size before relaxing)
- .debug_str     0x00010053      0x26a vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_blk_cipher.o
+ .debug_str     0x00010039      0x26a vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_blk_cipher.o
                                 0xbfc (size before relaxing)
- .debug_str     0x000102bd       0xa5 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_dh_alg.o
+ .debug_str     0x000102a3       0xa5 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_dh_alg.o
                                 0x388 (size before relaxing)
- .debug_str     0x00010362      0x597 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_ecc_curves.o
+ .debug_str     0x00010348      0x597 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_ecc_curves.o
                                 0x793 (size before relaxing)
- .debug_str     0x000108f9      0x148 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_ecc_keygen_alg.o
+ .debug_str     0x000108df      0x148 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_ecc_keygen_alg.o
                                 0x418 (size before relaxing)
- .debug_str     0x00010a41       0xd8 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_math.o
+ .debug_str     0x00010a27       0xd8 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_math.o
                                 0x349 (size before relaxing)
- .debug_str     0x00010b19       0x8e vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_memcpy.o
+ .debug_str     0x00010aff       0x8e vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_memcpy.o
                                 0x312 (size before relaxing)
- .debug_str     0x00010ba7      0x1fd vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_primitives.o
+ .debug_str     0x00010b8d      0x1fd vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_primitives.o
                                 0x594 (size before relaxing)
- .debug_str     0x00010da4       0x7c vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_rng.o
+ .debug_str     0x00010d8a       0x7c vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_rng.o
                                 0x2d5 (size before relaxing)
- .debug_str     0x00010e20      0x305 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_trng.o
+ .debug_str     0x00010e06      0x305 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_cryptoacc_library/src/sx_trng.o
                                 0x9d9 (size before relaxing)
- .debug_str     0x00011125       0x53 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_mbedtls_support/src/sl_mbedtls.o
+ .debug_str     0x0001110b       0x53 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_mbedtls_support/src/sl_mbedtls.o
                                 0x225 (size before relaxing)
- .debug_str     0x00011178      0x125 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_mbedtls_support/src/sli_psa_crypto.o
+ .debug_str     0x0001115e      0x125 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_mbedtls_support/src/sli_psa_crypto.o
                                 0x2bd (size before relaxing)
- .debug_str     0x0001129d      0x530 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_protocol_crypto/src/sli_protocol_crypto_radioaes.o
+ .debug_str     0x00011283      0x530 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_protocol_crypto/src/sli_protocol_crypto_radioaes.o
                                 0x8f3 (size before relaxing)
- .debug_str     0x000117cd       0x9a vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_protocol_crypto/src/sli_radioaes_management.o
+ .debug_str     0x000117b3       0x9a vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_protocol_crypto/src/sli_radioaes_management.o
                                 0xdc9 (size before relaxing)
- .debug_str     0x00011867       0xed vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/cryptoacc_management.o
+ .debug_str     0x0001184d       0xed vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/cryptoacc_management.o
                                 0xcd3 (size before relaxing)
- .debug_str     0x00011954      0x454 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/sl_psa_its_nvm3.o
+ .debug_str     0x0001193a      0x454 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/sl_psa_its_nvm3.o
                                 0x986 (size before relaxing)
- .debug_str     0x00011da8      0x47d vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/sli_cryptoacc_transparent_driver_cipher.o
+ .debug_str     0x00011d8e      0x47d vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/sli_cryptoacc_transparent_driver_cipher.o
                                 0x7e2 (size before relaxing)
- .debug_str     0x00012225       0xef vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/sli_cryptoacc_transparent_driver_key_derivation.o
+ .debug_str     0x0001220b       0xef vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/sli_cryptoacc_transparent_driver_key_derivation.o
                                 0x614 (size before relaxing)
- .debug_str     0x00012314      0x160 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/sli_cryptoacc_transparent_driver_key_management.o
+ .debug_str     0x000122fa      0x160 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/sli_cryptoacc_transparent_driver_key_management.o
                                 0x736 (size before relaxing)
- .debug_str     0x00012474      0x2b3 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/sli_cryptoacc_transparent_driver_mac.o
+ .debug_str     0x0001245a      0x2b3 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/sli_cryptoacc_transparent_driver_mac.o
                                 0x802 (size before relaxing)
- .debug_str     0x00012727       0xa5 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/sli_psa_driver_init.o
+ .debug_str     0x0001270d       0xa5 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/sli_psa_driver_init.o
                                 0x255 (size before relaxing)
- .debug_str     0x000127cc       0xf1 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/sli_psa_trng.o
+ .debug_str     0x000127b2       0xf1 vscode-build/obj/gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/sli_psa_trng.o
                                 0x3be (size before relaxing)
- .debug_str     0x000128bd       0x4a vscode-build/obj/gecko_sdk_4.3.0/platform/service/device_init/src/sl_device_init_dcdc_s2.o
+ .debug_str     0x000128a3       0x4a vscode-build/obj/gecko_sdk_4.3.0/platform/service/device_init/src/sl_device_init_dcdc_s2.o
                                 0x603 (size before relaxing)
- .debug_str     0x00012907       0x52 vscode-build/obj/gecko_sdk_4.3.0/platform/service/device_init/src/sl_device_init_emu_s2.o
+ .debug_str     0x000128ed       0x52 vscode-build/obj/gecko_sdk_4.3.0/platform/service/device_init/src/sl_device_init_emu_s2.o
                                 0x7e3 (size before relaxing)
- .debug_str     0x00012959      0x521 vscode-build/obj/gecko_sdk_4.3.0/platform/service/device_init/src/sl_device_init_hfxo_s2.o
+ .debug_str     0x0001293f      0x521 vscode-build/obj/gecko_sdk_4.3.0/platform/service/device_init/src/sl_device_init_hfxo_s2.o
                                 0xb95 (size before relaxing)
- .debug_str     0x00012e7a       0x48 vscode-build/obj/gecko_sdk_4.3.0/platform/service/device_init/src/sl_device_init_lfrco.o
+ .debug_str     0x00012e60       0x48 vscode-build/obj/gecko_sdk_4.3.0/platform/service/device_init/src/sl_device_init_lfrco.o
                                 0x265 (size before relaxing)
- .debug_str     0x00012ec2      0x1bf vscode-build/obj/gecko_sdk_4.3.0/platform/service/device_init/src/sl_device_init_lfxo_s2.o
+ .debug_str     0x00012ea8      0x1bf vscode-build/obj/gecko_sdk_4.3.0/platform/service/device_init/src/sl_device_init_lfxo_s2.o
                                 0x471 (size before relaxing)
- .debug_str     0x00013081       0x47 vscode-build/obj/gecko_sdk_4.3.0/platform/service/device_init/src/sl_device_init_nvic.o
+ .debug_str     0x00013067       0x47 vscode-build/obj/gecko_sdk_4.3.0/platform/service/device_init/src/sl_device_init_nvic.o
                                 0x745 (size before relaxing)
- .debug_str     0x000130c8      0x116 vscode-build/obj/gecko_sdk_4.3.0/platform/service/iostream/src/sl_iostream.o
+ .debug_str     0x000130ae      0x116 vscode-build/obj/gecko_sdk_4.3.0/platform/service/iostream/src/sl_iostream.o
                                 0x3af (size before relaxing)
- .debug_str     0x000131de      0x155 vscode-build/obj/gecko_sdk_4.3.0/platform/service/iostream/src/sl_iostream_retarget_stdio.o
+ .debug_str     0x000131c4      0x155 vscode-build/obj/gecko_sdk_4.3.0/platform/service/iostream/src/sl_iostream_retarget_stdio.o
                                 0x3bc (size before relaxing)
- .debug_str     0x00013333      0x342 vscode-build/obj/gecko_sdk_4.3.0/platform/service/iostream/src/sl_iostream_stdlib_config.o
+ .debug_str     0x00013319      0x342 vscode-build/obj/gecko_sdk_4.3.0/platform/service/iostream/src/sl_iostream_stdlib_config.o
                                 0x569 (size before relaxing)
- .debug_str     0x00013675      0x21f vscode-build/obj/gecko_sdk_4.3.0/platform/service/iostream/src/sl_iostream_uart.o
+ .debug_str     0x0001365b      0x21f vscode-build/obj/gecko_sdk_4.3.0/platform/service/iostream/src/sl_iostream_uart.o
                                0x1198 (size before relaxing)
- .debug_str     0x00013894       0xed vscode-build/obj/gecko_sdk_4.3.0/platform/service/iostream/src/sl_iostream_usart.o
+ .debug_str     0x0001387a       0xed vscode-build/obj/gecko_sdk_4.3.0/platform/service/iostream/src/sl_iostream_usart.o
                                0x25e2 (size before relaxing)
- .debug_str     0x00013981      0x1b8 vscode-build/obj/gecko_sdk_4.3.0/platform/service/mpu/src/sl_mpu.o
+ .debug_str     0x00013967      0x1b8 vscode-build/obj/gecko_sdk_4.3.0/platform/service/mpu/src/sl_mpu.o
                                 0x509 (size before relaxing)
- .debug_str     0x00013b39      0xae4 vscode-build/obj/gecko_sdk_4.3.0/platform/service/power_manager/src/sl_power_manager.o
+ .debug_str     0x00013b1f      0xae4 vscode-build/obj/gecko_sdk_4.3.0/platform/service/power_manager/src/sl_power_manager.o
                                0x1074 (size before relaxing)
- .debug_str     0x0001461d       0x77 vscode-build/obj/gecko_sdk_4.3.0/platform/service/power_manager/src/sl_power_manager_debug.o
+ .debug_str     0x00014603       0x77 vscode-build/obj/gecko_sdk_4.3.0/platform/service/power_manager/src/sl_power_manager_debug.o
                                 0x292 (size before relaxing)
- .debug_str     0x00014694      0x297 vscode-build/obj/gecko_sdk_4.3.0/platform/service/power_manager/src/sl_power_manager_hal_s2.o
+ .debug_str     0x0001467a      0x297 vscode-build/obj/gecko_sdk_4.3.0/platform/service/power_manager/src/sl_power_manager_hal_s2.o
                                0x1572 (size before relaxing)
- .debug_str     0x0001492b      0x5ba vscode-build/obj/gecko_sdk_4.3.0/platform/service/sleeptimer/src/sl_sleeptimer.o
+ .debug_str     0x00014911      0x5ba vscode-build/obj/gecko_sdk_4.3.0/platform/service/sleeptimer/src/sl_sleeptimer.o
                                 0xb82 (size before relaxing)
- .debug_str     0x00014ee5      0x194 vscode-build/obj/gecko_sdk_4.3.0/platform/service/sleeptimer/src/sl_sleeptimer_hal_rtcc.o
+ .debug_str     0x00014ecb      0x194 vscode-build/obj/gecko_sdk_4.3.0/platform/service/sleeptimer/src/sl_sleeptimer_hal_rtcc.o
                                0x1c19 (size before relaxing)
- .debug_str     0x00015079       0x4c vscode-build/obj/gecko_sdk_4.3.0/platform/service/system/src/sl_system_init.o
+ .debug_str     0x0001505f       0x4c vscode-build/obj/gecko_sdk_4.3.0/platform/service/system/src/sl_system_init.o
                                 0x1a7 (size before relaxing)
- .debug_str     0x000150c5       0x60 vscode-build/obj/gecko_sdk_4.3.0/platform/service/system/src/sl_system_process_action.o
+ .debug_str     0x000150ab       0x60 vscode-build/obj/gecko_sdk_4.3.0/platform/service/system/src/sl_system_process_action.o
                                 0x1d4 (size before relaxing)
- .debug_str     0x00015125      0x5dc vscode-build/obj/gecko_sdk_4.3.0/protocol/bluetooth/src/sl_bt_stack_init.o
+ .debug_str     0x0001510b      0x5dc vscode-build/obj/gecko_sdk_4.3.0/protocol/bluetooth/src/sl_bt_stack_init.o
                                 0xa4f (size before relaxing)
- .debug_str     0x00015701       0x6d vscode-build/obj/gecko_sdk_4.3.0/protocol/bluetooth/src/sli_bt_advertiser_config.o
+ .debug_str     0x000156e7       0x6d vscode-build/obj/gecko_sdk_4.3.0/protocol/bluetooth/src/sli_bt_advertiser_config.o
                                 0x231 (size before relaxing)
- .debug_str     0x0001576e       0x6d vscode-build/obj/gecko_sdk_4.3.0/protocol/bluetooth/src/sli_bt_connection_config.o
+ .debug_str     0x00015754       0x6d vscode-build/obj/gecko_sdk_4.3.0/protocol/bluetooth/src/sli_bt_connection_config.o
                                 0x24e (size before relaxing)
- .debug_str     0x000157db       0x64 vscode-build/obj/gecko_sdk_4.3.0/util/silicon_labs/silabs_core/memory_manager/sl_malloc.o
+ .debug_str     0x000157c1       0x64 vscode-build/obj/gecko_sdk_4.3.0/util/silicon_labs/silabs_core/memory_manager/sl_malloc.o
                                 0x280 (size before relaxing)
- .debug_str     0x0001583f       0x66 vscode-build/obj/gecko_sdk_4.3.0/util/third_party/mbedtls/library/platform_util.o
+ .debug_str     0x00015825       0x66 vscode-build/obj/gecko_sdk_4.3.0/util/third_party/mbedtls/library/platform_util.o
                                 0x1fe (size before relaxing)
- .debug_str     0x000158a5     0x26d0 vscode-build/obj/gecko_sdk_4.3.0/util/third_party/mbedtls/library/psa_crypto.o
+ .debug_str     0x0001588b     0x26d0 vscode-build/obj/gecko_sdk_4.3.0/util/third_party/mbedtls/library/psa_crypto.o
                                0x2ebe (size before relaxing)
- .debug_str     0x00017f75       0x81 vscode-build/obj/gecko_sdk_4.3.0/util/third_party/mbedtls/library/psa_crypto_client.o
+ .debug_str     0x00017f5b       0x81 vscode-build/obj/gecko_sdk_4.3.0/util/third_party/mbedtls/library/psa_crypto_client.o
                                 0x444 (size before relaxing)
- .debug_str     0x00017ff6      0x4df vscode-build/obj/gecko_sdk_4.3.0/util/third_party/mbedtls/library/psa_crypto_driver_wrappers.o
+ .debug_str     0x00017fdc      0x4df vscode-build/obj/gecko_sdk_4.3.0/util/third_party/mbedtls/library/psa_crypto_driver_wrappers.o
                                0x259e (size before relaxing)
- .debug_str     0x000184d5      0x2ce vscode-build/obj/gecko_sdk_4.3.0/util/third_party/mbedtls/library/psa_crypto_slot_management.o
+ .debug_str     0x000184bb      0x2ce vscode-build/obj/gecko_sdk_4.3.0/util/third_party/mbedtls/library/psa_crypto_slot_management.o
                                 0x904 (size before relaxing)
- .debug_str     0x000187a3      0x17f vscode-build/obj/gecko_sdk_4.3.0/util/third_party/mbedtls/library/psa_crypto_storage.o
+ .debug_str     0x00018789      0x17f vscode-build/obj/gecko_sdk_4.3.0/util/third_party/mbedtls/library/psa_crypto_storage.o
                                 0x62d (size before relaxing)
- .debug_str     0x00018922        0x7 vscode-build/obj/main.o
+ .debug_str     0x00018908        0x7 vscode-build/obj/main.o
                                 0x1f8 (size before relaxing)
- .debug_str     0x00018929       0x79 vscode-build/obj/sl_gatt_service_device_information.o
+ .debug_str     0x0001890f       0x79 vscode-build/obj/sl_gatt_service_device_information.o
                                0x2795 (size before relaxing)
- .debug_str     0x000189a2      0x18e gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_pa_curves.o)
+ .debug_str     0x00018988      0x18e gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_pa_curves.o)
                                 0x437 (size before relaxing)
- .debug_str     0x00018b30      0x400 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
+ .debug_str     0x00018b16      0x400 gecko_sdk_4.3.0/platform/radio/rail_lib/autogen/librail_release/librail_config_bgm220pc22hna_gcc.a(rail_config.o)
                                 0x7be (size before relaxing)
 
 .debug_frame    0x00000000     0x727c
