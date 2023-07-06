@@ -27,7 +27,6 @@ sdk: {id: gecko_sdk, version: 4.3.0}
 toolchain_settings: []
 component:
 - {id: bluetooth_feature_gatt_server}
-- {id: in_place_ota_dfu}
 - {id: bluetooth_feature_sm}
 - {id: mpu}
 - {id: bluetooth_feature_legacy_advertiser}
