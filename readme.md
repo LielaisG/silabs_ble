@@ -22,14 +22,14 @@ The development of a Bluetooth applications consist of three main steps:
 ## Prepare Project environment
 
 Open the .slcp file. Select the SOFTWARE COMPONENTS tab and install the software components:
-- [Services] → [IO Stream] → [IO Stream: USART] → default instance name: **vcom**
+- [Services] → [IO Stream] → [Driver] → [IO Stream: USART] → default instance name: **vcom**
 - [Application] → [Utility] → [Log]
 - [Application] → [Utility] → [Assert]
+- [Application] → [Utility] → [Timer]
 - [Platform] → [Driver] → [I2C] → [I2CSPM] → default instance name: **sensor**
-- [Bluetooth] → [GATT] → [Health Thermometer API]
-- [Application] → [Sensor] → [Relative Humidity and Temperature sensor]
-- [Application] → [Services] → [Simple timer service]
-- [Platform] → [Board] → [Board Control] → enable *Virtual COM UART*
+- [Bluetooth] → [Application] → [GATT services] → [Health Thermometer API]
+- [Bluetooth] → [Application] → [Miscellaneous] → [Relative Humidity and Temperature sensor]
+- [Platform] → [Board] → [Board Control] → enable *Virtual COM UART* + *Relative Humidity and Temperature sensor*
 
 ## Designing the GATT Database
 
@@ -39,7 +39,6 @@ Import the GATT configuration:
 2. Select the CONFIGURATION TOOLS tab and open the Bluetooth GATT Configurator.
 3. Find the Import button and import the attached config/btconf/gatt_configuration.btconf file.
 4. Save the GATT configuration (ctrl-s).
-
 
 ## Responding to Bluetooth Events
 
