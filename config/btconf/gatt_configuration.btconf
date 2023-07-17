@@ -32,7 +32,7 @@
     <!--Manufacturer Name String-->
     <characteristic const="true" id="manufacturer_name_string" name="Manufacturer Name String" sourceId="org.bluetooth.characteristic.manufacturer_name_string" uuid="2A29">
       <informativeText>Abstract: The value of this characteristic is a UTF-8 string representing the name of the manufacturer of the device.</informativeText>
-      <value length="12" type="utf-8" variable_length="false">Silicon Labs</value>
+      <value length="10" type="utf-8" variable_length="false">Mesh group</value>
       <properties>
         <read authenticated="false" bonded="false" encrypted="false"/>
       </properties>
@@ -59,7 +59,7 @@
     <!--Firmware Revision String-->
     <characteristic const="false" id="firmware_revision_string" name="Firmware Revision String" sourceId="org.bluetooth.characteristic.firmware_revision_string" uuid="2A26">
       <informativeText>Summary: The value of this characteristic is a UTF-8 string representing the firmware revision for the firmware within the device.</informativeText>
-      <value length="5" type="utf-8" variable_length="false">0.0.0</value>
+      <value length="5" type="utf-8" variable_length="false">1.0</value>
       <properties>
         <read authenticated="false" bonded="false" encrypted="false"/>
       </properties>
