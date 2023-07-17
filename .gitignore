@@ -1,0 +1,16 @@
+efr32bg24_rrc_bt.slps
+efr32bg24_rrc_bt.pintool
+create_bl_files.sh
+create_bl_files.bat
+.projectlinkstore
+.project
+.cproject
+.settings/com.silabs.ss.framework.ide.project.sls.core.prefs
+.pdm/uc.module.setup.apack_btConfig.com.silabs.ss.framework.project.toolchain.core.default#com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt.10.3.1.20210824.gcc.slsproj
+.pdm/uc.module.setup.CommonProjectPostBuild.com.silabs.ss.framework.project.toolchain.core.default#com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt.10.3.1.20210824.gcc.slsproj
+.pdm/uc.module.setup.componentSetup.com.silabs.ss.framework.project.toolchain.core.default#com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt.10.3.1.20210824.gcc.slsproj
+.pdm/uc.module.setup.defaultSettings.com.silabs.ss.framework.project.toolchain.core.default#com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt.10.3.1.20210824.gcc.slsproj
+.pdm/uc.module.setup.ProjectPostBuild.com.silabs.ss.framework.project.toolchain.core.default#com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt.10.3.1.20210824.gcc.slsproj
+.pdm/uc.module.setup.ucConfig.com.silabs.ss.framework.project.toolchain.core.default#com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt.10.3.1.20210824.gcc.slsproj
+.pdm/uc.module.setup.ucProject.com.silabs.ss.framework.project.toolchain.core.default#com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt.10.3.1.20210824.gcc.slsproj
+.pdm/uc.module.setup.ucTemplate.com.silabs.ss.framework.project.toolchain.core.default#com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt.10.3.1.20210824.gcc.slsproj
