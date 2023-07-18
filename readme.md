@@ -23,20 +23,23 @@ Software required:
 ## Getting Started
 
 The development of a Bluetooth applications consist of three main steps:
-* Designing the GATT database
-* Responding to the events raised by the Bluetooth stack
-* Implementing additional application logic
+- Designing the GATT database
+- Responding to the events raised by the Bluetooth stack
+- Implementing additional application logic
 
-## Prepare Project environment ##
+## Prepare Project environment
 
 Open the .slcp file. Select the SOFTWARE COMPONENTS tab and install the software components:
+- steps to be added
 - 
 
-## Designing the GATT Database ##
+## Designing the GATT Database
 
 Configure the GATT configuration:
+- steps to be added
 - 
 
-## Responding to Bluetooth Events ##
+## Responding to Bluetooth Events
 
+- steps to be added
 - 
