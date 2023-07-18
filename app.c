@@ -41,7 +41,7 @@ static uint8_t advertising_set_handle = 0xff;   /*!< The advertising set handle 
 void app_init(void)
 {
     // Turning ON the LED
-    LED(GREEN, ON);
+    LED(BLUE, ON);
 }
 
 /*******************************************************************************

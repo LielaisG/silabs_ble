@@ -22,5 +22,12 @@
 */
 void LED(int color, int state)
 {
-    GPIO_PinModeSet(gpioPortA, color, gpioModePushPull, state);
+    if (color == 0)
+    {
+        GPIO_PinModeSet(gpioPortB, color, gpioModePushPull, state);
+    }
+    else 
+    {
+        GPIO_PinModeSet(gpioPortA, color, gpioModePushPull, state);
+    }
 }
