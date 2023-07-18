@@ -17,6 +17,7 @@
                 "SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h>",
                 "SLI_RADIOAES_REQUIRES_MASKING=1"
             ],
+            "intelliSenseMode": "gcc-arm",
             "compilerPath": "C:/Work/SiliconLabs/SimplicityStudio/v5/developer/toolchains/gnu_arm/10.3_2021.10/bin/arm-none-eabi-gcc"
         }
     ],

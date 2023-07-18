@@ -578,3 +578,4 @@ GNU ARM v10.3.1 - Default/vscode-build/sdk/platform/service/system/src/subdir.mk
 GNU ARM v10.3.1 - Default/vscode-build/sdk/protocol/bluetooth/src/subdir.mk
 GNU ARM v10.3.1 - Default/vscode-build/sdk/util/silicon_labs/silabs_core/memory_manager/subdir.mk
 GNU ARM v10.3.1 - Default/vscode-build/sdk/util/third_party/mbedtls/library/subdir.mk
+.vscode/c_cpp_properties.json

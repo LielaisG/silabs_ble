@@ -10,7 +10,6 @@
  *****************************************************************************/
 
 #include "led.h"
-#include "em_gpio.h"
 
 /**
  * @brief   Function to turn onboard LED on/off 
