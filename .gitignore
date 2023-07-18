@@ -548,3 +548,33 @@ vscode-build/sdk/util/third_party/mbedtls/library/threading.d
 vscode-build/sdk/util/third_party/mbedtls/library/threading.o
 efr32bg24_rrc_bt.vscode.project.mak
 efr32bg24_rrc_bt.vscode.project.mak
+GNU ARM v10.3.1 - Default/vscode-build/obj/subdir.mk
+GNU ARM v10.3.1 - Default/vscode-build/obj/autogen/subdir.mk
+GNU ARM v10.3.1 - Default/vscode-build/obj/custom_board_drivers/Src/subdir.mk
+GNU ARM v10.3.1 - Default/vscode-build/sdk/app/bluetooth/common/in_place_ota_dfu/subdir.mk
+GNU ARM v10.3.1 - Default/vscode-build/sdk/platform/Device/SiliconLabs/BGM24/Source/subdir.mk
+GNU ARM v10.3.1 - Default/vscode-build/sdk/platform/bootloader/api/subdir.mk
+GNU ARM v10.3.1 - Default/vscode-build/sdk/platform/bootloader/app_properties/subdir.mk
+GNU ARM v10.3.1 - Default/vscode-build/sdk/platform/common/src/subdir.mk
+GNU ARM v10.3.1 - Default/vscode-build/sdk/platform/common/toolchain/src/subdir.mk
+GNU ARM v10.3.1 - Default/vscode-build/sdk/platform/emdrv/nvm3/src/subdir.mk
+GNU ARM v10.3.1 - Default/vscode-build/sdk/platform/emlib/src/subdir.mk
+GNU ARM v10.3.1 - Default/vscode-build/sdk/platform/peripheral/src/subdir.mk
+GNU ARM v10.3.1 - Default/vscode-build/sdk/platform/radio/rail_lib/plugin/fem_util/subdir.mk
+GNU ARM v10.3.1 - Default/vscode-build/sdk/platform/radio/rail_lib/plugin/pa-conversions/subdir.mk
+GNU ARM v10.3.1 - Default/vscode-build/sdk/platform/radio/rail_lib/plugin/rail_util_power_manager_init/subdir.mk
+GNU ARM v10.3.1 - Default/vscode-build/sdk/platform/radio/rail_lib/plugin/rail_util_pti/subdir.mk
+GNU ARM v10.3.1 - Default/vscode-build/sdk/platform/radio/rail_lib/plugin/rail_util_sequencer/subdir.mk
+GNU ARM v10.3.1 - Default/vscode-build/sdk/platform/security/sl_component/se_manager/src/subdir.mk
+GNU ARM v10.3.1 - Default/vscode-build/sdk/platform/security/sl_component/sl_mbedtls_support/src/subdir.mk
+GNU ARM v10.3.1 - Default/vscode-build/sdk/platform/security/sl_component/sl_protocol_crypto/src/subdir.mk
+GNU ARM v10.3.1 - Default/vscode-build/sdk/platform/security/sl_component/sl_psa_driver/src/subdir.mk
+GNU ARM v10.3.1 - Default/vscode-build/sdk/platform/service/device_init/src/subdir.mk
+GNU ARM v10.3.1 - Default/vscode-build/sdk/platform/service/hfxo_manager/src/subdir.mk
+GNU ARM v10.3.1 - Default/vscode-build/sdk/platform/service/mpu/src/subdir.mk
+GNU ARM v10.3.1 - Default/vscode-build/sdk/platform/service/power_manager/src/subdir.mk
+GNU ARM v10.3.1 - Default/vscode-build/sdk/platform/service/sleeptimer/src/subdir.mk
+GNU ARM v10.3.1 - Default/vscode-build/sdk/platform/service/system/src/subdir.mk
+GNU ARM v10.3.1 - Default/vscode-build/sdk/protocol/bluetooth/src/subdir.mk
+GNU ARM v10.3.1 - Default/vscode-build/sdk/util/silicon_labs/silabs_core/memory_manager/subdir.mk
+GNU ARM v10.3.1 - Default/vscode-build/sdk/util/third_party/mbedtls/library/subdir.mk
