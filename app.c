@@ -17,6 +17,7 @@
 #include "app_assert.h"
 #include "sl_bluetooth.h"
 #include "app.h"
+#include "led.h"
 /**
  * @}
 */
@@ -39,7 +40,8 @@ static uint8_t advertising_set_handle = 0xff;   /*!< The advertising set handle 
 *******************************************************************************/
 void app_init(void)
 {
-
+    // Turning ON the LED
+    LED(GREEN, ON);
 }
 
 /*******************************************************************************
