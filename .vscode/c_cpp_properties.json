@@ -4,6 +4,7 @@
             "name": "efr32bg24_rrc_bt",
             "includePath": [
                 "${workspaceFolder}/**",
+                "C:/Users/Mesh/SimplicityStudio/SDKs/gecko_sdk/**",
                 "C:/Users/Mesh/SimplicityStudio/SDKs/gecko_sdk/platform/common/**",
                 "C:/Users/Mesh/SimplicityStudio/SDKs/gecko_sdk/platform/bootloader/**",
                 "C:/Users/Mesh/SimplicityStudio/SDKs/gecko_sdk/platform/emlib/inc/**",
