@@ -4,7 +4,10 @@
             "name": "efr32bg24_rrc_bt",
             "includePath": [
                 "${workspaceFolder}/**",
-                "C:/Users/Mesh/SimplicityStudio/SDKs/gecko_sdk/**"
+                "C:/Users/Mesh/SimplicityStudio/SDKs/gecko_sdk/platform/common/**",
+                "C:/Users/Mesh/SimplicityStudio/SDKs/gecko_sdk/platform/emlib/inc/**",
+                "C:/Users/Mesh/SimplicityStudio/SDKs/gecko_sdk/platform/Device/SiliconLabs/BGM24/Include",
+                "C:/Users/Mesh/SimplicityStudio/SDKs/gecko_sdk/platform/CMSIS/Core/**"
             ],
             "defines": [
                 "BGM240SA22VNA=1",
