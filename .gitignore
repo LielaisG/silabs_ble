@@ -584,3 +584,5 @@ GNU ARM v10.3.1 - Default/custom_board_drivers/Src/stepper.o
 efr32bg24_rrc_bt.vscode.Makefile
 vscode-build/obj/custom_board_drivers/Src/stepper.d
 vscode-build/obj/custom_board_drivers/Src/stepper.o
+vscode-build/obj/custom_board_drivers/Src/timer.d
+vscode-build/obj/custom_board_drivers/Src/timer.o
