@@ -18,6 +18,8 @@
 #include "sl_bluetooth.h"
 #include "app.h"
 #include "led.h"
+#include "timer.h"
+#include "stepper.h"
 /**
  * @}
 */
@@ -41,7 +43,7 @@ static uint8_t advertising_set_handle = 0xff;   /*!< The advertising set handle 
 void app_init(void)
 {
     // Turning ON the LED
-    LED(BLUE, ON);
+    LED(GREEN, ON);
 }
 
 /*******************************************************************************
