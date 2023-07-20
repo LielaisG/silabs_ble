@@ -579,8 +579,6 @@ GNU ARM v10.3.1 - Default/vscode-build/sdk/protocol/bluetooth/src/subdir.mk
 GNU ARM v10.3.1 - Default/vscode-build/sdk/util/silicon_labs/silabs_core/memory_manager/subdir.mk
 GNU ARM v10.3.1 - Default/vscode-build/sdk/util/third_party/mbedtls/library/subdir.mk
 .vscode/c_cpp_properties.json
-custom_board_drivers/Inc/stepper.h
-custom_board_drivers/Src/stepper.c
 GNU ARM v10.3.1 - Default/custom_board_drivers/Src/stepper.d
 GNU ARM v10.3.1 - Default/custom_board_drivers/Src/stepper.o
 efr32bg24_rrc_bt.vscode.Makefile
