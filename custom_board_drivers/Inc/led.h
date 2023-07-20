@@ -12,7 +12,6 @@
 #ifndef CUSTOM_BOARD_DRIVERS_LED_H_
 #define CUSTOM_BOARD_DRIVERS_LED_H_
 
-#include "em_gpio.h"
 #include "app.h"
 
 /**
