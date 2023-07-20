@@ -13,8 +13,8 @@
 
 /**
  * @brief   Function to turn onboard LED on/off 
- * 
  * @retval  None
+ * @note    LEDR - PA05, LEDG - PA04, LEDB - PB00
  * 
  * @param[in] color Colour of the LED
  * @param[in] state State of the LED
