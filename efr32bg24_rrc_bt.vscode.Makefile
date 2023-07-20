@@ -10,7 +10,7 @@ SDK_PATH := C:/Users/Mesh/SimplicityStudio/SDKs/gecko_sdk
 ARM_GCC_DIR_WIN = C:/Work/SiliconLabs/SimplicityStudio/v5/developer/toolchains/gnu_arm/10.3_2021.10
 ARM_GCC_DIR_OSX = 
 ARM_GCC_DIR_LINUX = 
-POST_BUILD_EXE_WIN = C:/Users/Mesh/Downloads/Commander_win32_x64_1v15p2b1337/Simplicity Commander/commander.exe
+POST_BUILD_EXE_WIN = C:/Work/SiliconLabs/SimplicityStudio/v5/developer/adapter_packs/commander/commander.exe
 POST_BUILD_EXE_OSX = 
 POST_BUILD_EXE_LINUX = 
 
