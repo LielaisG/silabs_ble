@@ -118,7 +118,7 @@ C_FLAGS += \
  -std=c99 \
  -Wall \
  -Wextra \
- -Os \
+ -O0 \
  -fdata-sections \
  -ffunction-sections \
  -fomit-frame-pointer \
@@ -137,7 +137,7 @@ CXX_FLAGS += \
  -fno-exceptions \
  -Wall \
  -Wextra \
- -Os \
+ -O0 \
  -fdata-sections \
  -ffunction-sections \
  -fomit-frame-pointer \
