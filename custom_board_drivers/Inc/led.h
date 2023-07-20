@@ -21,8 +21,6 @@
 #define RED     5   /*LED red pin*/
 #define GREEN   4   /*LED green pin*/
 #define BLUE    0   /*LED blue pin*/
-#define ON      0   /*Source to GND*/
-#define OFF     1   /*No source to GND*/
 /**
  * @}
 */
@@ -31,7 +29,8 @@
  * @defgroup Function declarations
  * @{
 */
-void LED(int color, int state);
+void led_turn_on(int color);
+void led_turn_off(void);
 /**
  * @}
 */
