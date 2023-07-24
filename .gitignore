@@ -591,3 +591,5 @@ GNU ARM v10.3.1 - Default/custom_board_drivers/Src/adc.d
 GNU ARM v10.3.1 - Default/custom_board_drivers/Src/adc.o
 GNU ARM v10.3.1 - Default/custom_board_drivers/Src/timer.d
 GNU ARM v10.3.1 - Default/custom_board_drivers/Src/timer.o
+vscode-build/sdk/platform/emlib/src/em_iadc.d
+vscode-build/sdk/platform/emlib/src/em_iadc.o
