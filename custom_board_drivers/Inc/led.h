@@ -15,7 +15,7 @@
 #include "app.h"
 
 /**
- * @defgroup LED configuration parameters
+ * @defgroup Defines for LED configuration
  * @{
 */
 #define RED     5   /*LED red pin*/

@@ -15,7 +15,7 @@
 #include "app.h"
 
 /**
- * @defgroup configuration parameters
+ * @defgroup Defines for stepper configuration
  * @{
 */
 
