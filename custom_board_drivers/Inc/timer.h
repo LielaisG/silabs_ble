@@ -15,7 +15,7 @@
 #include "app.h"
 
 /**
- * @defgroup configuration parameters
+ * @defgroup Defines for timer configuration
  * @{
 */
 
@@ -27,7 +27,7 @@
  * @defgroup Function declarations
  * @{
 */
-
+void timer0_init(void);
 /**
  * @}
 */
