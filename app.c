@@ -43,8 +43,11 @@ static uint8_t advertising_set_handle = 0xff;   /*!< The advertising set handle 
 *******************************************************************************/
 void app_init(void)
 {
-    // Turning ON the LED
+    /*Turning ON the LED*/
     led_turn_on(BLUE);
+
+    /*Initialize the IADC*/
+    iadc_init();
 }
 
 /*******************************************************************************
@@ -55,7 +58,7 @@ void app_init(void)
 *******************************************************************************/
 void app_process_action(void)
 {
-
+    iadc_start_conv();
 }
 
 /*************************************************************************** 
