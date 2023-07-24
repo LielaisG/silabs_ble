@@ -90,7 +90,8 @@ INCLUDES += \
  -I$(SDK_PATH)/platform/common/toolchain/inc \
  -I$(SDK_PATH)/platform/service/system/inc \
  -I$(SDK_PATH)/platform/service/sleeptimer/inc \
- -I$(SDK_PATH)/platform/security/sl_component/sl_protocol_crypto/src
+ -I$(SDK_PATH)/platform/security/sl_component/sl_protocol_crypto/src \
+ -Icustom_board_drivers/Inc
 
 GROUP_START =-Wl,--start-group
 GROUP_END =-Wl,--end-group
