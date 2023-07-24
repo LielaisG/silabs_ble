@@ -19,7 +19,7 @@
  * @{
 */
 #define CLK_SRC_ADC_FREQ            20000000                    // CLK_SRC_ADC
-#define CLK_ADC_FREQ                10000000                    // CLK_ADC - 10MHz max in normal mode
+#define CLK_ADC_FREQ                5000000                     // CLK_ADC - 5MHz max for analog gain of 2x
 /*ADC Input 0*/
 #define IADC_INPUT_0_PORT_PIN       iadcPosInputPortAPin7       //PA07 - OA_IN_P
 #define IADC_INPUT_0_BUS            ABUSALLOC                   //A Bus allocation 
@@ -47,6 +47,7 @@ static volatile double      singleResult; // Volts
  * @{
 */
 void iadc_init(void);
+void iadc_start_conv(void);
 /**
  * @}
 */
