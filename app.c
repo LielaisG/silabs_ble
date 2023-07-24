@@ -20,6 +20,7 @@
 #include "led.h"
 #include "timer.h"
 #include "stepper.h"
+#include "adc.h"
 /**
  * @}
 */

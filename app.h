@@ -12,8 +12,11 @@
 #ifndef APP_H
 #define APP_H
 
+#include "bgm240sa22vna.h"
 #include "em_cmu.h"
 #include "em_gpio.h"
+#include "em_timer.h"
+#include "em_iadc.h"
 
 /**
  * @defgroup Function declarations
