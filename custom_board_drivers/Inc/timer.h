@@ -28,10 +28,9 @@
  * @defgroup Global variables
  * @{
 */
-static uint32_t     buffer[BUFFER_SIZE];
-static const uint32_t dutyCyclePercentages[BUFFER_SIZE] = {0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
-LDMA_Descriptor_t   descLinker;
-
+// static uint32_t         buffer[BUFFER_SIZE];
+// static const uint32_t   dutyCyclePercentages[BUFFER_SIZE];
+// uint32_t                timerFreq, topValue;
 /**
  * @}
 */
@@ -45,4 +44,4 @@ void timer0_init(void);
  * @}
 */
 
-#endif /* CUSTOM_BOARD_DRIVERS_TIMER_H_ */
+#endif /* CUSTOM_BOARD_DRIVERS_TIMEr_H_ */
