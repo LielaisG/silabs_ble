@@ -25,7 +25,6 @@ void iadc_init(void)
 
     /*Enable IADC and GPIO clocks*/
     CMU_ClockEnable(cmuClock_IADC0, true);
-    CMU_ClockEnable(cmuClock_GPIO, true);
 
     /*Reset IADC configuration in case it has been modified earlier*/
     IADC_reset(IADC0);
