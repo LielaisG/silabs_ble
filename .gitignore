@@ -598,3 +598,8 @@ GNU ARM v10.3.1 - Default/gecko_sdk_4.3.0/platform/emlib/src/em_iadc.o
 vscode-build/obj/custom_board_drivers/Src/gpio.d
 vscode-build/obj/custom_board_drivers/Src/gpio.o
 GNU ARM v10.3.1 - Default/custom_board_drivers/Src/gpio.o
+GNU ARM v10.3.1 - Default/gecko_sdk_4.3.0/platform/emdrv/dmadrv/src/dmadrv.d
+GNU ARM v10.3.1 - Default/gecko_sdk_4.3.0/platform/emdrv/dmadrv/src/dmadrv.o
+GNU ARM v10.3.1 - Default/gecko_sdk_4.3.0/platform/emdrv/dmadrv/src/subdir.mk
+vscode-build/sdk/platform/emdrv/dmadrv/src/dmadrv.d
+vscode-build/sdk/platform/emdrv/dmadrv/src/dmadrv.o
