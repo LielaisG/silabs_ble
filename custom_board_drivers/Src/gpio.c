@@ -21,16 +21,21 @@ void initAllGPIOs(void)
     CMU_ClockEnable(cmuClock_GPIO, true);
 
     /*LED pins*/
-    GPIO_PinModeSet(gpioPortA, 5, gpioModePushPull, 0);     /*RED pin*/
-    GPIO_PinModeSet(gpioPortA, 4, gpioModePushPull, 0);     /*GREEN pin*/
-    GPIO_PinModeSet(gpioPortB, 0, gpioModePushPull, 0);     /*BLUE pin*/
+    GPIO_PinModeSet(gpioPortA, 5, gpioModePushPull, 1);     /*RED pin*/
+    GPIO_PinModeSet(gpioPortA, 4, gpioModePushPull, 1);     /*GREEN pin*/
+    GPIO_PinModeSet(gpioPortB, 0, gpioModePushPull, 1);     /*BLUE pin*/
 
     /*Motor driver pins*/
     GPIO_PinModeSet(gpioPortA, 9, gpioModePushPull, 0);     /*mSLEEP pin*/
-    GPIO_PinModeSet(gpioPortC, 0, gpioModePushPull, 0);     /*mA1 pin*/
-    GPIO_PinModeSet(gpioPortC, 1, gpioModePushPull, 0);     /*mA2 pin*/
-    GPIO_PinModeSet(gpioPortC, 2, gpioModePushPull, 0);     /*mB1 pin*/
-    GPIO_PinModeSet(gpioPortC, 3, gpioModePushPull, 0);     /*mB2 pin*/
+    GPIO_PinModeSet(gpioPortC, 0, gpioModePushPull, 1);     /*mA1 pin*/
+    GPIO_PinModeSet(gpioPortC, 1, gpioModePushPull, 1);     /*mA2 pin*/
+    GPIO_PinModeSet(gpioPortC, 2, gpioModePushPull, 1);     /*mB1 pin*/
+    GPIO_PinModeSet(gpioPortC, 3, gpioModePushPull, 1);     /*mB2 pin*/
+
+    /*ADC*/
+    GPIO_PinModeSet(gpioPortA, 6, gpioModePushPull, 0);     /*OA_OUT*/
+    GPIO_PinModeSet(gpioPortA, 7, gpioModePushPull, 0);     /*OA_IN_P*/
+    GPIO_PinModeSet(gpioPortA, 8, gpioModePushPull, 0);     /*OA_IN_N*/
 }
 
 /**
@@ -88,4 +93,12 @@ void bridge_enable(void)
 void bridge_disable(void)
 {
     GPIO_PinModeSet(gpioPortA, 9, gpioModePushPull, 0);
+}
+
+void dir_fw(void)
+{
+    GPIO_PinModeSet(gpioPortC, 0, gpioModePushPull, 1);     /*mA1 pin*/
+    GPIO_PinModeSet(gpioPortC, 1, gpioModePushPull, 0);     /*mA2 pin*/
+    GPIO_PinModeSet(gpioPortC, 2, gpioModePushPull, 1);     /*mB1 pin*/
+    GPIO_PinModeSet(gpioPortC, 3, gpioModePushPull, 0);     /*mB2 pin*/
 }

@@ -43,6 +43,7 @@ void led_turn_on(int color);
 void led_turn_off(void);
 void bridge_enable(void);
 void bridge_disable(void);
+void dir_fw(void);
 /**
  * @}
 */
