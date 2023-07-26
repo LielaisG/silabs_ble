@@ -17,7 +17,7 @@
 #include "app_assert.h"
 #include "sl_bluetooth.h"
 #include "app.h"
-#include "led.h"
+#include "gpio.h"
 #include "timer.h"
 #include "stepper.h"
 #include "adc.h"
@@ -43,6 +43,8 @@ static uint8_t advertising_set_handle = 0xff;   /*!< The advertising set handle 
 *******************************************************************************/
 void app_init(void)
 {
+    initAllGPIOs();
+
     /*Turning ON the LED*/
     led_turn_on(BLUE);
 

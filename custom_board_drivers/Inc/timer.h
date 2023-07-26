@@ -18,13 +18,26 @@
  * @defgroup Defines for timer configuration
  * @{
 */
+#define PWM_FREQ        1000
+#define BUFFER_SIZE     11
+/**
+ * @}
+*/
+
+/**
+ * @defgroup Global variables
+ * @{
+*/
+static uint32_t     buffer[BUFFER_SIZE];
+static const uint32_t dutyCyclePercentages[BUFFER_SIZE] = {0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
+LDMA_Descriptor_t   descLinker;
 
 /**
  * @}
 */
 
 /**
- * @defgroup Function declarations
+ * @defgroup Prototypes
  * @{
 */
 void timer0_init(void);

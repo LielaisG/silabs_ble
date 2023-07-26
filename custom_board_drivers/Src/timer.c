@@ -21,6 +21,12 @@
 */
 void timer0_init(void)
 {
+    
+    
+
+
+
+
     /*Define struct for the timer with default values*/
     TIMER_Init_TypeDef myTimer = TIMER_INIT_DEFAULT;
 
