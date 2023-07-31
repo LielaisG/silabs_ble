@@ -9,30 +9,23 @@
  * All rights reserved.
  *****************************************************************************/
 
-/**
- * @defgroup Includes
- * @{
-*/
 #include "em_common.h"
 #include "app_assert.h"
 #include "sl_bluetooth.h"
 #include "app.h"
 #include "gpio.h"
-#include "timer.h"
 #include "stepper.h"
 #include "adc.h"
-/**
- * @}
-*/
 
-/**
- * @defgroup Static variables
- * @{
-*/
+/*******************************************************************************
+ **************************   LOCAL VARIABLES   ********************************
+ ******************************************************************************/
+
 static uint8_t advertising_set_handle = 0xff;   /*!< The advertising set handle allocated from Bluetooth stack.*/
-/**
- * @}
-*/
+
+/*******************************************************************************
+ **************************   GLOBAL FUNCTIONS   *******************************
+ ******************************************************************************/
 
 /*******************************************************************************
  * @brief   Application init action
@@ -44,13 +37,15 @@ static uint8_t advertising_set_handle = 0xff;   /*!< The advertising set handle 
 void app_init(void)
 {
     /*Initialize GPIO pins*/
-    initAllGPIOs();
+    GPIO_init();
 
     /*Turning ON the LED*/
     led_turn_on(RED);
 
     /*Initialize the IADC*/
     //iadc_init();
+
+    
 }
 
 /*******************************************************************************
@@ -64,8 +59,7 @@ void app_process_action(void)
     //iadc_start_conv();
 
     /*Motor driver*/
-    bridge_enable();
-    dir_fw();
+
 }
 
 /*************************************************************************** 
