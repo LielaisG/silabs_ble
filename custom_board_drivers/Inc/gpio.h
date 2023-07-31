@@ -14,38 +14,21 @@
 
 #include "app.h"
 
-/**
- * @defgroup    Defines for GPIO configuration
- * @{
-*/
-#define RED     5   /*LED red pin*/
-#define GREEN   4   /*LED green pin*/
-#define BLUE    0   /*LED blue pin*/
-/**
- * @}
-*/
+/*******************************************************************************
+ *******************************   DEFINES   ***********************************
+ ******************************************************************************/
 
-/**
- * @defgroup Global variables
- * @{
-*/
+#define RED         5           /*LED red pin*/
+#define GREEN       4           /*LED green pin*/
+#define BLUE        0           /*LED blue pin*/
 
-/**
- * @}
-*/
+/*******************************************************************************
+ *****************************   PROTOTYPES   **********************************
+ ******************************************************************************/
 
-/**
- * @defgroup Prototypes
- * @{
-*/
-void initAllGPIOs(void);
+void GPIO_init(void);
 void led_turn_on(int color);
 void led_turn_off(void);
-void bridge_enable(void);
-void bridge_disable(void);
-void dir_fw(void);
-/**
- * @}
-*/
+
 
 #endif /* CUSTOM_BOARD_DRIVERS_GPIO_H_ */

@@ -11,11 +11,14 @@
 
 #include "gpio.h"
 
+/*******************************************************************************
+ **************************   GLOBAL FUNCTIONS   *******************************
+ ******************************************************************************/
 /**
  * @brief   Initialize GPIOs as Push-Pull
  * @retval  None
 */
-void initAllGPIOs(void)
+void GPIO_init(void)
 {
     /*Enable GPIO clock*/
     CMU_ClockEnable(cmuClock_GPIO, true);
@@ -43,7 +46,6 @@ void initAllGPIOs(void)
  * @retval  None
  * 
  * @param[in] color Colour of the LED
- * @param[in] state State of the LED
 */
 void led_turn_on(int color)
 {
@@ -77,28 +79,3 @@ void led_turn_off(void)
     }
 }
 
-/**
- * @brief   Enable H-Bridge driver
- * @retval  None
-*/
-void bridge_enable(void)
-{
-    GPIO_PinModeSet(gpioPortA, 9, gpioModePushPull, 1);
-}
-
-/**
- * @brief   Disable H-Bridge driver
- * @retval  None
-*/
-void bridge_disable(void)
-{
-    GPIO_PinModeSet(gpioPortA, 9, gpioModePushPull, 0);
-}
-
-void dir_fw(void)
-{
-    GPIO_PinModeSet(gpioPortC, 0, gpioModePushPull, 1);     /*mA1 pin*/
-    GPIO_PinModeSet(gpioPortC, 1, gpioModePushPull, 0);     /*mA2 pin*/
-    GPIO_PinModeSet(gpioPortC, 2, gpioModePushPull, 1);     /*mB1 pin*/
-    GPIO_PinModeSet(gpioPortC, 3, gpioModePushPull, 0);     /*mB2 pin*/
-}
