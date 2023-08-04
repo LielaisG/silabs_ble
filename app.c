@@ -17,6 +17,13 @@
 #include "stepper.h"
 #include "adc.h"
 
+/***************************************************************************//**
+ * Extern
+ ******************************************************************************/
+extern bool Timer0_OverFlowFlag;
+extern int num_steps, current_step;
+extern bool direction;
+
 /*******************************************************************************
  **************************   LOCAL VARIABLES   ********************************
  ******************************************************************************/
@@ -36,16 +43,24 @@ static uint8_t advertising_set_handle = 0xff;   /*!< The advertising set handle 
 *******************************************************************************/
 void app_init(void)
 {
-    /*Initialize GPIO pins*/
-    GPIO_init();
+    /*Initialize GPIO*/
+  GPIO_init();
 
-    /*Turning ON the LED*/
-    led_turn_on(RED);
+  /*Turn on the LED*/
+  led_turn_on(BLUE);
 
-    /*Initialize the IADC*/
-    //iadc_init();
+  /*Initialize the timer*/
+  init_timer0();
 
-    
+  /*Initialize the IADC*/
+  iadc_init();
+
+  /*Rotate stepper*/
+  num_steps = calculateSteps(ANGLE_PER_TRIGGER);
+  current_step = 0;
+  GPIO_PinOutSet(NSLEEP_PORT, NSLEEP_PIN);
+  direction = true;
+  enable_timer0();
 }
 
 /*******************************************************************************
@@ -56,10 +71,39 @@ void app_init(void)
 *******************************************************************************/
 void app_process_action(void)
 {
-    //iadc_start_conv();
+    timer_callback();
 
-    /*Motor driver*/
+    iadc_start_conv();
+}
 
+void timer_callback(void)
+{
+  if (Timer0_OverFlowFlag == true)
+      {
+          Timer0_OverFlowFlag = false;
+
+          // Rotate the motor by one full step
+          current_step++;
+
+          if(direction == false)
+          {
+              led_turn_off();
+              led_turn_on(GREEN);
+              stepper_output(current_step % COIL_CNT);
+          }
+          else {
+              led_turn_off();
+              led_turn_on(RED);
+              stepper_output((num_steps - current_step) % COIL_CNT);
+          }
+
+          /*Stop rotating the motor if the desired angle is reached*/
+          if(current_step == num_steps)
+          {
+              direction = !direction;
+              current_step = 0;
+          }
+      }
 }
 
 /*************************************************************************** 

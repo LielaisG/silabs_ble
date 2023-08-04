@@ -26,6 +26,7 @@
  */
 void app_init(void);            /*!< Application init action*/ 
 void app_process_action(void);  /*!< Application process action*/
+void timer_callback(void);      /*!< */
 /**
  * @}
 */
