@@ -603,3 +603,8 @@ GNU ARM v10.3.1 - Default/gecko_sdk_4.3.0/platform/emdrv/dmadrv/src/dmadrv.o
 GNU ARM v10.3.1 - Default/gecko_sdk_4.3.0/platform/emdrv/dmadrv/src/subdir.mk
 vscode-build/sdk/platform/emdrv/dmadrv/src/dmadrv.d
 vscode-build/sdk/platform/emdrv/dmadrv/src/dmadrv.o
+efr32bg24_rrc_bt.vscode.Makefile
+vscode.conf
+GNU ARM v10.3.1 - Default/vscode-build/sdk/platform/emdrv/dmadrv/src/subdir.mk
+efr32bg24_rrc_bt.vscode.Makefile
+vscode.conf
