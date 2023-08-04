@@ -11,13 +11,11 @@
 
 #include "gpio.h"
 
-/*******************************************************************************
- **************************   GLOBAL FUNCTIONS   *******************************
- ******************************************************************************/
 /**
+ * @fn      void GPIO_init(void)
  * @brief   Initialize GPIOs as Push-Pull
  * @retval  None
-*/
+ */
 void GPIO_init(void)
 {
     /*Enable GPIO clock*/
@@ -28,54 +26,40 @@ void GPIO_init(void)
     GPIO_PinModeSet(gpioPortA, 4, gpioModePushPull, 1);     /*GREEN pin*/
     GPIO_PinModeSet(gpioPortB, 0, gpioModePushPull, 1);     /*BLUE pin*/
 
-    /*Motor driver pins*/
+    /*Stepper pins*/
     GPIO_PinModeSet(gpioPortA, 9, gpioModePushPull, 0);     /*mSLEEP pin*/
-    GPIO_PinModeSet(gpioPortC, 0, gpioModePushPull, 1);     /*mA1 pin*/
-    GPIO_PinModeSet(gpioPortC, 1, gpioModePushPull, 1);     /*mA2 pin*/
-    GPIO_PinModeSet(gpioPortC, 2, gpioModePushPull, 1);     /*mB1 pin*/
-    GPIO_PinModeSet(gpioPortC, 3, gpioModePushPull, 1);     /*mB2 pin*/
-
-    /*ADC*/
-    GPIO_PinModeSet(gpioPortA, 6, gpioModePushPull, 0);     /*OA_OUT*/
-    GPIO_PinModeSet(gpioPortA, 7, gpioModePushPull, 0);     /*OA_IN_P*/
-    GPIO_PinModeSet(gpioPortA, 8, gpioModePushPull, 0);     /*OA_IN_N*/
+    GPIO_PinModeSet(gpioPortC, 0, gpioModePushPull, 0);     /*mA1 pin*/
+    GPIO_PinModeSet(gpioPortC, 1, gpioModePushPull, 0);     /*mA2 pin*/
+    GPIO_PinModeSet(gpioPortC, 2, gpioModePushPull, 0);     /*mB1 pin*/
+    GPIO_PinModeSet(gpioPortC, 3, gpioModePushPull, 0);     /*mB2 pin*/
 }
 
 /**
- * @brief   Turn onboard LED on 
+ * @fn      void led_turn_on(int color)
+ * @brief   Turn on-board LED on
  * @retval  None
- * 
- * @param[in] color Colour of the LED
+ * @param[in] color of the LED
 */
 void led_turn_on(int color)
 {
     if (color == 0)
     {
-        GPIO_PinModeSet(gpioPortB, color, gpioModePushPull, 0);
+        GPIO_PinOutClear(gpioPortB, color);/*BLUE*/
     }
-    else 
+    else
     {
-        GPIO_PinModeSet(gpioPortA, color, gpioModePushPull, 0);
+        GPIO_PinOutClear(gpioPortA, color);/*GREEN & RED*/
     }
 }
 
 /**
- * @brief   Turn onboard LEDs off 
+ * @fn      void led_turn_off(void)
+ * @brief   Turn off the LED
  * @retval  None
-*/
+ */
 void led_turn_off(void)
 {
-    if (GPIO_PinInGet(gpioPortB, BLUE))
-    {
-        GPIO_PinModeSet(gpioPortB, BLUE, gpioModePushPull, 1);
-    }
-    else if (GPIO_PinInGet(gpioPortA, GREEN))
-    {
-        GPIO_PinModeSet(gpioPortA, GREEN, gpioModePushPull, 1);
-    }
-    else if (GPIO_PinInGet(gpioPortA, RED))
-    {
-        GPIO_PinModeSet(gpioPortA, RED, gpioModePushPull, 1);
-    }
+  GPIO_PinModeSet(gpioPortB, BLUE, gpioModePushPull, 1);
+  GPIO_PinModeSet(gpioPortA, GREEN, gpioModePushPull, 1);
+  GPIO_PinModeSet(gpioPortA, RED, gpioModePushPull, 1);
 }
-
