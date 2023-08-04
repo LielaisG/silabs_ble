@@ -11,124 +11,144 @@
 
 #include "stepper.h"
 
-/*******************************************************************************
- **************************   GLOBAL VARIBLES   ********************************
- ******************************************************************************/
+bool Timer0_OverFlowFlag = false;
+GPIO_Port_TypeDef coilPorts = M_PORT;
+uint8_t coilPins[COIL_CNT] = { MA1_PIN, MB1_PIN, MA2_PIN, MB2_PIN};
+int num_steps, current_step;
+bool direction;
 
-int current_step = 0;
-uint8_t coilPins[NUM_COILS] = 
-{
-    MA1_PIN,
-    MA2_PIN,
-    MB1_PIN,
-    MB2_PIN
-};
 
-/*******************************************************************************
- **************************   GLOBAL FUNCTIONS   *******************************
- ******************************************************************************/
 /**
+ * @fn      void init_timer0(void)
  * @brief   Initialize Timer0
- * @retval  None
-*/
-void timer0_init(void)
+ */
+void init_timer0(void)
 {
-    /*Enable clock for the timer*/
-    CMU_ClockEnable(cmuClock_TIMER0, true);
+  /*Define timer struct with default values*/
+  TIMER_Init_TypeDef timerInit = TIMER_INIT_DEFAULT;
 
-    /*Define struct for the timer with default values*/
-    TIMER_InitCC_TypeDef timCC = TIMER_INITCC_DEFAULT;
-    TIMER_Init_TypeDef tim = TIMER_INIT_DEFAULT;
+  /*Disable timer when initialization completes*/
+  timerInit.enable = false;
 
-    /*Configure the timer*/
-    timCC.mode = timerCCModeCompare;
-    tim.enable = false;
-    tim.prescale = timerPrescale1024;
+  /*Enable Timer0 clock*/
+  CMU_ClockEnable(cmuClock_TIMER0, true);
 
-    /*Initialize actual timer*/
-    TIMER_InitCC(TIMER0, 0, &timCC);
-    TIMER_Init(TIMER0, &tim);
-    
-    /*Set the timer overflow at motor frequency*/
-    uint32_t topVal = CMU_ClockFreqGet(cmuClock_TIMER0) / 
-                        (2*STEPPER_FREQ * (1 << timerPrescale1024))-1;
-    TIMER_TopSet(TIMER0, topVal);
+  /*Init actual timer*/
+  TIMER_Init(TIMER0, &timerInit);
 
-    /*Enable timer interrupts*/
-    TIMER_IntEnable(TIMER0, TIMER_IEN_OF);
-    NVIC_EnableIRQ(TIMER0_IRQn);
+  /*Set the timer prescaler to value 1*/
+  timerInit.prescale = timerPrescale1 + 1;
+
+  /*Calculate & set the timer TOP Value = given freq divided by desired freq*/
+  uint32_t timerFreq = CMU_ClockFreqGet(cmuClock_TIMER0) / (timerInit.prescale);
+  uint32_t timerTopVal = timerFreq / TIMER0_FREQUENCY;
+  TIMER_TopSet(TIMER0, timerTopVal);
+
+  /*Enable interrupts on timer overflow*/
+  TIMER_IntEnable(TIMER0, TIMER_IEN_OF);
+  NVIC_EnableIRQ(TIMER0_IRQn);
 }
 
 /**
- * @brief       Magnetize the coil
- * @retval      None
- * @param[in]   gpioPort[in]    - 
- *              pin[in]         - 
-*/
-void coilOn(GPIO_Port_TypeDef gpioPort, int pin)
+ * @fn      void enable_timer0(void)
+ * @brief   Enable Timer0
+ */
+void enable_timer0(void)
 {
-    GPIO_PinOutSet(gpioPort, pin);
+  /*Read active Interrupt flags*/
+  uint32_t timerFlags = TIMER_IntGet(TIMER0);
+
+  /*Clear interrupts before enabling the timer*/
+  TIMER_IntClear(TIMER0, timerFlags);
+
+  /*Enable timer*/
+  TIMER_Enable(TIMER0, true);
 }
 
 /**
- * @brief       Demagnetize the coil
- * @retval      None
- * @param[in]   gpioPort[in]    - 
- *              pin[in]         - 
-*/
-void coilOff(GPIO_Port_TypeDef gpioPort, int pin)
+ * @fn      void disable_timer0(void)
+ * @brief   Disable Timer0
+ */
+void disable_timer0(void)
 {
-    GPIO_PinOutClear(gpioPort, pin);
+  /*Read active Interrupt flags*/
+  uint32_t timerFlags = TIMER_IntGet(TIMER0);
+
+  /*Clear interrupts before enabling the timer*/
+  TIMER_IntClear(TIMER0, timerFlags);
+
+  /*Disable timer*/
+  TIMER_Enable(TIMER0, false);
 }
 
 /**
- * @brief       Turns on the specified coil, and turns off the remaining coils
- * @retval      None
- * @param[in]   coil - 
-*/
-void coilOutput(int coil)
-{
-    int i;
-
-    for(i=0; i<coil; i++) {
-        coilOff(coilPorts[i], coilPins[i]);
-    }
-
-    coilOn(coilPorts[coil], coilPins[coil]);
-
-    for(i=coil+1; i<NUM_COILS; i++) {
-        coilOff(coilPorts[i], coilPins[i]);
-    }
-}
-
-/**
- * @brief   Handle Timer overflow event and increment step
- * @retval  None
-*/
+ * @fn      void TIMER0_IRQHandler(void)
+ * @brief   Timer interrupt handler
+ */
 void TIMER0_IRQHandler(void)
 {
-    /*Acknowledge the interrupt*/
-    uint32_t flags = TIMER_IntGet(TIMER0);
-    TIMER_IntClear(TIMER0, flags);
+  /*Read active Interrupt flags*/
+  uint32_t timerFlags = TIMER_IntGet(TIMER0);
 
-    /*Rotate the motor by one full step*/
+  /*Clear interrupts before enabling the timer*/
+  TIMER_IntClear(TIMER0, timerFlags);
+
+  /*Raise the local flag*/
+  Timer0_OverFlowFlag = true;
 }
 
 /**
- * @brief   Enable H-Bridge driver
- * @retval  None
-*/
-void stepper_enable(void)
+ * @fn      int calculateSteps(int)
+ * @brief   Returns the number of steps required to rotate a specified angle
+ *
+ * @param   angle
+ * @return  Number of steps
+ */
+int calculateSteps(int angle)
 {
-    GPIO_PinOutSet(NSLEEP_PORT, NSLEEP_PIN);
+  return (angle * FULL_ROTATION_STEPS) / 360;
 }
 
 /**
- * @brief   Disable H-Bridge driver
- * @retval  None
-*/
-void stepper_disable(void)
+ * @fn      void turn_coil_on(GPIO_Port_TypeDef, int)
+ * @brief   Magnetize the coil
+ * @param   gpioPort
+ * @param   pin
+ */
+void turn_coil_on(GPIO_Port_TypeDef gpioPort, int pin)
 {
-    GPIO_PinOutClear(NSLEEP_PORT, NSLEEP_PIN);
+  /*Magnetize the coil*/
+  GPIO_PinOutSet(gpioPort, pin);
 }
 
+/**
+ * @fn      void turn_coil_off(GPIO_Port_TypeDef, int)
+ * @brief   Demagnetize the coil
+ * @param   gpioPort
+ * @param   pin
+ */
+void turn_coil_off(GPIO_Port_TypeDef gpioPort, int pin)
+{
+  /*Demagnetize the coil*/
+  GPIO_PinOutClear(gpioPort, pin);
+}
+
+/**
+ * @fn      void stepper_output(int)
+ * @brief   Turns on the specified coil, and turns off the remaining coils
+ * @param   coil
+ */
+void stepper_output(int coil)
+{
+  int i;
+
+  for(i=0; i<coil; i++) {
+      turn_coil_off(coilPorts, coilPins[i]);
+  }
+
+  turn_coil_on(coilPorts, coilPins[coil]);
+
+  for(i=coil+1; i<COIL_CNT; i++) {
+      turn_coil_off(coilPorts, coilPins[i]);
+  }
+}
