@@ -12,9 +12,9 @@
 #include "adc.h"
 
 /**
- * @brief   Function to initialize IADC
- * @retval  None
-*/
+ * @fn      void iadc_init(void)
+ * @brief   Initialize IADC
+ */
 void iadc_init(void)
 {
     /*Declare init structs for the IADC with default values*/
@@ -30,7 +30,7 @@ void iadc_init(void)
     IADC_reset(IADC0);
 
     /*Set FSRCO as IADC clock*/
-    CMU_ClockSelectSet(cmuClock_IADCCLK, cmuSelect_FSRCO);          /** FSRCO = 20MHz*/    
+    CMU_ClockSelectSet(cmuClock_IADCCLK, cmuSelect_FSRCO);          /** FSRCO = 20MHz*/
 
     /*Modify init struct and initialize*/
     init_iadc.warmup = iadcWarmupKeepWarm;                          /** ADC and reference selected for scan mode kept warmup, allowing continuous conversion. */
@@ -44,7 +44,7 @@ void iadc_init(void)
     */
     initAllConfigs.configs[0].reference = iadcCfgReferenceInt1V2;   /** Internal 1.2V Band Gap Reference (buffered) to ground */
     initAllConfigs.configs[0].vRef = 1210;                          /** Vref magnitude expressed in millivolts */
-    initAllConfigs.configs[0].analogGain = iadcCfgAnalogGain2x;     /** Analog gain of 2x */
+    initAllConfigs.configs[0].analogGain = iadcCfgAnalogGain4x;     /** Analog gain of 4x */
 
     /*Set the CLK_ADC frequency dividing CLK_SRC_ADC*/
     initAllConfigs.configs[0].adcClkPrescale = IADC_calcAdcClkPrescale(IADC0,                       /*IADC instance*/
@@ -83,7 +83,14 @@ void iadc_start_conv(void)
 
     /*Get ADC result*/
     sample = IADC_pullSingleFifoResult(IADC0).data;
+    if (sample > highestSample)
+      {
+        highestSample = sample;
 
-    /*Calculate input voltage*/
-    singleResult = (sample * 0.625) / 0xFFF;
+        /*Calculate input voltage*/
+        senseVoltage = (highestSample * 0.3125) / 0xFFF;
+
+        /*Calculate input current*/
+        senseCurrent = senseVoltage / 0.1;
+      }
 }
