@@ -1,14 +1,19 @@
 /******************************************************************************
  * @file    app.c
- * @author  Gatis Fridenbergs
  * @brief   Core application logic
- ******************************************************************************
- * @attention
- * Copyright (c) 2023 LielaisG.
- * https://github.com/LielaisG
- * All rights reserved.
+ *
+ * @author  Gatis Fridenbergs
+ *          https://github.com/LielaisG
+ *          fridenbergs.gatis@gmail.com
+ * Created on:  August 10, 2023
+ *
+ * @note
+ * @todo
  *****************************************************************************/
 
+/*******************************************************************************
+ * Includes
+ ******************************************************************************/
 #include "em_common.h"
 #include "app_assert.h"
 #include "sl_bluetooth.h"
@@ -17,7 +22,7 @@
 #include "stepper.h"
 #include "adc.h"
 
-/***************************************************************************//**
+/*******************************************************************************
  * Extern
  ******************************************************************************/
 extern bool Timer0_OverFlowFlag;
@@ -25,14 +30,13 @@ extern int num_steps, current_step;
 extern bool direction;
 
 /*******************************************************************************
- **************************   LOCAL VARIABLES   ********************************
+ * Global
  ******************************************************************************/
-
-static uint8_t advertising_set_handle = 0xff;   /*!< The advertising set handle allocated from Bluetooth stack.*/
-
-/*******************************************************************************
- **************************   GLOBAL FUNCTIONS   *******************************
- ******************************************************************************/
+static uint8_t advertising_set_handle = 0xff;
+double temp = 0;
+IADC_Result_t tmp;
+double avgRawVoltage, avgVoltage, sensedCurrent;
+int count;
 
 /*******************************************************************************
  * @brief   Application init action
@@ -44,23 +48,19 @@ static uint8_t advertising_set_handle = 0xff;   /*!< The advertising set handle 
 void app_init(void)
 {
     /*Initialize GPIO*/
-  GPIO_init();
+    GPIO_init();
 
-  /*Turn on the LED*/
-  led_turn_on(BLUE);
+    /*Turn on the LED*/
+    led_turn_on(BLUE);
 
-  /*Initialize the timer*/
-  init_timer0();
+    /*Initialize the timer*/
+    init_timer0();
 
-  /*Initialize the IADC*/
-  iadc_init();
+    /*Initialize the IADC*/
+    iadc_diff_init();
 
-  /*Rotate stepper*/
-  num_steps = calculateSteps(ANGLE_PER_TRIGGER);
-  current_step = 0;
-  GPIO_PinOutSet(NSLEEP_PORT, NSLEEP_PIN);
-  direction = true;
-  enable_timer0();
+    /*Start rotation*/
+    //step();
 }
 
 /*******************************************************************************
@@ -71,11 +71,42 @@ void app_init(void)
 *******************************************************************************/
 void app_process_action(void)
 {
-    timer_callback();
+  timer_callback();
+  if ((direction == true) && (current_step >= 100) && (current_step <= 900))
+  {
+      /*Increment counter*/
+      count++;
 
-    iadc_start_conv();
+      /*Read raw ADC value*/
+      tmp = iadc_start_diff_conv();
+
+      /*Calculate average raw value*/
+      temp += (int32_t) tmp.data;
+      avgRawVoltage = temp / count;
+
+      /*Calculate average voltage in Volts*/
+      avgVoltage = (avgRawVoltage * ((1.21*2) / 4)) / 0xFFF;
+
+      // Calculate input voltage:
+      //  For differential inputs, the resultant range is from -Vref to +Vref, i.e.,
+      //  (Vref * 2)/GAIN - full scale IADC range represented by 12 bits.
+      sensedCurrent = avgVoltage / 0.1;
+  }
+  else
+  {
+      count = 0;
+      temp = 0;
+      avgVoltage = 0;
+      sensedCurrent = 0;
+  }
 }
 
+/**
+ * @fn      void timer_callback(void)
+ * @brief   Timer callback function
+ * @retval  None
+ * @param   None
+ */
 void timer_callback(void)
 {
   if (Timer0_OverFlowFlag == true)
@@ -104,6 +135,21 @@ void timer_callback(void)
               current_step = 0;
           }
       }
+}
+/**
+ * @fn      void step(void)
+ * @brief   Start stepper motor
+ * @retval  None
+ * @param   None
+ */
+void step(void)
+{
+  /*Rotate stepper*/
+  num_steps = calculateSteps(ANGLE_PER_TRIGGER);
+  current_step = 0;
+  GPIO_PinOutSet(NSLEEP_PORT, NSLEEP_PIN);
+  direction = true;
+  enable_timer0();
 }
 
 /*************************************************************************** 
