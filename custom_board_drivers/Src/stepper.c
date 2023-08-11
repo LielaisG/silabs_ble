@@ -1,26 +1,43 @@
 /******************************************************************************
  * @file    stepper.c
- * @author  Gatis Fridenbergs
  * @brief   Stepper motor driver module
- ******************************************************************************
- * @attention
- * Copyright (c) 2023 LielaisG.
- * https://github.com/LielaisG
- * All rights reserved.
+ *
+ * @author  Gatis Fridenbergs
+ *          https://github.com/LielaisG
+ *          fridenbergs.gatis@gmail.com
+ * Created on:  August 10, 2023
+ *
+ * @note
+ * @todo
  *****************************************************************************/
 
+/*******************************************************************************
+ * Includes
+ ******************************************************************************/
 #include "stepper.h"
 
+/******************************************************************************
+ * Data types
+ *****************************************************************************/
 bool Timer0_OverFlowFlag = false;
 GPIO_Port_TypeDef coilPorts = M_PORT;
 uint8_t coilPins[COIL_CNT] = { MA1_PIN, MB1_PIN, MA2_PIN, MB2_PIN};
 int num_steps, current_step;
 bool direction;
 
+/******************************************************************************
+ * Extern
+ *****************************************************************************/
 
+
+/******************************************************************************
+ * Private Function Prototypes
+ *****************************************************************************/
 /**
  * @fn      void init_timer0(void)
  * @brief   Initialize Timer0
+ * @retval  None
+ * @param   None
  */
 void init_timer0(void)
 {
@@ -52,6 +69,8 @@ void init_timer0(void)
 /**
  * @fn      void enable_timer0(void)
  * @brief   Enable Timer0
+ * @retval  None
+ * @param   None
  */
 void enable_timer0(void)
 {
@@ -66,8 +85,10 @@ void enable_timer0(void)
 }
 
 /**
- * @fn      void disable_timer0(void)
+ * @fn      void disable_timer0(void
  * @brief   Disable Timer0
+ * @retval  None
+ * @param   None
  */
 void disable_timer0(void)
 {
@@ -84,6 +105,8 @@ void disable_timer0(void)
 /**
  * @fn      void TIMER0_IRQHandler(void)
  * @brief   Timer interrupt handler
+ * @retval  None
+ * @param   None
  */
 void TIMER0_IRQHandler(void)
 {
@@ -100,9 +123,8 @@ void TIMER0_IRQHandler(void)
 /**
  * @fn      int calculateSteps(int)
  * @brief   Returns the number of steps required to rotate a specified angle
- *
+ * @retval  Number of steps
  * @param   angle
- * @return  Number of steps
  */
 int calculateSteps(int angle)
 {
@@ -112,6 +134,7 @@ int calculateSteps(int angle)
 /**
  * @fn      void turn_coil_on(GPIO_Port_TypeDef, int)
  * @brief   Magnetize the coil
+ * @retval  None
  * @param   gpioPort
  * @param   pin
  */
@@ -124,6 +147,7 @@ void turn_coil_on(GPIO_Port_TypeDef gpioPort, int pin)
 /**
  * @fn      void turn_coil_off(GPIO_Port_TypeDef, int)
  * @brief   Demagnetize the coil
+ * @retval  None
  * @param   gpioPort
  * @param   pin
  */
@@ -136,6 +160,7 @@ void turn_coil_off(GPIO_Port_TypeDef gpioPort, int pin)
 /**
  * @fn      void stepper_output(int)
  * @brief   Turns on the specified coil, and turns off the remaining coils
+ * @retval  None
  * @param   coil
  */
 void stepper_output(int coil)
