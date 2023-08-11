@@ -1,20 +1,39 @@
 /******************************************************************************
  * @file    gpio.c
- * @author  Gatis Fridenbergs
  * @brief   GPIO driver module
- ******************************************************************************
- * @attention
- * Copyright (c) 2023 LielaisG.
- * https://github.com/LielaisG
- * All rights reserved.
+ *
+ * @author  Gatis Fridenbergs
+ *          https://github.com/LielaisG
+ *          fridenbergs.gatis@gmail.com
+ * Created on:  August 10, 2023
+ *
+ * @note
+ * @todo
  *****************************************************************************/
 
+/*******************************************************************************
+ * Includes
+ ******************************************************************************/
 #include "gpio.h"
 
+/******************************************************************************
+ * Data types
+ *****************************************************************************/
+
+
+/******************************************************************************
+ * Extern
+ *****************************************************************************/
+
+
+/******************************************************************************
+ * Private Function Prototypes
+ *****************************************************************************/
 /**
  * @fn      void GPIO_init(void)
  * @brief   Initialize GPIOs as Push-Pull
  * @retval  None
+ * @param   None
  */
 void GPIO_init(void)
 {
@@ -56,6 +75,7 @@ void led_turn_on(int color)
  * @fn      void led_turn_off(void)
  * @brief   Turn off the LED
  * @retval  None
+ * @param   None
  */
 void led_turn_off(void)
 {
