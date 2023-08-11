@@ -1,37 +1,58 @@
 /******************************************************************************
  * @file    adc.h
- * @author  Gatis Fridenbergs
  * @brief   Header file for ADC driver module
- ******************************************************************************
- * @attention
- * Copyright (c) 2023 LielaisG.
- * https://github.com/LielaisG
- * All rights reserved.
+ *
+ * @author  Gatis Fridenbergs
+ *          https://github.com/LielaisG
+ *          fridenbergs.gatis@gmail.com
+ * Created on:  August 10, 2023
+ *
+ * @note
+ * @todo
  *****************************************************************************/
 
+/******************************************************************************
+ * Multiple include protection
+ *****************************************************************************/
 #ifndef CUSTOM_BOARD_DRIVERS_ADC_H_
 #define CUSTOM_BOARD_DRIVERS_ADC_H_
 
+/*******************************************************************************
+ * Includes
+ ******************************************************************************/
 #include "app.h"
 
-#define CLK_SRC_ADC_FREQ            20000000                    // CLK_SRC_ADC
-#define CLK_ADC_FREQ                2500000                     // CLK_ADC - 2.5MHz max for analog gain of 4x
-/*ADC Input 0*/
-#define IADC_INPUT_0_PORT_PIN       iadcPosInputPortAPin7       //PA07 - OA_IN_P
+/*******************************************************************************
+ * Macros
+ ******************************************************************************/
+#define CLK_SRC_ADC_FREQ            20000000
+#define CLK_ADC_FREQ                2500000                     // 2.5MHz max for 4x gain
+#define IADC_INPUT_0_PORT_PIN       iadcPosInputPortAPin8       //PA08 - OA_IN_N
 #define IADC_INPUT_0_BUS            ABUSALLOC                   //A Bus allocation
 #define IADC_INPUT_0_BUSALLOC       GPIO_ABUSALLOC_AEVEN0_ADC0  //Mode ADC0 for GPIO_ABUSALLOC
-/*ADC Input 1*/
-#define IADC_INPUT_1_PORT_PIN       iadcNegInputPortAPin8       //PA08 - OA_IN_N
+#define IADC_INPUT_1_PORT_PIN       iadcNegInputPortAPin7       //PA07 - OA_IN_P
 #define IADC_INPUT_1_BUS            ABUSALLOC                   //A Bus allocation
 #define IADC_INPUT_1_BUSALLOC       GPIO_ABUSALLOC_AODD0_ADC0   //Shifted mode ADC0 for GPIO_ABUSALLOC
+#define NUM_SAMPLES                 1024                        //Sample count
+#define IADC_SCALE_OFFSET_MAX_NEG   0x00020000UL                // 18-bit 2's compliment
+#define IADC_SCALE_OFFSET_ZERO      0x00000000UL
 
-static volatile int32_t     sample;
-static volatile int32_t     highestSample;
-static volatile double      senseVoltage; // Volts
-static volatile double      senseCurrent;
+/*******************************************************************************
+ * Local variables
+ ******************************************************************************/
+static volatile IADC_Result_t       sample;
+static volatile IADC_Result_t       highestReading;
+static volatile double              singleResult;
 
-void iadc_init(void);
-void iadc_start_conv(void);
+/*******************************************************************************
+ * Functions
+ ******************************************************************************/
+double IADCAverageConversion(uint32_t numSamples);
+void IADCRescale(uint32_t newScale);
+void iadc_diff_init(void);
+IADC_Result_t iadc_start_diff_conv(void);
 
-
+/*******************************************************************************
+ * END
+ ******************************************************************************/
 #endif /* CUSTOM_BOARD_DRIVERS_ADC_H_ */
