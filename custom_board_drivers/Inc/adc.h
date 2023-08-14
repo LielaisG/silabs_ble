@@ -38,19 +38,14 @@
 #define IADC_SCALE_OFFSET_ZERO      0x00000000UL
 
 /*******************************************************************************
- * Local variables
- ******************************************************************************/
-static volatile IADC_Result_t       sample;
-static volatile IADC_Result_t       highestReading;
-static volatile double              singleResult;
-
-/*******************************************************************************
  * Functions
  ******************************************************************************/
-double IADCAverageConversion(uint32_t numSamples);
-void IADCRescale(uint32_t newScale);
 void iadc_diff_init(void);
 IADC_Result_t iadc_start_diff_conv(void);
+double calcAvgADCValue(int32_t numSamples);
+void calculateCurrent(void);
+void setADCScale(uint32_t newScale);
+void calibrateADC(void);
 
 /*******************************************************************************
  * END
