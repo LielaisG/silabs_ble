@@ -26,17 +26,11 @@
  * Extern
  ******************************************************************************/
 extern bool Timer0_OverFlowFlag;
-extern int num_steps, current_step;
-extern bool direction;
 
 /*******************************************************************************
  * Global
  ******************************************************************************/
 static uint8_t advertising_set_handle = 0xff;
-double temp = 0;
-IADC_Result_t tmp;
-double avgRawVoltage, avgVoltage, sensedCurrent;
-int count;
 
 /*******************************************************************************
  * @brief   Application init action
@@ -56,12 +50,19 @@ void app_init(void)
     /*Initialize the timer*/
     init_timer0();
 
+    /*Initialize stepper*/
+    initStepper(ANGLE_PER_TRIGGER);
+
     /*Initialize the IADC*/
     iadc_diff_init();
 
-    /*Start rotation*/
-    //step();
+    /*Calibrate ADC prior starting any conversions*/
+    calibrateADC();
+
+    /*Start stepper motor*/
+    //stepperStart();
 }
+
 
 /*******************************************************************************
  * @brief   Application process action
@@ -71,85 +72,29 @@ void app_init(void)
 *******************************************************************************/
 void app_process_action(void)
 {
+    /*Calculate current consumption*/
+    calculateCurrent();
+}
+
+/**
+ * @fn      void TIMER0_IRQHandler(void)
+ * @brief   Timer interrupt handler
+ * @param   none
+ * @return  None
+ */
+void TIMER0_IRQHandler(void)
+{
+  /*Read active Interrupt flags*/
+  uint32_t timerFlags = TIMER_IntGet(TIMER0);
+
+  /*Clear interrupts before enabling the timer*/
+  TIMER_IntClear(TIMER0, timerFlags);
+
+  /*Raise the local flag*/
+  Timer0_OverFlowFlag = true;
+
+  /*Run callback function*/
   timer_callback();
-  if ((direction == true) && (current_step >= 100) && (current_step <= 900))
-  {
-      /*Increment counter*/
-      count++;
-
-      /*Read raw ADC value*/
-      tmp = iadc_start_diff_conv();
-
-      /*Calculate average raw value*/
-      temp += (int32_t) tmp.data;
-      avgRawVoltage = temp / count;
-
-      /*Calculate average voltage in Volts*/
-      avgVoltage = (avgRawVoltage * ((1.21*2) / 4)) / 0xFFF;
-
-      // Calculate input voltage:
-      //  For differential inputs, the resultant range is from -Vref to +Vref, i.e.,
-      //  (Vref * 2)/GAIN - full scale IADC range represented by 12 bits.
-      sensedCurrent = avgVoltage / 0.1;
-  }
-  else
-  {
-      count = 0;
-      temp = 0;
-      avgVoltage = 0;
-      sensedCurrent = 0;
-  }
-}
-
-/**
- * @fn      void timer_callback(void)
- * @brief   Timer callback function
- * @retval  None
- * @param   None
- */
-void timer_callback(void)
-{
-  if (Timer0_OverFlowFlag == true)
-      {
-          Timer0_OverFlowFlag = false;
-
-          // Rotate the motor by one full step
-          current_step++;
-
-          if(direction == false)
-          {
-              led_turn_off();
-              led_turn_on(GREEN);
-              stepper_output(current_step % COIL_CNT);
-          }
-          else {
-              led_turn_off();
-              led_turn_on(RED);
-              stepper_output((num_steps - current_step) % COIL_CNT);
-          }
-
-          /*Stop rotating the motor if the desired angle is reached*/
-          if(current_step == num_steps)
-          {
-              direction = !direction;
-              current_step = 0;
-          }
-      }
-}
-/**
- * @fn      void step(void)
- * @brief   Start stepper motor
- * @retval  None
- * @param   None
- */
-void step(void)
-{
-  /*Rotate stepper*/
-  num_steps = calculateSteps(ANGLE_PER_TRIGGER);
-  current_step = 0;
-  GPIO_PinOutSet(NSLEEP_PORT, NSLEEP_PIN);
-  direction = true;
-  enable_timer0();
 }
 
 /*************************************************************************** 
