@@ -22,8 +22,7 @@
 bool Timer0_OverFlowFlag = false;
 GPIO_Port_TypeDef coilPorts = M_PORT;
 uint8_t coilPins[COIL_CNT] = { MA1_PIN, MB1_PIN, MA2_PIN, MB2_PIN};
-int num_steps, current_step;
-bool direction;
+int maxSteps, currentStep, direction;
 
 /******************************************************************************
  * Extern
@@ -36,8 +35,8 @@ bool direction;
 /**
  * @fn      void init_timer0(void)
  * @brief   Initialize Timer0
- * @retval  None
  * @param   None
+ * @return  none
  */
 void init_timer0(void)
 {
@@ -69,8 +68,8 @@ void init_timer0(void)
 /**
  * @fn      void enable_timer0(void)
  * @brief   Enable Timer0
- * @retval  None
  * @param   None
+ * @return  none
  */
 void enable_timer0(void)
 {
@@ -85,10 +84,10 @@ void enable_timer0(void)
 }
 
 /**
- * @fn      void disable_timer0(void
+ * @fn      void disable_timer0(void)
  * @brief   Disable Timer0
- * @retval  None
  * @param   None
+ * @return  none
  */
 void disable_timer0(void)
 {
@@ -102,29 +101,13 @@ void disable_timer0(void)
   TIMER_Enable(TIMER0, false);
 }
 
-/**
- * @fn      void TIMER0_IRQHandler(void)
- * @brief   Timer interrupt handler
- * @retval  None
- * @param   None
- */
-void TIMER0_IRQHandler(void)
-{
-  /*Read active Interrupt flags*/
-  uint32_t timerFlags = TIMER_IntGet(TIMER0);
 
-  /*Clear interrupts before enabling the timer*/
-  TIMER_IntClear(TIMER0, timerFlags);
-
-  /*Raise the local flag*/
-  Timer0_OverFlowFlag = true;
-}
 
 /**
  * @fn      int calculateSteps(int)
  * @brief   Returns the number of steps required to rotate a specified angle
- * @retval  Number of steps
  * @param   angle
+ * @return  Number of steps
  */
 int calculateSteps(int angle)
 {
@@ -134,9 +117,9 @@ int calculateSteps(int angle)
 /**
  * @fn      void turn_coil_on(GPIO_Port_TypeDef, int)
  * @brief   Magnetize the coil
- * @retval  None
  * @param   gpioPort
  * @param   pin
+ * @return  none
  */
 void turn_coil_on(GPIO_Port_TypeDef gpioPort, int pin)
 {
@@ -147,9 +130,9 @@ void turn_coil_on(GPIO_Port_TypeDef gpioPort, int pin)
 /**
  * @fn      void turn_coil_off(GPIO_Port_TypeDef, int)
  * @brief   Demagnetize the coil
- * @retval  None
  * @param   gpioPort
  * @param   pin
+ * @return  none
  */
 void turn_coil_off(GPIO_Port_TypeDef gpioPort, int pin)
 {
@@ -160,20 +143,116 @@ void turn_coil_off(GPIO_Port_TypeDef gpioPort, int pin)
 /**
  * @fn      void stepper_output(int)
  * @brief   Turns on the specified coil, and turns off the remaining coils
- * @retval  None
  * @param   coil
+ * @return  None
  */
 void stepper_output(int coil)
 {
-  int i;
-
-  for(i=0; i<coil; i++) {
+  /*Turn off all coils*/
+  for(int i=0; i<coil; i++)
+  {
       turn_coil_off(coilPorts, coilPins[i]);
   }
 
+  /*Magnetize specific coil*/
   turn_coil_on(coilPorts, coilPins[coil]);
 
-  for(i=coil+1; i<COIL_CNT; i++) {
+  /*Turn off all coils*/
+  for(int i=coil+1; i<COIL_CNT; i++)
+  {
       turn_coil_off(coilPorts, coilPins[i]);
   }
+}
+
+/**
+ * @fn      void stepperStart(int, int)
+ * @brief   Initialize stepper
+ * @param   dir
+ * @param   maxAngle
+ * @return  none
+ */
+void initStepper(int maxAngle)
+{
+    /*Reset initial position and set direction*/
+    currentStep = 0;
+
+    /*Set max angle*/
+    maxSteps = calculateSteps(maxAngle);
+}
+
+/**
+ * @fn      void stepperStart(void)
+ * @brief   Start rotation
+ * @param   None
+ * @return  None
+ */
+void stepperStart(void)
+{
+    /*Disable driver sleep mode*/
+    GPIO_PinOutSet(NSLEEP_PORT, NSLEEP_PIN);
+
+    /*Start timer*/
+    enable_timer0();
+}
+
+/**
+ * @fn      void stepperStop(void)
+ * @brief   Stop rotation
+ * @param   None
+ * @return  None
+ */
+void stepperStop(void)
+{
+    /*Enable driver sleep mode*/
+    GPIO_PinOutClear(NSLEEP_PORT, NSLEEP_PIN);
+
+    /*Disable timer*/
+    disable_timer0();
+}
+
+/**
+ * @fn      void timer_callback(void)
+ * @brief   Timer 0 callback function
+ * @param   None
+ * @return  None
+ */
+void timer_callback(void)
+{
+    if (Timer0_OverFlowFlag == true)
+    {
+        /*Reset flag*/
+        Timer0_OverFlowFlag = false;
+
+        /*Stepper has rotated one more step*/
+        ++currentStep;
+
+        if (direction == FORWARD)
+        {
+            /*Turn on specific coil*/
+            stepper_output((maxSteps - currentStep) % COIL_CNT);
+
+            /*Indicate direction*/
+            led_turn_off();
+            led_turn_on(RED);
+        }
+        else if (direction == BACKWARDS)
+        {
+            /*Turn on specific coil*/
+            stepper_output(currentStep % COIL_CNT);
+
+            /*Indicate direction*/
+            led_turn_off();
+            led_turn_on(GREEN);
+        }
+
+        /*Change direction if the desired angle is reached*/
+        if(currentStep == maxSteps)
+        {
+            /*Reset initial position*/
+            currentStep = 0;
+
+            /*Change direction*/
+            direction = !direction;
+        }
+    }
 }

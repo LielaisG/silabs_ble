@@ -21,6 +21,7 @@
  * Includes
  ******************************************************************************/
 #include "app.h"
+#include "gpio.h"
 
 /*******************************************************************************
  * Macros
@@ -35,7 +36,9 @@
 #define MB2_PIN               3           /*mB2 pin*/
 #define FULL_ROTATION_STEPS   2048        /*Total step count*/
 #define COIL_CNT              4           /*Bipolar, 4 pins*/
-#define ANGLE_PER_TRIGGER     180         /*90 degrees*/
+#define ANGLE_PER_TRIGGER     180         /*180 degrees*/
+#define FORWARD               1           /*Forward direction*/
+#define BACKWARDS             0           /*Backwards direction*/
 
 /*******************************************************************************
  * Functions
@@ -48,6 +51,10 @@ int calculateSteps(int angle);
 void turn_coil_on(GPIO_Port_TypeDef gpioPort, int pin);
 void turn_coil_off(GPIO_Port_TypeDef gpioPort, int pin);
 void stepper_output(int coil);
+void initStepper(int maxAngle);
+void stepperStart(void);
+void stepperStop(void);
+void timer_callback(void);
 
 /*******************************************************************************
  * END
