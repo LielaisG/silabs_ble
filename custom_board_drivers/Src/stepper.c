@@ -8,7 +8,10 @@
  * Created on:  August 10, 2023
  *
  * @note
- * @todo
+ * @todo    Implement:
+ *          (1) Full range detection
+ *          (2) Mapping step count to percent,
+ *          (3) Stall detection
  *****************************************************************************/
 
 /*******************************************************************************
@@ -20,9 +23,28 @@
  * Data types
  *****************************************************************************/
 bool Timer0_OverFlowFlag = false;
-GPIO_Port_TypeDef coilPorts = M_PORT;
-uint8_t coilPins[COIL_CNT] = { MA1_PIN, MB1_PIN, MA2_PIN, MB2_PIN};
 int maxSteps, currentStep, direction;
+/*Transistors are in order A+, A-, B+, B-*/
+/**
+ * Full step pattern:
+ * 1010 - 0xA
+ * 0110 - 0x6
+ * 0101 - 0x5
+ * 1001 - 0x9
+ */
+uint32_t fullStepPattern[STEP_CNT_FULL] = {0xA, 0x6, 0x5, 0x9};
+/**
+ * Half step pattern:
+ * 1010 - 0xA
+ * 0010 - 0x2
+ * 0110 - 0x6
+ * 0100 - 0x4
+ * 0101 - 0x5
+ * 0001 - 0x1
+ * 1001 - 0x9
+ * 1000 - 0x8
+ */
+uint32_t halfStepPattern[STEP_CNT_HALF] = {0xA, 0x2, 0x6, 0x4, 0x5, 0x1, 0x9, 0x8};
 
 /******************************************************************************
  * Extern
@@ -101,8 +123,6 @@ void disable_timer0(void)
   TIMER_Enable(TIMER0, false);
 }
 
-
-
 /**
  * @fn      int calculateSteps(int)
  * @brief   Returns the number of steps required to rotate a specified angle
@@ -115,53 +135,15 @@ int calculateSteps(int angle)
 }
 
 /**
- * @fn      void turn_coil_on(GPIO_Port_TypeDef, int)
- * @brief   Magnetize the coil
- * @param   gpioPort
- * @param   pin
- * @return  none
- */
-void turn_coil_on(GPIO_Port_TypeDef gpioPort, int pin)
-{
-  /*Magnetize the coil*/
-  GPIO_PinOutSet(gpioPort, pin);
-}
-
-/**
- * @fn      void turn_coil_off(GPIO_Port_TypeDef, int)
- * @brief   Demagnetize the coil
- * @param   gpioPort
- * @param   pin
- * @return  none
- */
-void turn_coil_off(GPIO_Port_TypeDef gpioPort, int pin)
-{
-  /*Demagnetize the coil*/
-  GPIO_PinOutClear(gpioPort, pin);
-}
-
-/**
- * @fn      void stepper_output(int)
- * @brief   Turns on the specified coil, and turns off the remaining coils
- * @param   coil
+ * @fn      void stepThroughPattern(uint32_t)
+ * @brief   Stepping through stepper motor pattern
+ * @param   pos
  * @return  None
  */
-void stepper_output(int coil)
+void stepThroughPattern(uint32_t pos)
 {
-  /*Turn off all coils*/
-  for(int i=0; i<coil; i++)
-  {
-      turn_coil_off(coilPorts, coilPins[i]);
-  }
-
-  /*Magnetize specific coil*/
-  turn_coil_on(coilPorts, coilPins[coil]);
-
-  /*Turn off all coils*/
-  for(int i=coil+1; i<COIL_CNT; i++)
-  {
-      turn_coil_off(coilPorts, coilPins[i]);
-  }
+    /*Seting individual bits*/
+    GPIO_PortOutSetVal(M_PORT, pos, 0xF);
 }
 
 /**
@@ -229,7 +211,8 @@ void timer_callback(void)
         if (direction == FORWARD)
         {
             /*Turn on specific coil*/
-            stepper_output((maxSteps - currentStep) % COIL_CNT);
+            //stepThroughPattern(fullStepPattern[(maxSteps - currentStep) % STEP_CNT_FULL]);
+            stepThroughPattern(halfStepPattern[(maxSteps - currentStep) % STEP_CNT_HALF]);
 
             /*Indicate direction*/
             led_turn_off();
@@ -238,7 +221,8 @@ void timer_callback(void)
         else if (direction == BACKWARDS)
         {
             /*Turn on specific coil*/
-            stepper_output(currentStep % COIL_CNT);
+            //stepThroughPattern(fullStepPattern[currentStep % STEP_CNT_FULL]);
+            stepThroughPattern(halfStepPattern[currentStep % STEP_CNT_HALF]);
 
             /*Indicate direction*/
             led_turn_off();

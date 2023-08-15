@@ -79,7 +79,7 @@ void app_process_action(void)
 /**
  * @fn      void TIMER0_IRQHandler(void)
  * @brief   Timer interrupt handler
- * @param   none
+ * @param   None
  * @return  None
  */
 void TIMER0_IRQHandler(void)
